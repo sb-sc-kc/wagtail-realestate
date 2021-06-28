@@ -4,7 +4,8 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-wagtail = "*"
+wagtail = ">=2.13,<2.14"
+Django = "<3.3,>=3.2"
 
 [dev-packages]
 
