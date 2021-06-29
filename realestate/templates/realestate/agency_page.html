@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% load wagtailcore_tags wagtailimages_tags %}
+
+{% block body_class %}template-agencypage{% endblock %}
+
+{% block content %}
+    <h1>{{ page.title }}</h1>
+
+    <h2>{{ page.agency_name }}</h2>
+
+    <div class="intro">{{ page.short_description }}</div>
+
+    <ul>
+      <li>{{ page.address_street }}</li>
+      <li>{{ page.address_city }}</li>
+      <li>{{ page.address_zip }}</li>
+      <li>{{ page.address_country }}</li>
+    </ul>
+
+    {{ page.description|richtext }}
+    
+<p><a href="{{ page.get_parent.url }}">Return to blog</a></p>
+
+{% endblock %}
