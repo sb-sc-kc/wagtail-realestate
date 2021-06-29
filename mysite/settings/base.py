@@ -29,6 +29,8 @@ INSTALLED_APPS = [
     'blog',
     'realestate',
 
+    'wagtail.contrib.modeladmin',
+    'wagtailmenus',
     'wagtail.contrib.forms',
     'wagtail.contrib.redirects',
     'wagtail.embeds',
@@ -50,6 +52,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
@@ -79,7 +82,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-            ],
+                'wagtailmenus.context_processors.wagtailmenus',            ],
         },
     },
 ]
