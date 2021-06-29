@@ -29,6 +29,7 @@ class BlogIndexPage(Page):
         return context
 
 
+@register_snippet
 class BlogPageTag(TaggedItemBase):
     content_object = ParentalKey(
         'BlogPage',
