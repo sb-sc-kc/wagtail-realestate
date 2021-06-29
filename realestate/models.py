@@ -53,6 +53,7 @@ class AgencyPage(AddressPage):
     """A realestate agency
     """
     agency_name = models.CharField(max_length=64)
+    template = 'realestate/agency_page.html'
 
     content_panels = [
         FieldPanel('agency_name'),
