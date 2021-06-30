@@ -7,8 +7,13 @@ name = "pypi"
 wagtail = ">=2.13,<2.14"
 Django = "<3.3,>=3.2"
 pyyaml = "*"
+wagtailmenus = "*"
+django-extensions = "*"
+python-environ = "*"
 
 [dev-packages]
+ipython = "*"
+notebook = "*"
 
 [requires]
 python_version = "3.9"

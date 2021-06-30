@@ -1,27 +1,6 @@
-{% extends "base.html" %}
+{% extends 'realestate/base.html' %}
 {% load static %}
-{% load menu_tags %}
-
 {% load wagtailcore_tags debugger_tags wagtailimages_tags %}
-
-{{ page|pdb }}
-
-{% comment %}
-{% main_menu max_levels=3 template="menus/main_menu.html" sub_menu_template="menus/main_menu.html" %}
-{% endcomment %}
-
-{% main_menu max_levels=3 template="menus/main_menu.html" %}
-
-<ul class="nav navbar-nav">
-    {% for menu in menuitems %}
-        <li>
-            <a href="{{menu.url}}">{{menu.title}}</a>
-        </li>
-    {% endfor %}
-</u>
-
-{% block body_class %}template-agencypage{% endblock %}
-
 {% block content %}
     <h1>{{ page.title }}</h1>
 

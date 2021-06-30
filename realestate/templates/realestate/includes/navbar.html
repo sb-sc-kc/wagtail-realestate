@@ -1,0 +1,44 @@
+{% load static %}
+{% load wagtailcore_tags %}
+{% load i18n %}
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="{% slugurl 'home' %}">{% trans "LC Real Estate" %}</a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarNav">
+	      <ul class="navbar-nav">
+		<li class="nav-item navbar-brand">
+		  <a class="nav-link" aria-current="page" href="{% slugurl 'rental-offers' %}">{% trans "Rentals" %}</a>
+		</li>
+		<li class="nav-item navbar-brand">
+		  <a class="nav-link" aria-current="page" href="{% slugurl 'sale-offers' %}">{% trans "Sales" %}</a>
+		</li>
+		<li class="nav-item navbar-brand">
+		  <a class="nav-link" href="{% slugurl 'contact' %}">{% trans "Put an ad" %}</a>
+		</li>
+		{% block page_navbar %}{% endblock %}
+		{% if user.is_authenticated %}
+		<li class="nav-item navbar-brand">
+		  <a class="nav-link" href="{% slugurl 'profile_change' %}">{% blocktrans with myuser=user.username %}{{ myuser }}{% endblocktrans %}</a>
+		</li>
+		<li class="nav-item navbar-brand">
+		  <a class="nav-link" href="{% slugurl 'logout' %}?next=/">
+		    {% blocktrans with myuser=user.username %}Log Out{% endblocktrans %}</a>
+		</li>
+		{% else %}
+		<li class="nav-item navbar-brand">
+		  <a class="nav-link" href="{% url 'realestate:login' %}">{% trans "Log In" %}</a>
+		</li>
+		{% endif %}
+	      </ul>
+	      {% block nav_search_form %}
+	      <form class="d-flex">
+		<input class="form-control me-sm-2" name="q" type="text" placeholder="{% trans 'Search' %}">
+		<button class="btn btn-secondary my-2 my-sm-0" type="submit">{% trans 'Search' %}</button>
+	      </form>
+	      {% endblock %}
+	    </div>
+	  </div>
+	</nav>

@@ -1,0 +1,24 @@
+{% extends 'realestate/base.html' %}
+{% load wagtailcore_tags wagtailimages_tags %}
+{% load i18n %}
+
+{% block content %}
+<h1>{{ page.title }}</h1>
+
+<div class="intro">{{ page.intro|richtext }}</div>
+
+<h2>Offers: {{ offerpages_count }}</h2>
+
+{% for offer, parent in mydict.items %}
+<h2><a href="{% pageurl offer %}">Desc: {{ offer.title }}</a></h2>
+{% comment %}
+{% with offer.asset.main_image as main_image %}
+{% if main_image %}{% image main_image fill-160x100 %}{% endif %}
+{% endwith %}
+{% endcomment %}
+<p>
+  {{ offer.asset.description|richtext }}
+</p>
+surface: {{ parent.asset_surface }}<br/>
+{% endfor %}
+{% endblock %}

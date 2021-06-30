@@ -9,6 +9,7 @@ from modelcluster.contrib.taggit import ClusterTaggableManager
 
 from taggit.models import TaggedItemBase
 
+from wagtail.core.fields import RichTextField
 from wagtail.core.models import Page, Orderable, PageManager
 from wagtail.admin.edit_handlers import FieldPanel, InlinePanel, MultiFieldPanel
 from wagtail.images.edit_handlers import ImageChooserPanel
@@ -46,7 +47,7 @@ class AddressPage(Page):
     ]
 
     def address_county(self):
-        return self.addres_zip[:2]
+        return self.address_zip[:2]
 
 
 class AgencyPage(AddressPage):
@@ -90,6 +91,22 @@ class PropertyAssetPageTag(TaggedItemBase):
     )
 
 
+class PropertyAssetIndexPage(Page):
+    intro = RichTextField(blank=True)
+    template='realestate/property_asset_index_page.html'
+    content_panels = Page.content_panels + [
+        FieldPanel('intro', classname="full")
+    ]
+
+    def get_context(self, request):
+        # Update context to include only published posts, ordered by reverse-chron
+        context = super().get_context(request)
+        assetpages = self.get_children().live()
+        context['assetpages'] = assetpages
+        return context
+
+
+
 class PropertyAssetManager(PageManager):
     """QuerySet manager for Invoice class to add non-database fields.
 
@@ -127,8 +144,6 @@ class PropertyAssetPage(Page):
     address_country = models.CharField(max_length=64, verbose_name=_('Country'), default='France')
 
     # Asset
-    asset_value = models.DecimalField(
-        max_digits=9, decimal_places=2, verbose_name=_('Value'))
     asset_surface = models.DecimalField(
         max_digits=4, decimal_places=0, verbose_name=_('Surface'))
     asset_type = models.ForeignKey(
@@ -136,36 +151,47 @@ class PropertyAssetPage(Page):
         on_delete=models.SET_NULL, verbose_name=_('Asset Type'))
 
     # Description
-    short_description = models.CharField(
-        max_length=64, verbose_name=_('Short Description'))
-    description = models.CharField(
-        max_length=512, blank=True, null=True, verbose_name=_('Description'))
+    description = RichTextField(blank=True, null=True)
 
     # Overridden objects manager
     objects = PropertyAssetManager()
+
+    subpage_types = ['realestate.SaleOfferPage', 'realestate.RentalOfferPage']
 
     content_panels = Page.content_panels + [
         MultiFieldPanel([
             FieldPanel('tags'),
             FieldPanel('categories', widget=forms.CheckboxSelectMultiple),
-        ], heading=_("Propery Asset information")),
+        ], heading=_("Property Asset information")),
         MultiFieldPanel([
+            FieldPanel('asset_owner'),
             FieldPanel('address_street'),
             FieldPanel('address_city'),
             FieldPanel('address_zip'),
             FieldPanel('address_country'),
         ], heading=_("Asset Address")),
-        FieldPanel('short_description'),
+        MultiFieldPanel([
+            FieldPanel('asset_type'),
+            FieldPanel('asset_surface'),
+            ], heading=_("Asset Informations")
+        ),
         FieldPanel('description', classname="full"),
         InlinePanel('gallery_images', label="Gallery images"),
     ]
+    
+
+    def get_context(self, request):
+        # Update context to include only published posts, ordered by reverse-chron
+        context = super().get_context(request)
+        context['asset'] = self
+        return context
 
     class Meta:
         verbose_name = _('Property Asset')
         verbose_name_plural = _('Property Assets')
 
     def __str__(self):
-        return '{address_city:s} {address_zip} {asset_type:s}'.format(
+        return '{address_city:s} {address_zip:s} {asset_type:s}'.format(
             address_city=self.address_city, address_zip=self.address_zip, asset_type=str(self.asset_type),
         )
 
@@ -176,14 +202,8 @@ class PropertyAssetPage(Page):
         else:
             return None
 
-    def description_lines(self):
-        try:
-            return self.description.splitlines()
-        except:
-            return []
-
     def address_county(self):
-        return self.addres_zip[:2]
+        return self.address_zip[:2]
 
 
 class OfferManager(PageManager):
@@ -206,39 +226,70 @@ class OfferPage(Page):
         (3, _('Archived')),
     )
 
-    agency = models.ForeignKey(
-        AgencyPage, on_delete=models.PROTECT, verbose_name=_('Agency'))
-    asset = models.ForeignKey(
-        PropertyAssetPage, on_delete=models.PROTECT,
-        verbose_name=_('Property Asset'))
     price = models.DecimalField(
         max_digits=9, decimal_places=2, verbose_name=_('Price'))
-    description = models.CharField(
-        max_length=512, blank=True, null=True, verbose_name=_('Description'))
+
+    # Description
+    description = RichTextField(blank=True, null=True)
     status = models.PositiveSmallIntegerField(
       choices=STATUS,
       default=1,
-   )
+    )
+
+    content_panels = Page.content_panels + [
+        FieldPanel('price'),
+        FieldPanel('description', classname="full"),
+    ]
 
     class Meta:
         verbose_name = _('Offer')
         verbose_name_plural = _('Offers')
 
     def __str__(self):
-        return '{asset:s} prix: {price:9.2f}'.format(
-            asset=str(self.asset), price=self.price)
+        return 'Offer: {title:s} prix: {price:9.2f}'.format(
+            title=self.title, price=self.price)
 
-    @property
     def asset_surface(self):
-        return self.asset.asset_surface
+        return self.get_parent().specific.asset_surface
 
 
-    def description_lines(self):
-        try:
-            return self.description.splitlines()
-        except:
-            return []
-    
+class OfferIndexPage(Page):
+    intro = RichTextField(blank=True)
+    content_panels = Page.content_panels + [
+        FieldPanel('intro', classname="full")
+    ]
+
+    def get_context(self, request):
+        # Update context to include only published posts, ordered by reverse-chron
+        context = super().get_context(request)
+        offerpages = self.get_children().specific().live()
+        # assert(len(offerpages) > 0)
+        context['offerpages'] = offerpages
+        context['offerpages_count'] = self.get_children_count()
+        return context
+
+
+class RentalOfferIndexPage(Page):
+    intro = RichTextField(blank=True)
+    content_panels = Page.content_panels + [
+        FieldPanel('intro', classname="full")
+    ]
+
+    subpage_types = ['realestate.RentalOfferPage']
+
+    def get_context(self, request):
+        # Update context to include only published posts, ordered by reverse-chron
+        context = super().get_context(request)
+        offerpages = RentalOfferPage.objects.specific()
+        mydict = {}
+        for page in offerpages:
+            mydict[page] = page.get_parent().specific
+        # assert(len(offerpages) > 0)
+        context['offerpages'] = offerpages
+        context['mydict'] = mydict
+        
+        return context
+
 
 class RentalOfferPage(OfferPage):
     """Rental Offers
@@ -248,16 +299,53 @@ class RentalOfferPage(OfferPage):
     start_date = models.DateTimeField(verbose_name=_('Start Date'))
     end_date = models.DateTimeField(verbose_name=_('End Date'))
 
+    content_panels = OfferPage.content_panels + [
+        FieldPanel('deposit'),
+        FieldPanel('start_date'),
+        FieldPanel('end_date'),
+    ]
+
     class Meta:
         verbose_name = _('Rental Offer')
         verbose_name_plural = _('Rental Offers')
 
-    def __str__(self):
-        return _('{asset:s} available from {start_date:s} to {end_date:s} price: {price:9.2f}').format(
-            asset=str(self.asset),
-            start_date=format_date(self.start_date),
-            end_date=format_date(self.end_date), price=self.price)
+    # def __str__(self):
+    #     return _('{asset:s} available from {start_date:s} to {end_date:s} price: {price:9.2f}').format(
+    #         asset=str(self.get_parent().asset),
+    #         start_date=format_date(self.start_date),
+    #         end_date=format_date(self.end_date), price=self.price)
+    
+    def get_context(self, request):
+        # Update context to include only published posts, ordered by reverse-chron
+        context = super().get_context(request)
+        asset = self.get_parent().specific
+        images = asset.gallery_images.all()
+        # assert(len(offerpages) > 0)
+        context['offer'] = self
+        context['asset'] = asset
+        context['images'] = images
+        return context
 
+    def __repr__(self):
+        return 'Rental Offer: {title:s} prix: {price:9.2f}'.format(
+            title=self.title, price=self.price)
+
+
+class SaleOfferIndexPage(Page):
+    intro = RichTextField(blank=True)
+    content_panels = Page.content_panels + [
+        FieldPanel('intro', classname="full")
+    ]
+
+    def get_context(self, request):
+        # Update context to include only published posts, ordered by reverse-chron
+        context = super().get_context(request)
+        offerpages = self.get_children().live()
+        # assert(len(offerpages) > 0)
+        context['offerpages'] = offerpages
+        context['offerpages_count'] = self.get_children_count()
+        return context
+    subpage_types = ['realestate.SaleOfferPage']
 
 class SaleOfferPage(OfferPage):
     """Sale Offers
