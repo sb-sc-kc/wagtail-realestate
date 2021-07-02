@@ -1,0 +1,242 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-02 07:48+0200\n"
+"PO-Revision-Date: 2021-07-02 08:00+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: home/templates/home/welcome_page.html:6
+msgid "Visit the Wagtail website"
+msgstr ""
+
+#: home/templates/home/welcome_page.html:15
+msgid "View the release notes"
+msgstr ""
+
+#: home/templates/home/welcome_page.html:27
+msgid "Welcome to your new Wagtail site!"
+msgstr ""
+
+#: home/templates/home/welcome_page.html:28
+msgid ""
+"Please feel free to <a href=\"https://github.com/wagtail/wagtail/wiki/Slack"
+"\">join our community on Slack</a>, or get started with one of the links "
+"below."
+msgstr ""
+
+#: home/templates/home/welcome_page.html:35
+msgid "Wagtail Documentation"
+msgstr ""
+
+#: home/templates/home/welcome_page.html:36
+msgid "Topics, references, & how-tos"
+msgstr ""
+
+#: home/templates/home/welcome_page.html:42
+msgid "Tutorial"
+msgstr ""
+
+#: home/templates/home/welcome_page.html:43
+msgid "Build your first Wagtail site"
+msgstr ""
+
+#: home/templates/home/welcome_page.html:49
+msgid "Admin Interface"
+msgstr ""
+
+#: home/templates/home/welcome_page.html:50
+msgid "Create your superuser first!"
+msgstr ""
+
+#: realestate/models.py:25 realestate/models.py:143
+#: realestate/templates/realestate/offer_page.html:116
+#: realestate/templates/realestate/property_asset_page.html:13
+msgid "Street"
+msgstr "Rue"
+
+#: realestate/models.py:28 realestate/models.py:144 realestate/models.py:146
+#: realestate/templates/realestate/offer_page.html:117
+#: realestate/templates/realestate/property_asset_page.html:14
+msgid "City"
+msgstr "Ville"
+
+#: realestate/models.py:31 realestate/models.py:145
+msgid "Zip Code"
+msgstr "Code postal"
+
+#: realestate/models.py:34 realestate/models.py:147
+msgid "Country"
+msgstr "Pays"
+
+#: realestate/models.py:48 realestate/models.py:175
+msgid "Asset Address"
+msgstr "Addresse du bien imobilier"
+
+#: realestate/models.py:66
+msgid "Agency"
+msgstr "Agence"
+
+#: realestate/models.py:67
+msgid "Agencies"
+msgstr "Agences"
+
+#: realestate/models.py:80 realestate/models.py:154
+msgid "Asset Type"
+msgstr "Type de bien immobilier"
+
+#: realestate/models.py:81
+msgid "Asset Types"
+msgstr "Types de bien immobilier"
+
+#: realestate/models.py:134
+msgid "Owner"
+msgstr "Propriétaire"
+
+#: realestate/models.py:137
+msgid "Creation Date"
+msgstr "Date de création"
+
+#: realestate/models.py:151 realestate/templates/realestate/offer_page.html:119
+#: realestate/templates/realestate/property_asset_page.html:16
+msgid "Surface"
+msgstr "Surface"
+
+#: realestate/models.py:168
+msgid "Property Asset information"
+msgstr "Informations sur le bien immobilier"
+
+#: realestate/models.py:179
+msgid "Asset Informations"
+msgstr "Informations sur le bien immobilier"
+
+#: realestate/models.py:193
+msgid "Property Asset"
+msgstr "Bien immobilier"
+
+#: realestate/models.py:194
+msgid "Property Assets"
+msgstr "Biens immobilier"
+
+#: realestate/models.py:237
+msgid "Draft"
+msgstr "Brouillon"
+
+#: realestate/models.py:238
+msgid "Published"
+msgstr "Publié"
+
+#: realestate/models.py:239
+msgid "Archived"
+msgstr "Archivé"
+
+#: realestate/models.py:244 realestate/templates/realestate/offer_page.html:120
+msgid "Price"
+msgstr "Prix"
+
+#: realestate/models.py:260
+msgid "Offer"
+msgstr "Offre"
+
+#: realestate/models.py:261
+msgid "Offers"
+msgstr "Offres"
+
+#: realestate/models.py:327 realestate/templates/realestate/offer_page.html:121
+msgid "Deposit"
+msgstr "Caution"
+
+#: realestate/models.py:328
+#: realestate/templates/realestate/rental_offer_page.html:5
+msgid "Start Date"
+msgstr "Date de début"
+
+#: realestate/models.py:329
+#: realestate/templates/realestate/rental_offer_page.html:6
+msgid "End Date"
+msgstr "Date de fin"
+
+#: realestate/models.py:338
+msgid "Rental Offer"
+msgstr "Offre à la location"
+
+#: realestate/models.py:339
+msgid "Rental Offers"
+msgstr "Offres à la location"
+
+#: realestate/models.py:383
+msgid "Sale Offer"
+msgstr "Offre à la vent"
+
+#: realestate/models.py:384
+msgid "Sale Offers"
+msgstr "Offres à la vente"
+
+#: realestate/templates/base.html:36
+#, python-format
+msgid "Hi %(myuser)s!"
+msgstr "Salut %(myuser)s !"
+
+#: realestate/templates/base.html:38
+msgid "You are not logged in"
+msgstr "Vous n'êtes pas connecté"
+
+#: realestate/templates/base.html:39
+msgid "Log In"
+msgstr "Connexion"
+
+#: realestate/templates/realestate/includes/marketing.html:33
+msgid "Edit »"
+msgstr "Modifier"
+
+#: realestate/templates/realestate/includes/navbar.html:6
+#: realestate/templates/wagtailadmin/admin_base.html:4
+msgid "LC Real Estate"
+msgstr "Agence immobilière LC"
+
+#: realestate/templates/realestate/includes/navbar.html:13
+msgid "Rentals"
+msgstr "Locations"
+
+#: realestate/templates/realestate/includes/navbar.html:16
+msgid "Sales"
+msgstr "Ventes"
+
+#: realestate/templates/realestate/includes/navbar.html:19
+msgid "Put an ad"
+msgstr "Placer une annonce"
+
+#: realestate/templates/realestate/includes/navbar.html:24
+#, python-format
+msgid "%(myuser)s"
+msgstr "%(myuser)s"
+
+#: realestate/templates/realestate/includes/navbar.html:28
+msgid "Log Out"
+msgstr "Se déconnecter"
+
+#: realestate/templates/realestate/includes/navbar.html:41
+#: realestate/templates/realestate/includes/navbar.html:42
+msgid "Search"
+msgstr "Rechercher"
+
+#: realestate/templates/realestate/offer_page.html:118
+#: realestate/templates/realestate/property_asset_page.html:15
+msgid "Zip"
+msgstr "Code postal"
+
+#: realestate/templates/realestate/property_asset_page.html:17
+msgid "Value"
+msgstr "Valeur"

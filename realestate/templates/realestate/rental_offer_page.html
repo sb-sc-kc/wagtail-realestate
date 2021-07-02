@@ -1,1 +1,7 @@
 {% extends 'realestate/offer_page.html' %}
+{% load i18n %}
+{% block offer-specs %}
+{{ block.super }}
+<tr><td>{% trans "Start Date" %}</td><td>{{ offer.start_date }}</td></tr>
+<tr><td>{% trans "End Date" %}  </td><td>{{ offer.end_date }}  </td></tr>
+{% endblock %}

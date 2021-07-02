@@ -9,13 +9,13 @@
   {{ asset.short_description }}
 </p>
 <p>
-<ul>
-  <li>{{ asset.address_city }}</li>
-  <li>{{ asset.address_street }}</li>
-  <li>{{ asset.address_zip }}</li>
-  <li>{{ asset.asset_surface }}</li>
-  <li>{{ asset.asset_value }}</li>
-</ul>
+<table class="table table-striped">
+  <tr><td>{% trans "Street" %}</td><td>{{ asset.address_street }}</td></tr>
+  <tr><td>{% trans "City" %}</td><td>{{ asset.address_city }}</td></tr>
+  <tr><td>{% trans "Zip" %}</td><td>{{ asset.address_zip }}</td></tr>
+  <tr><td>{% trans "Surface" %}</td><td>{{ asset.asset_surface }}</td></tr>
+  <tr><td>{% trans "Value" %}</td><td>{{ asset.asset_value }}</td></tr>
+</table>
 <h2>Description</h2>
 <p>
   {{ asset.description|richtext }}

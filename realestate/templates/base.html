@@ -15,8 +15,6 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="{% static 'realestate/css/bootstrap-min.css' %}" rel="stylesheet" />
         <link href="{% static 'realestate/css/styles.css' %}" rel="stylesheet" />
-	{% block page_style %}
-	{% endblock %}
     </head>
     <body>
       {% block main %} <!-- >>> main -->
@@ -34,14 +32,12 @@
       </header>
       
       <div class="searchbar">
-	{% comment %}
 	{% if user.is_authenticated %}
 	<h1>{% blocktrans with myuser=user.username %}Hi {{ myuser }}!{% endblocktrans %}</h1>
 	{% else %}
 	<h1>{% trans "You are not logged in" %}</h1>
 	<a class="btn btn-outline-primary" href="{% url 'realestate:login' %}">{% trans "Log In" %}</a>
 	{% endif %}
-	{% endcomment %}
       </div>
       <!-- >>> Page Content -->
       <div id="content" class="container py-4">

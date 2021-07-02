@@ -1,0 +1,20 @@
+{% extends "realestate/base.html" %}
+{% load wagtailcore_tags debugger_tags wagtailimages_tags %}
+{% load i18n %}
+{% block content %}
+
+<h1>{{ person.title }}</h1>
+<p>
+<ul>
+  <li>{{ person.firstname }}</li>
+  <li>{{ person.lastname }}</li>
+  <li>{{ person.email }}</li>
+  <li>{{ person.address_street }}</li>
+  <li>{{ person.address_city }}</li>
+  <li>{{ person.address_zip }}</li>
+</ul>
+<h2>Description</h2>
+<p>
+  {{ person.description|richtext }}
+</p>
+{% endblock %}

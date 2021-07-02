@@ -14,6 +14,8 @@ from wagtail.core.models import Page, Orderable, PageManager
 from wagtail.admin.edit_handlers import FieldPanel, InlinePanel, MultiFieldPanel
 from wagtail.images.edit_handlers import ImageChooserPanel
 
+from wagtail.contrib.routable_page.models import RoutablePageMixin, route
+
 from wagtail.snippets.models import register_snippet
 
 
@@ -105,6 +107,7 @@ class PropertyAssetIndexPage(Page):
         context['assetpages'] = assetpages
         return context
 
+    subpage_types = ['realestate.PropertyAssetPage']
 
 
 class PropertyAssetManager(PageManager):
@@ -206,6 +209,16 @@ class PropertyAssetPage(Page):
         return self.address_zip[:2]
 
 
+
+
+class OfferPageTag(TaggedItemBase):
+    content_object = ParentalKey(
+        'OfferPage',
+        related_name='tagged_items',
+        on_delete=models.CASCADE
+    )
+
+
 class OfferManager(PageManager):
     """QuerySet manager for PropertyAsset class to add non-database fields.
 
@@ -225,6 +238,7 @@ class OfferPage(Page):
         (2, _('Published')),
         (3, _('Archived')),
     )
+    tags = ClusterTaggableManager(through=OfferPageTag, blank=True)
 
     price = models.DecimalField(
         max_digits=9, decimal_places=2, verbose_name=_('Price'))
@@ -237,6 +251,7 @@ class OfferPage(Page):
     )
 
     content_panels = Page.content_panels + [
+        FieldPanel('tags'),
         FieldPanel('price'),
         FieldPanel('description', classname="full"),
     ]
@@ -253,7 +268,7 @@ class OfferPage(Page):
         return self.get_parent().specific.asset_surface
 
 
-class OfferIndexPage(Page):
+class OfferIndexPage(RoutablePageMixin, Page):
     intro = RichTextField(blank=True)
     content_panels = Page.content_panels + [
         FieldPanel('intro', classname="full")
@@ -262,12 +277,26 @@ class OfferIndexPage(Page):
     def get_context(self, request):
         # Update context to include only published posts, ordered by reverse-chron
         context = super().get_context(request)
+
+    def get_context(self, request, *args, **kwargs):
+        """Adding custom stuff to our context."""
+        context = super().get_context(request, *args, **kwargs)
         offerpages = self.get_children().specific().live()
         # assert(len(offerpages) > 0)
+        if request.GET.get('tag', None):
+            tags = request.GET.get('tag')
+            offerpages = offerpages.filter(tags__slug__in=[tags])
         context['offerpages'] = offerpages
         context['offerpages_count'] = self.get_children_count()
+
         return context
 
+    # Get all posts
+        all_posts = BlogDetailPage.objects.live().public().order_by('-first_published_at')
+
+
+        context["posts"] = all_posts
+        return context
 
 class RentalOfferIndexPage(Page):
     intro = RichTextField(blank=True)
@@ -356,15 +385,6 @@ class SaleOfferPage(OfferPage):
 
     pass
 
-
-
-@register_snippet
-class OfferPageTag(TaggedItemBase):
-    content_object = ParentalKey(
-        'OfferPage',
-        related_name='tagged_items',
-        on_delete=models.CASCADE
-    )
 
 
 class PageGalleryImage(Orderable):

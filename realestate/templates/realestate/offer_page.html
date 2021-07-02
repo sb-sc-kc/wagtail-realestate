@@ -5,23 +5,27 @@
 {% load wagtailcore_tags wagtailimages_tags %}
 
 {% block page_style %}
-    <!-- Custom styles for this template -->
-<link href="{% static 'css/carousel.css' %}" rel="stylesheet">
-<style>
-  .bd-placeholder-img {
-  font-size: 1.125rem;
-  text-anchor: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-  }
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/carousel.css' %}" rel="stylesheet">
+  <style>
+    .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    }
 
-  @media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-  font-size: 3.5rem;
-  }
-  }
-</style>
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+      }
+    }
+    tr > td:first-child {
+    text-align: right;
+    font-weight: bold;
+    }    
+  </style>
 {% endblock %}
 
 {% block content %}
@@ -32,57 +36,91 @@
 	<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
 	<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
+
+      <!-- ==================  images  ================== -->
       {% setvar "True" as is_first %}
       <div class="carousel-inner">
-	{% for image in asset.gallery_images.all  %}
+	{% for photo in asset.gallery_images.all  %}
 	  {% if is_first == "True" %}
-            {% setvar "False" as is_first %}
+	    {% setvar "False" as is_first %}
 	    <div class="carousel-item active">
 	  {% else %}
 	    <div class="carousel-item">
 	  {% endif %}
+	  {% image photo.image height-400 as carimage %}
           <div class="carousel-item-img">
-            <img src="/media/{{ image.upload }}" alt="{{ image.description }}"/>
-          </div>
-
-          <div class="container">
-            <div class="carousel-caption text-start">
-              <h1>Example headline.</h1>
-              <p>Some representative placeholder content for the first slide of the carousel.</p>
-              <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
-            </div>
+	    <img src="{{ carimage.url }}"/>
           </div>
 	    </div>
-	{% endfor %}
-	<button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-	    <span class="visually-hidden">Previous</span>
-	  </button>
-	  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-	    <span class="visually-hidden">Next</span>
-	  </button>
+            <div class="container">
+	      <div class="carousel-caption text-start">
+		<h1>Example headline.</h1>
+		<p>Some representative placeholder content for the first slide of the carousel.</p>
+		<p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+	      </div>
+            </div>
+	  {% endfor %}
+	  
+	  <!-- ==========  carousel boutton ========= -->
+	    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+	      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	      <span class="visually-hidden">Previous</span>
+	    </button>
+	    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+	      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	      <span class="visually-hidden">Next</span>
+	    </button>
 	    </div>
 	    
 
 	    <!-- Marketing messaging and featurettes
-		 ================================================== -->
-		 {% include 'realestate/includes/marketing.html' %}    
-		 <!-- Wrap the rest of the page in another container to center all the content. -->
+	    ================================================== -->
+	{% include 'realestate/includes/marketing.html' %}    
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+	    
+	    {# Check if there are tags #}
+	    {% if offer.tags.count %}
+	      <h1>Tags:</h1>
+	      {% for tag in page.tags.all %}
+		{# Loop through all the existing tags #}
+		<a href="{{ self.get_parent.url }}?tag={{ tag.slug }}">{{ tag }}</a><br />
+	      {% endfor %}
+	    {% endif %}	    
 	    {% block offer_detail %}
 	      <div>
 		<h1>{{ offer }}</h1>
 
 		<p>{{ offer.title }}
 		</p>
-		<ul>
-		  <li class="list-group-item">agency: {{ asset.get_parent.specific.agency_name }}</li>
-		  <li class="list-group-item">city: {{ asset.address_city }}</li>
-		  <li class="list-group-item">zip: {{ asset.address_zip }}</li>
-		  <li class="list-group-item">surface: {{ offer.asset_surface }}m2</li>
-		  <li class="list-group-item">price: {{ offer.price }}</li>
-		  <li class="list-group-item">deposit: {{ offer.deposit }}</li>
-		</ul>
+		{% comment %}
+		<div>
+ 		  <dl class="dl-horizontal">
+		    <dt>{% trans "Street" %}</dt><dd>{{ asset.address_street }}</dd>
+		    <dt>{% trans "City" %}</dt><dd>{{ asset.address_city }}</dd>
+		    <dt>{% trans "Zip" %}</dt><dd>{{ asset.address_zip }}</dd>
+		    <dt>{% trans "Surface" %}</dt><dd>{{ asset.asset_surface }}</dd>
+		    <dt>{% trans "Price" %}</dt><dd>{{ offer.price }}</dd>
+		    <dt>{% trans "Deposit" %}</dt><dd>{{ offer.deposit }}</dd>
+		  </dl>
+		</div>
+	      {% endcomment %}
+		<div class="table-responsive">
+ 		  <table class="table table-striped">
+		    <thead>
+		      <tr>
+			<th width="20%"></th><th></th>
+		      </tr>
+		    </thead>
+		    {% block offer-specs %}
+		    <tr><td>{% trans "Street" %}</td><td>{{ asset.address_street }}</td></tr>
+		    <tr><td>{% trans "City" %}</td><td>{{ asset.address_city }}</td></tr>
+		    <tr><td>{% trans "Zip" %}</td><td>{{ asset.address_zip }}</td></tr>
+		    <tr><td>{% trans "Surface" %}</td><td>{{ asset.asset_surface }}</td></tr>
+		    <tr><td>{% trans "Price" %}</td><td>{{ offer.price }}</td></tr>
+		    <tr><td>{% trans "Deposit" %}</td><td>{{ offer.deposit }}</td></tr>
+		  {% endblock %}
+		  </table>
+		</div>
 		<br/>
 		nbimages: {{ asset.gallery_images_count }}
 		<h2>Asset Title</h2>

@@ -28,9 +28,11 @@
 		    {% blocktrans with myuser=user.username %}Log Out{% endblocktrans %}</a>
 		</li>
 		{% else %}
+		{% comment %}
 		<li class="nav-item navbar-brand">
 		  <a class="nav-link" href="{% url 'realestate:login' %}">{% trans "Log In" %}</a>
 		</li>
+		{%  endcomment %}
 		{% endif %}
 	      </ul>
 	      {% block nav_search_form %}

@@ -119,13 +119,28 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+# AUTH_USER_MODEL = 'users.User'
+
+RUNSCRIPT_CHDIR = os.path.join(BASE_DIR, 'scripts')
+
+# WAGTAIL_USER_EDIT_FORM = 'realestate.users.forms.CustomUserEditForm'
+# WAGTAIL_USER_CREATION_FORM = 'realestate.users.forms.CustomUserCreationForm'
+# WAGTAIL_USER_CUSTOM_FIELDS = ['country', 'status']
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+LANGUAGE_CODE = 'fr'
+
+LANGUAGES = [
+    ('fr', 'French'),
+    ('en', 'English'),
+]
+
+# LOCALE_PATHS = [os.path.join(BASE_DIR, 'locale')]
+
+TIME_ZONE = 'Europe/Paris'
 
 USE_I18N = True
 
