@@ -1,0 +1,5063 @@
+-   model: home.homepage
+    pk: 3
+    fields:
+        body: <p data-block-key="h9xb8">Ma Homepage</p><p data-block-key="d32v1"></p><p
+            data-block-key="5l7ul"><a id="15" linktype="page">Rental Offers</a></p><p
+            data-block-key="a5tpt">&lt;br/&gt;</p><p data-block-key="7t8mv"><a href="/admin/">Admin</a></p>
+-   model: realestate.addresspage
+    pk: 4
+    fields:
+        address_street: 45 rue de la paix
+        address_city: Draguignan
+        address_zip: '83123'
+        address_country: France
+        address_website: null
+-   model: realestate.agencypage
+    pk: 4
+    fields:
+        agency_name: Mon Agence
+-   model: realestate.propertyassettype
+    pk: 1
+    fields:
+        label: Studio
+-   model: realestate.propertyassettype
+    pk: 2
+    fields:
+        label: T1
+-   model: realestate.propertyassettype
+    pk: 3
+    fields:
+        label: T2
+-   model: realestate.propertyassettype
+    pk: 4
+    fields:
+        label: T3
+-   model: realestate.propertyassettype
+    pk: 5
+    fields:
+        label: T4
+-   model: realestate.propertyassettype
+    pk: 6
+    fields:
+        label: Villa
+-   model: realestate.propertyassetpagetag
+    pk: 2
+    fields:
+        tag: 1
+        content_object: 9
+-   model: realestate.propertyassetpagetag
+    pk: 4
+    fields:
+        tag: 2
+        content_object: 16
+-   model: realestate.propertyassetindexpage
+    pk: 6
+    fields:
+        intro: <p data-block-key="xnv3m">Nullam eu ante vel est convallis dignissim.  Fusce
+            suscipit, wisi nec facilisis facilisis, est dui fermentum leo, quis tempor
+            ligula erat quis odio.  Nunc porta vulputate tellus.  Nunc rutrum turpis
+            sed pede.  Sed bibendum.  Aliquam posuere.  Nunc aliquet, augue nec adipiscing
+            interdum, lacus tellus malesuada massa, quis varius mi purus non odio.  Pellentesque
+            condimentum, magna ut suscipit hendrerit, ipsum augue ornare nulla, non
+            luctus diam neque sit amet urna.  Curabitur vulputate vestibulum lorem.  Fusce
+            sagittis, libero non molestie mollis, magna orci ultrices dolor, at vulputate
+            neque nulla lacinia eros.  Sed id ligula quis est convallis tempor.  Curabitur
+            lacinia pulvinar nibh.  Nam a sapien.</p><p data-block-key="bnkp4"></p>
+-   model: realestate.propertyassetpage
+    pk: 9
+    fields:
+        asset_owner: 1
+        time_created: 2021-06-30 06:07:01.789000+00:00
+        address_street: 45 rue de la paix
+        address_zip: '83654'
+        address_city: Cavalaire
+        address_country: France
+        asset_surface: '250'
+        asset_type: 6
+        description: <p data-block-key="15jje">Nullam eu ante vel est convallis dignissim.
+            Fusce suscipit, wisi nec facilisis facilisis, est dui fermentum leo, quis
+            tempor ligula erat quis odio. Nunc porta vulputate tellus. Nunc rutrum
+            turpis sed pede. Sed bibendum. Aliquam posuere. Nunc aliquet, augue nec
+            adipiscing interdum, lacus tellus malesuada massa, quis varius mi purus
+            non odio. Pellentesque condimentum, magna ut suscipit hendrerit, ipsum
+            augue ornare nulla, non luctus diam neque sit amet urna. Curabitur vulputate
+            vestibulum lorem. Fusce sagittis, libero non molestie mollis, magna orci
+            ultrices dolor, at vulputate neque nulla lacinia eros. Sed id ligula quis
+            est convallis tempor. Curabitur lacinia pulvinar nibh. Nam a sapien.</p><p
+            data-block-key="b931l"></p>
+        categories: []
+-   model: realestate.propertyassetpage
+    pk: 16
+    fields:
+        asset_owner: 2
+        time_created: 2021-07-01 19:34:55.631000+00:00
+        address_street: 67 avenue Foch
+        address_zip: '83987'
+        address_city: Le Revest
+        address_country: France
+        asset_surface: '20'
+        asset_type: 1
+        description: <h2 data-block-key="zdm3s">Nullam eu ante vel est convallis dignissim.</h2><p
+            data-block-key="6u3k4">Fusce suscipit, wisi nec facilisis facilisis, est
+            dui fermentum leo, quis tempor ligula erat quis odio. Nunc porta vulputate
+            tellus. Nunc rutrum turpis sed pede. Sed bibendum.</p><ol><li data-block-key="3o0ft">Aliquam
+            posuere.</li><li data-block-key="4f59u">Nunc aliquet,</li><li data-block-key="bp8d6">augue
+            nec adipiscing interdum,</li></ol><h2 data-block-key="5350o">lacus tellus
+            malesuada massa, quis varius mi purus non odio.</h2><p data-block-key="6tcuj">Pellentesque
+            condimentum, magna ut suscipit hendrerit, ipsum augue ornare nulla, non
+            luctus diam neque sit amet urna. Curabitur vulputate vestibulum lorem.
+            Fusce sagittis, <b>libero</b> non molestie mollis, magna orci ultrices
+            dolor, at vulputate neque nulla lacinia eros. Sed id ligula quis est convallis
+            tempor.<i> Curabitur lacinia pulvinar nibh</i>. Nam a sapien.</p><p data-block-key="5mols"></p>
+        categories: []
+-   model: realestate.propertyassetpage
+    pk: 18
+    fields:
+        asset_owner: 2
+        time_created: 2021-07-01 22:42:44.538000+00:00
+        address_street: 21 rue qui monte
+        address_zip: '06321'
+        address_city: Villeneuve Loubet
+        address_country: France
+        asset_surface: '175'
+        asset_type: 6
+        description: <p data-block-key="log4h">Pellentesque dapibus suscipit ligula.  Donec
+            posuere augue in quam.  Etiam vel tortor sodales tellus ultricies commodo.  Suspendisse
+            potenti.  Aenean in sem ac leo mollis blandit.  Donec neque quam, dignissim
+            in, mollis nec, sagittis eu, wisi.  Phasellus lacus.  Etiam laoreet quam
+            sed arcu.  Phasellus at dui in ligula mollis ultricies.  Integer placerat
+            tristique nisl.  Praesent augue.  Fusce commodo.  Vestibulum convallis,
+            lorem a tempus semper, dui dui euismod elit, vitae placerat urna tortor
+            vitae lacus.  Nullam libero mauris, consequat quis, varius et, dictum
+            id, arcu.  Mauris mollis tincidunt felis.  Aliquam feugiat tellus ut neque.  Nulla
+            facilisis, risus a rhoncus fermentum, tellus tellus lacinia purus, et
+            dictum nunc justo sit amet elit.</p><p data-block-key="cklhl"></p>
+        categories: []
+-   model: realestate.offerpagetag
+    pk: 1
+    fields:
+        tag: 3
+        content_object: 17
+-   model: realestate.offerpagetag
+    pk: 2
+    fields:
+        tag: 5
+        content_object: 13
+-   model: realestate.offerpage
+    pk: 13
+    fields:
+        price: '750.00'
+        description: <p data-block-key="87wtb">Nous vous proposons pour une semaine
+            cette <b><i>magnifique villa de prestige</i></b>, accès direct à la plage</p><p
+            data-block-key="bduvn"></p>
+        status: 1
+-   model: realestate.offerpage
+    pk: 17
+    fields:
+        price: '750.00'
+        description: <h2 data-block-key="4gm69">Pellentesque dapibus suscipit ligula.</h2><p
+            data-block-key="ds1tp">Donec posuere augue in quam. Etiam vel tortor sodales
+            tellus ultricies commodo. Suspendisse potenti. Aenean in sem ac leo mollis
+            blandit. Donec neque quam, dignissim in, mollis nec, sagittis eu, wisi.
+            Phasellus lacus. Etiam laoreet quam sed arcu. Phasellus at dui in ligula
+            mollis ultricies. Integer placerat tristique nisl. Praesent augue. Fusce
+            commodo. Vestibulum convallis, lorem a tempus semper, dui dui euismod
+            elit, vitae placerat urna tortor vitae lacus. Nullam libero mauris, consequat
+            quis, varius et, dictum id, arcu.</p><ul><li data-block-key="58scb">Mauris
+            mollis tincidunt felis.</li><li data-block-key="29gf8">Aliquam feugiat
+            tellus ut neque.</li></ul><p data-block-key="2qgbl">Nulla facilisis, risus
+            a rhoncus fermentum, tellus tellus lacinia purus, et dictum nunc justo
+            sit amet elit.</p><p data-block-key="9vgpq"></p>
+        status: 1
+-   model: realestate.rentalofferindexpage
+    pk: 15
+    fields:
+        intro: <ul><li data-block-key="gutfc">Suspendisse potenti.</li><li data-block-key="2lqma">Phasellus
+            at dui in ligula mollis ultricies.</li><li data-block-key="5vp15">In id
+            erat non orci commodo lobortis.</li></ul><p data-block-key="cncg0"></p>
+-   model: realestate.rentalofferpage
+    pk: 13
+    fields:
+        deposit: '1250.00'
+        start_date: 2021-07-05 13:11:00+00:00
+        end_date: 2021-07-11 13:11:00+00:00
+-   model: realestate.rentalofferpage
+    pk: 17
+    fields:
+        deposit: '800.00'
+        start_date: 2021-12-06 21:48:00+00:00
+        end_date: 2021-12-11 21:48:00+00:00
+-   model: realestate.saleofferindexpage
+    pk: 14
+    fields:
+        intro: <h2 data-block-key="sscfw">Nullam eu ante vel est convallis dignissim.</h2><p
+            data-block-key="7meiu">Fusce suscipit, wisi nec facilisis facilisis, est
+            dui fermentum leo, quis tempor ligula erat quis odio. Nunc porta vulputate
+            tellus. Nunc rutrum turpis sed pede.</p><ul><li data-block-key="5qiu">Sed
+            bibendum.</li><li data-block-key="fsfed">Aliquam posuere.</li></ul><p
+            data-block-key="8eg0e">Nunc aliquet, augue nec adipiscing interdum, lacus
+            tellus malesuada massa, quis varius mi purus non odio. Pellentesque condimentum,
+            magna ut suscipit hendrerit, ipsum augue ornare nulla, non luctus diam
+            neque sit amet urna. Curabitur vulputate vestibulum lorem. Fusce sagittis,
+            libero non molestie mollis, magna orci ultrices dolor, at vulputate neque
+            nulla lacinia eros. Sed id ligula quis est convallis tempor. Curabitur
+            lacinia pulvinar nibh. Nam a sapien.</p><p data-block-key="7ptur"></p>
+-   model: realestate.pagegalleryimage
+    pk: 1
+    fields:
+        sort_order: 0
+        page: 9
+        image: 1
+        caption: ''
+-   model: realestate.pagegalleryimage
+    pk: 2
+    fields:
+        sort_order: 1
+        page: 9
+        image: 2
+        caption: ''
+-   model: realestate.pagegalleryimage
+    pk: 3
+    fields:
+        sort_order: 2
+        page: 9
+        image: 3
+        caption: ''
+-   model: realestate.pagegalleryimage
+    pk: 4
+    fields:
+        sort_order: 3
+        page: 9
+        image: 4
+        caption: ''
+-   model: realestate.pagegalleryimage
+    pk: 5
+    fields:
+        sort_order: 4
+        page: 9
+        image: 5
+        caption: ''
+-   model: realestate.pagegalleryimage
+    pk: 6
+    fields:
+        sort_order: 0
+        page: 16
+        image: 6
+        caption: ''
+-   model: realestate.pagegalleryimage
+    pk: 7
+    fields:
+        sort_order: 1
+        page: 16
+        image: 7
+        caption: ''
+-   model: realestate.pagegalleryimage
+    pk: 8
+    fields:
+        sort_order: 2
+        page: 16
+        image: 8
+        caption: ''
+-   model: realestate.pagegalleryimage
+    pk: 9
+    fields:
+        sort_order: 3
+        page: 16
+        image: 9
+        caption: ''
+-   model: realestate.pagegalleryimage
+    pk: 10
+    fields:
+        sort_order: 4
+        page: 16
+        image: 10
+        caption: ''
+-   model: realestate.pagegalleryimage
+    pk: 11
+    fields:
+        sort_order: 5
+        page: 16
+        image: 11
+        caption: ''
+-   model: realestate.pagegalleryimage
+    pk: 12
+    fields:
+        sort_order: 0
+        page: 18
+        image: 12
+        caption: ''
+-   model: realestate.pagegalleryimage
+    pk: 13
+    fields:
+        sort_order: 1
+        page: 18
+        image: 13
+        caption: ''
+-   model: realestate.pagegalleryimage
+    pk: 14
+    fields:
+        sort_order: 2
+        page: 18
+        image: 14
+        caption: ''
+-   model: realestate.pagegalleryimage
+    pk: 15
+    fields:
+        sort_order: 3
+        page: 18
+        image: 15
+        caption: ''
+-   model: realestate.pagegalleryimage
+    pk: 16
+    fields:
+        sort_order: 4
+        page: 18
+        image: 16
+        caption: ''
+-   model: wagtailusers.userprofile
+    pk: 1
+    fields:
+        user: 1
+        submitted_notifications: true
+        approved_notifications: true
+        rejected_notifications: true
+        updated_comments_notifications: true
+        preferred_language: ''
+        current_time_zone: ''
+        avatar: ''
+-   model: wagtailimages.image
+    pk: 1
+    fields:
+        collection: 1
+        title: cuzin1.jpg
+        file: original_images/cuzin1_SonnOms.jpg
+        width: 1875
+        height: 797
+        created_at: 2021-06-30 06:07:17.411496+00:00
+        uploaded_by_user: 1
+        focal_point_x: null
+        focal_point_y: null
+        focal_point_width: null
+        focal_point_height: null
+        file_size: 490333
+        file_hash: 535e1394040dd3feee74af26b268211163e1fb61
+-   model: wagtailimages.image
+    pk: 2
+    fields:
+        collection: 1
+        title: cuzin2.jpg
+        file: original_images/cuzin2_FKWl07R.jpg
+        width: 1875
+        height: 797
+        created_at: 2021-06-30 06:07:28.790063+00:00
+        uploaded_by_user: 1
+        focal_point_x: null
+        focal_point_y: null
+        focal_point_width: null
+        focal_point_height: null
+        file_size: 486479
+        file_hash: e4d5518330079efb1cdc5d06b39d9174d9e4e682
+-   model: wagtailimages.image
+    pk: 3
+    fields:
+        collection: 1
+        title: cuzin3.jpg
+        file: original_images/cuzin3_TKL1YoJ.jpg
+        width: 1875
+        height: 797
+        created_at: 2021-06-30 06:07:39.389138+00:00
+        uploaded_by_user: 1
+        focal_point_x: null
+        focal_point_y: null
+        focal_point_width: null
+        focal_point_height: null
+        file_size: 241971
+        file_hash: d2b1dd05c09cfb2761ff7fab4e6aa939e5bd378d
+-   model: wagtailimages.image
+    pk: 4
+    fields:
+        collection: 1
+        title: cuzin4.jpg
+        file: original_images/cuzin4_N3e6uLi.jpg
+        width: 1875
+        height: 797
+        created_at: 2021-06-30 06:07:50.495110+00:00
+        uploaded_by_user: 1
+        focal_point_x: null
+        focal_point_y: null
+        focal_point_width: null
+        focal_point_height: null
+        file_size: 203435
+        file_hash: 31b212b4640cb8b88780f30b577589ecd37590b0
+-   model: wagtailimages.image
+    pk: 5
+    fields:
+        collection: 1
+        title: cuzin5.jpg
+        file: original_images/cuzin5_ZIzJHTS.jpg
+        width: 1875
+        height: 797
+        created_at: 2021-06-30 06:08:01.223894+00:00
+        uploaded_by_user: 1
+        focal_point_x: null
+        focal_point_y: null
+        focal_point_width: null
+        focal_point_height: null
+        file_size: 410592
+        file_hash: 99e12a904d6884e89f26810e52f6eeefa207fc0d
+-   model: wagtailimages.image
+    pk: 6
+    fields:
+        collection: 1
+        title: studio-montagne-01.jpg
+        file: original_images/studio-montagne-01.jpg
+        width: 1024
+        height: 680
+        created_at: 2021-07-01 19:43:43.160780+00:00
+        uploaded_by_user: 1
+        focal_point_x: null
+        focal_point_y: null
+        focal_point_width: null
+        focal_point_height: null
+        file_size: 135186
+        file_hash: ddb18617fe8b3faff367b2ed7eb14cbde6e9bc61
+-   model: wagtailimages.image
+    pk: 7
+    fields:
+        collection: 1
+        title: studio-montagne-02.jpg
+        file: original_images/studio-montagne-02.jpg
+        width: 510
+        height: 768
+        created_at: 2021-07-01 19:44:00.440496+00:00
+        uploaded_by_user: 1
+        focal_point_x: null
+        focal_point_y: null
+        focal_point_width: null
+        focal_point_height: null
+        file_size: 63409
+        file_hash: fd0e630c1f35903a9c3880e583bef2c72a965353
+-   model: wagtailimages.image
+    pk: 8
+    fields:
+        collection: 1
+        title: studio-montagne-03.webp
+        file: original_images/studio-montagne-03.webp
+        width: 576
+        height: 768
+        created_at: 2021-07-01 19:44:14.664758+00:00
+        uploaded_by_user: 1
+        focal_point_x: null
+        focal_point_y: null
+        focal_point_width: null
+        focal_point_height: null
+        file_size: 77794
+        file_hash: 7c048a321eede157d600238780d3b11353b2bfca
+-   model: wagtailimages.image
+    pk: 9
+    fields:
+        collection: 1
+        title: studio-montagne-04.webp
+        file: original_images/studio-montagne-04.webp
+        width: 1024
+        height: 680
+        created_at: 2021-07-01 19:44:26.354456+00:00
+        uploaded_by_user: 1
+        focal_point_x: null
+        focal_point_y: null
+        focal_point_width: null
+        focal_point_height: null
+        file_size: 75916
+        file_hash: d32d5774bec42e948b6d1eec5cb0857e43142808
+-   model: wagtailimages.image
+    pk: 10
+    fields:
+        collection: 1
+        title: studio-montagne-05.webp
+        file: original_images/studio-montagne-05.webp
+        width: 1024
+        height: 680
+        created_at: 2021-07-01 19:44:36.582110+00:00
+        uploaded_by_user: 1
+        focal_point_x: null
+        focal_point_y: null
+        focal_point_width: null
+        focal_point_height: null
+        file_size: 59928
+        file_hash: 35d8d646c60530a548385dc6855cb69fc214cccc
+-   model: wagtailimages.image
+    pk: 11
+    fields:
+        collection: 1
+        title: studio-montagne-06.webp
+        file: original_images/studio-montagne-06.webp
+        width: 510
+        height: 768
+        created_at: 2021-07-01 19:44:47.604744+00:00
+        uploaded_by_user: 1
+        focal_point_x: null
+        focal_point_y: null
+        focal_point_width: null
+        focal_point_height: null
+        file_size: 28012
+        file_hash: bcc00e666530efd4b0e7b7511de62a1b61ec63fe
+-   model: wagtailimages.image
+    pk: 12
+    fields:
+        collection: 1
+        title: maison-provence-01.jpg
+        file: original_images/maison-provence-01_noBOTAq.jpg
+        width: 3697
+        height: 5546
+        created_at: 2021-07-01 22:40:46.968514+00:00
+        uploaded_by_user: 1
+        focal_point_x: null
+        focal_point_y: null
+        focal_point_width: null
+        focal_point_height: null
+        file_size: 2257697
+        file_hash: 118fa775ecb49485ca32ccc0a7ffd5d72e0ec272
+-   model: wagtailimages.image
+    pk: 13
+    fields:
+        collection: 1
+        title: maison-provence-01-interieur.jpg
+        file: original_images/maison-provence-01-interieur_Q861Qll.jpg
+        width: 3224
+        height: 4837
+        created_at: 2021-07-01 22:41:00.317207+00:00
+        uploaded_by_user: 1
+        focal_point_x: null
+        focal_point_y: null
+        focal_point_width: null
+        focal_point_height: null
+        file_size: 1082682
+        file_hash: 52514e641fec822899c1050c8869fc803d30ed90
+-   model: wagtailimages.image
+    pk: 14
+    fields:
+        collection: 1
+        title: maison-provence-01-interieur-02.jpg
+        file: original_images/maison-provence-01-interieur-02.jpg
+        width: 4728
+        height: 7092
+        created_at: 2021-07-01 22:41:24.008553+00:00
+        uploaded_by_user: 1
+        focal_point_x: null
+        focal_point_y: null
+        focal_point_width: null
+        focal_point_height: null
+        file_size: 2817439
+        file_hash: fec5fa296f21b7963b78fdf1c921f119d33345f2
+-   model: wagtailimages.image
+    pk: 15
+    fields:
+        collection: 1
+        title: maison-provence-01-interieur-03.jpg
+        file: original_images/maison-provence-01-interieur-03.jpg
+        width: 7021
+        height: 4681
+        created_at: 2021-07-01 22:41:40.527472+00:00
+        uploaded_by_user: 1
+        focal_point_x: null
+        focal_point_y: null
+        focal_point_width: null
+        focal_point_height: null
+        file_size: 2250760
+        file_hash: 7a849f5cac4db96dca897f1b32dfa2b921303174
+-   model: wagtailimages.image
+    pk: 16
+    fields:
+        collection: 1
+        title: maison-provence-01-interieur-04.jpg
+        file: original_images/maison-provence-01-interieur-04.jpg
+        width: 4719
+        height: 7071
+        created_at: 2021-07-01 22:42:15.172759+00:00
+        uploaded_by_user: 1
+        focal_point_x: null
+        focal_point_y: null
+        focal_point_width: null
+        focal_point_height: null
+        file_size: 2550460
+        file_hash: 8afe3590a9107ab2b3109281fe0e205689fdd3b2
+-   model: wagtailimages.rendition
+    pk: 1
+    fields:
+        filter_spec: max-165x165
+        file: images/cuzin1_SonnOms.max-165x165.jpg
+        width: 165
+        height: 70
+        focal_point_key: ''
+        image: 1
+-   model: wagtailimages.rendition
+    pk: 2
+    fields:
+        filter_spec: max-165x165
+        file: images/cuzin2_FKWl07R.max-165x165.jpg
+        width: 165
+        height: 70
+        focal_point_key: ''
+        image: 2
+-   model: wagtailimages.rendition
+    pk: 3
+    fields:
+        filter_spec: max-165x165
+        file: images/cuzin3_TKL1YoJ.max-165x165.jpg
+        width: 165
+        height: 70
+        focal_point_key: ''
+        image: 3
+-   model: wagtailimages.rendition
+    pk: 4
+    fields:
+        filter_spec: max-165x165
+        file: images/cuzin4_N3e6uLi.max-165x165.jpg
+        width: 165
+        height: 70
+        focal_point_key: ''
+        image: 4
+-   model: wagtailimages.rendition
+    pk: 5
+    fields:
+        filter_spec: max-165x165
+        file: images/cuzin5_ZIzJHTS.max-165x165.jpg
+        width: 165
+        height: 70
+        focal_point_key: ''
+        image: 5
+-   model: wagtailimages.rendition
+    pk: 6
+    fields:
+        filter_spec: width-400
+        file: images/cuzin1_SonnOms.width-400.jpg
+        width: 400
+        height: 170
+        focal_point_key: ''
+        image: 1
+-   model: wagtailimages.rendition
+    pk: 7
+    fields:
+        filter_spec: width-400
+        file: images/cuzin2_FKWl07R.width-400.jpg
+        width: 400
+        height: 170
+        focal_point_key: ''
+        image: 2
+-   model: wagtailimages.rendition
+    pk: 8
+    fields:
+        filter_spec: width-400
+        file: images/cuzin3_TKL1YoJ.width-400.jpg
+        width: 400
+        height: 170
+        focal_point_key: ''
+        image: 3
+-   model: wagtailimages.rendition
+    pk: 9
+    fields:
+        filter_spec: width-400
+        file: images/cuzin4_N3e6uLi.width-400.jpg
+        width: 400
+        height: 170
+        focal_point_key: ''
+        image: 4
+-   model: wagtailimages.rendition
+    pk: 10
+    fields:
+        filter_spec: width-400
+        file: images/cuzin5_ZIzJHTS.width-400.jpg
+        width: 400
+        height: 170
+        focal_point_key: ''
+        image: 5
+-   model: wagtailimages.rendition
+    pk: 11
+    fields:
+        filter_spec: width-800
+        file: images/cuzin1_SonnOms.width-800.jpg
+        width: 800
+        height: 340
+        focal_point_key: ''
+        image: 1
+-   model: wagtailimages.rendition
+    pk: 12
+    fields:
+        filter_spec: width-800
+        file: images/cuzin2_FKWl07R.width-800.jpg
+        width: 800
+        height: 340
+        focal_point_key: ''
+        image: 2
+-   model: wagtailimages.rendition
+    pk: 13
+    fields:
+        filter_spec: width-800
+        file: images/cuzin3_TKL1YoJ.width-800.jpg
+        width: 800
+        height: 340
+        focal_point_key: ''
+        image: 3
+-   model: wagtailimages.rendition
+    pk: 14
+    fields:
+        filter_spec: width-800
+        file: images/cuzin4_N3e6uLi.width-800.jpg
+        width: 800
+        height: 340
+        focal_point_key: ''
+        image: 4
+-   model: wagtailimages.rendition
+    pk: 15
+    fields:
+        filter_spec: width-800
+        file: images/cuzin5_ZIzJHTS.width-800.jpg
+        width: 800
+        height: 340
+        focal_point_key: ''
+        image: 5
+-   model: wagtailimages.rendition
+    pk: 16
+    fields:
+        filter_spec: original
+        file: images/cuzin1_SonnOms.original.jpg
+        width: 1875
+        height: 797
+        focal_point_key: ''
+        image: 1
+-   model: wagtailimages.rendition
+    pk: 17
+    fields:
+        filter_spec: original
+        file: images/cuzin2_FKWl07R.original.jpg
+        width: 1875
+        height: 797
+        focal_point_key: ''
+        image: 2
+-   model: wagtailimages.rendition
+    pk: 18
+    fields:
+        filter_spec: original
+        file: images/cuzin3_TKL1YoJ.original.jpg
+        width: 1875
+        height: 797
+        focal_point_key: ''
+        image: 3
+-   model: wagtailimages.rendition
+    pk: 19
+    fields:
+        filter_spec: original
+        file: images/cuzin4_N3e6uLi.original.jpg
+        width: 1875
+        height: 797
+        focal_point_key: ''
+        image: 4
+-   model: wagtailimages.rendition
+    pk: 20
+    fields:
+        filter_spec: original
+        file: images/cuzin5_ZIzJHTS.original.jpg
+        width: 1875
+        height: 797
+        focal_point_key: ''
+        image: 5
+-   model: wagtailimages.rendition
+    pk: 21
+    fields:
+        filter_spec: height-400
+        file: images/cuzin1_SonnOms.height-400.jpg
+        width: 941
+        height: 400
+        focal_point_key: ''
+        image: 1
+-   model: wagtailimages.rendition
+    pk: 22
+    fields:
+        filter_spec: height-400
+        file: images/cuzin2_FKWl07R.height-400.jpg
+        width: 941
+        height: 400
+        focal_point_key: ''
+        image: 2
+-   model: wagtailimages.rendition
+    pk: 23
+    fields:
+        filter_spec: height-400
+        file: images/cuzin3_TKL1YoJ.height-400.jpg
+        width: 941
+        height: 400
+        focal_point_key: ''
+        image: 3
+-   model: wagtailimages.rendition
+    pk: 24
+    fields:
+        filter_spec: height-400
+        file: images/cuzin4_N3e6uLi.height-400.jpg
+        width: 941
+        height: 400
+        focal_point_key: ''
+        image: 4
+-   model: wagtailimages.rendition
+    pk: 25
+    fields:
+        filter_spec: height-400
+        file: images/cuzin5_ZIzJHTS.height-400.jpg
+        width: 941
+        height: 400
+        focal_point_key: ''
+        image: 5
+-   model: wagtailimages.rendition
+    pk: 26
+    fields:
+        filter_spec: max-165x165
+        file: images/studio-montagne-01.max-165x165.jpg
+        width: 165
+        height: 109
+        focal_point_key: ''
+        image: 6
+-   model: wagtailimages.rendition
+    pk: 27
+    fields:
+        filter_spec: max-165x165
+        file: images/studio-montagne-02.max-165x165.jpg
+        width: 109
+        height: 165
+        focal_point_key: ''
+        image: 7
+-   model: wagtailimages.rendition
+    pk: 28
+    fields:
+        filter_spec: max-165x165
+        file: images/studio-montagne-03.max-165x165.png
+        width: 123
+        height: 165
+        focal_point_key: ''
+        image: 8
+-   model: wagtailimages.rendition
+    pk: 29
+    fields:
+        filter_spec: max-165x165
+        file: images/studio-montagne-04.max-165x165.png
+        width: 165
+        height: 109
+        focal_point_key: ''
+        image: 9
+-   model: wagtailimages.rendition
+    pk: 30
+    fields:
+        filter_spec: max-165x165
+        file: images/studio-montagne-05.max-165x165.png
+        width: 165
+        height: 109
+        focal_point_key: ''
+        image: 10
+-   model: wagtailimages.rendition
+    pk: 31
+    fields:
+        filter_spec: max-165x165
+        file: images/studio-montagne-06.max-165x165.png
+        width: 109
+        height: 165
+        focal_point_key: ''
+        image: 11
+-   model: wagtailimages.rendition
+    pk: 32
+    fields:
+        filter_spec: height-400
+        file: images/studio-montagne-01.height-400.jpg
+        width: 602
+        height: 400
+        focal_point_key: ''
+        image: 6
+-   model: wagtailimages.rendition
+    pk: 33
+    fields:
+        filter_spec: height-400
+        file: images/studio-montagne-02.height-400.jpg
+        width: 265
+        height: 400
+        focal_point_key: ''
+        image: 7
+-   model: wagtailimages.rendition
+    pk: 34
+    fields:
+        filter_spec: height-400
+        file: images/studio-montagne-03.height-400.png
+        width: 300
+        height: 400
+        focal_point_key: ''
+        image: 8
+-   model: wagtailimages.rendition
+    pk: 35
+    fields:
+        filter_spec: height-400
+        file: images/studio-montagne-04.height-400.png
+        width: 602
+        height: 400
+        focal_point_key: ''
+        image: 9
+-   model: wagtailimages.rendition
+    pk: 36
+    fields:
+        filter_spec: height-400
+        file: images/studio-montagne-05.height-400.png
+        width: 602
+        height: 400
+        focal_point_key: ''
+        image: 10
+-   model: wagtailimages.rendition
+    pk: 37
+    fields:
+        filter_spec: height-400
+        file: images/studio-montagne-06.height-400.png
+        width: 265
+        height: 400
+        focal_point_key: ''
+        image: 11
+-   model: wagtailimages.rendition
+    pk: 38
+    fields:
+        filter_spec: max-165x165
+        file: images/maison-provence-01_noBOTAq.max-165x165.jpg
+        width: 109
+        height: 165
+        focal_point_key: ''
+        image: 12
+-   model: wagtailimages.rendition
+    pk: 39
+    fields:
+        filter_spec: max-165x165
+        file: images/maison-provence-01-interieur_Q861Qll.max-165x165.jpg
+        width: 109
+        height: 165
+        focal_point_key: ''
+        image: 13
+-   model: wagtailimages.rendition
+    pk: 40
+    fields:
+        filter_spec: max-165x165
+        file: images/maison-provence-01-interieur-02.max-165x165.jpg
+        width: 110
+        height: 165
+        focal_point_key: ''
+        image: 14
+-   model: wagtailimages.rendition
+    pk: 41
+    fields:
+        filter_spec: max-165x165
+        file: images/maison-provence-01-interieur-03.max-165x165.jpg
+        width: 165
+        height: 110
+        focal_point_key: ''
+        image: 15
+-   model: wagtailimages.rendition
+    pk: 42
+    fields:
+        filter_spec: original
+        file: images/maison-provence-01-interieur-03.original.jpg
+        width: 7021
+        height: 4681
+        focal_point_key: ''
+        image: 15
+-   model: wagtailimages.rendition
+    pk: 43
+    fields:
+        filter_spec: max-800x600
+        file: images/maison-provence-01-interieur-03.max-800x600.jpg
+        width: 800
+        height: 533
+        focal_point_key: ''
+        image: 15
+-   model: wagtailimages.rendition
+    pk: 44
+    fields:
+        filter_spec: max-165x165
+        file: images/maison-provence-01-interieur-04.max-165x165.jpg
+        width: 110
+        height: 165
+        focal_point_key: ''
+        image: 16
+-   model: wagtailcore.site
+    pk: 2
+    fields:
+        hostname: localhost
+        port: 80
+        site_name: ''
+        root_page: 3
+        is_default_site: true
+-   model: wagtailcore.locale
+    pk: 1
+    fields:
+        language_code: en
+-   model: wagtailcore.page
+    pk: 1
+    fields:
+        path: '0001'
+        depth: 1
+        numchild: 1
+        translation_key: 6f2d41d6-b184-4426-971c-433f3d03793d
+        locale: 1
+        title: Root
+        draft_title: Root
+        slug: root
+        content_type: 1
+        live: true
+        has_unpublished_changes: false
+        url_path: /
+        owner: null
+        seo_title: ''
+        show_in_menus: false
+        search_description: ''
+        go_live_at: null
+        expire_at: null
+        expired: false
+        locked: false
+        locked_at: null
+        locked_by: null
+        first_published_at: null
+        last_published_at: null
+        latest_revision_created_at: null
+        live_revision: null
+        alias_of: null
+-   model: wagtailcore.page
+    pk: 3
+    fields:
+        path: '00010001'
+        depth: 2
+        numchild: 4
+        translation_key: b4fd365b-a14c-491c-837e-230c9dfdacbe
+        locale: 1
+        title: Home
+        draft_title: Home
+        slug: home
+        content_type: 4
+        live: true
+        has_unpublished_changes: false
+        url_path: /home/
+        owner: null
+        seo_title: ''
+        show_in_menus: false
+        search_description: ''
+        go_live_at: null
+        expire_at: null
+        expired: false
+        locked: false
+        locked_at: null
+        locked_by: null
+        first_published_at: 2021-06-30 05:24:13.240520+00:00
+        last_published_at: 2021-07-01 19:28:45.301057+00:00
+        latest_revision_created_at: 2021-07-01 19:28:45.249928+00:00
+        live_revision: 31
+        alias_of: null
+-   model: wagtailcore.page
+    pk: 4
+    fields:
+        path: '000100010001'
+        depth: 3
+        numchild: 0
+        translation_key: 34c86705-dbab-4069-97ba-d68c2170f58f
+        locale: 1
+        title: Mon Agence
+        draft_title: Mon Agence
+        slug: mon-agence
+        content_type: 21
+        live: true
+        has_unpublished_changes: false
+        url_path: /home/mon-agence/
+        owner: 1
+        seo_title: ''
+        show_in_menus: false
+        search_description: ''
+        go_live_at: null
+        expire_at: null
+        expired: false
+        locked: false
+        locked_at: null
+        locked_by: null
+        first_published_at: 2021-06-29 22:30:38.126440+00:00
+        last_published_at: 2021-06-29 22:30:38.126440+00:00
+        latest_revision_created_at: 2021-06-29 22:30:38.093032+00:00
+        live_revision: 2
+        alias_of: null
+-   model: wagtailcore.page
+    pk: 6
+    fields:
+        path: '000100010003'
+        depth: 3
+        numchild: 3
+        translation_key: 8231aac1-c1fa-4204-b908-100a6cace6fe
+        locale: 1
+        title: Assets
+        draft_title: Assets
+        slug: assets
+        content_type: 16
+        live: true
+        has_unpublished_changes: false
+        url_path: /home/assets/
+        owner: 1
+        seo_title: ''
+        show_in_menus: false
+        search_description: ''
+        go_live_at: null
+        expire_at: null
+        expired: false
+        locked: false
+        locked_at: null
+        locked_by: null
+        first_published_at: 2021-06-30 05:44:08.939698+00:00
+        last_published_at: 2021-06-30 05:44:08.939698+00:00
+        latest_revision_created_at: 2021-06-30 05:44:08.907748+00:00
+        live_revision: 7
+        alias_of: null
+-   model: wagtailcore.page
+    pk: 9
+    fields:
+        path: '0001000100030001'
+        depth: 4
+        numchild: 1
+        translation_key: 54d78626-b89f-494c-bc81-de68eb04a304
+        locale: 1
+        title: Belle villa en bord de mer
+        draft_title: Belle villa en bord de mer
+        slug: belle-villa-en-bord-de-mer
+        content_type: 17
+        live: true
+        has_unpublished_changes: false
+        url_path: /home/assets/belle-villa-en-bord-de-mer/
+        owner: 1
+        seo_title: ''
+        show_in_menus: false
+        search_description: ''
+        go_live_at: null
+        expire_at: null
+        expired: false
+        locked: false
+        locked_at: null
+        locked_by: null
+        first_published_at: 2021-06-30 06:08:09.618228+00:00
+        last_published_at: 2021-06-30 06:08:09.618228+00:00
+        latest_revision_created_at: 2021-06-30 06:08:09.565957+00:00
+        live_revision: 13
+        alias_of: null
+-   model: wagtailcore.page
+    pk: 13
+    fields:
+        path: '00010001000300010001'
+        depth: 5
+        numchild: 0
+        translation_key: ea657fe0-e08c-42b1-a3ba-1530d29cc9a2
+        locale: 1
+        title: Belle villa en bord de mer
+        draft_title: Belle villa en bord de mer
+        slug: belle-villa-en-bord-de-mer
+        content_type: 22
+        live: true
+        has_unpublished_changes: false
+        url_path: /home/assets/belle-villa-en-bord-de-mer/belle-villa-en-bord-de-mer/
+        owner: 1
+        seo_title: ''
+        show_in_menus: false
+        search_description: ''
+        go_live_at: null
+        expire_at: null
+        expired: false
+        locked: false
+        locked_at: null
+        locked_by: null
+        first_published_at: 2021-06-30 11:12:05.208573+00:00
+        last_published_at: 2021-07-01 23:09:49.433999+00:00
+        latest_revision_created_at: 2021-07-01 23:09:49.395991+00:00
+        live_revision: 42
+        alias_of: null
+-   model: wagtailcore.page
+    pk: 14
+    fields:
+        path: '000100010005'
+        depth: 3
+        numchild: 0
+        translation_key: fd771ba9-4af7-44d0-a2cb-099a1e328c0c
+        locale: 1
+        title: Sale Offers
+        draft_title: Sale Offers
+        slug: sale-offers
+        content_type: 20
+        live: true
+        has_unpublished_changes: false
+        url_path: /home/sale-offers/
+        owner: 1
+        seo_title: ''
+        show_in_menus: false
+        search_description: ''
+        go_live_at: null
+        expire_at: null
+        expired: false
+        locked: false
+        locked_at: null
+        locked_by: null
+        first_published_at: 2021-06-30 11:26:03.163594+00:00
+        last_published_at: 2021-06-30 11:26:25.257737+00:00
+        latest_revision_created_at: 2021-06-30 11:26:25.217103+00:00
+        live_revision: 24
+        alias_of: null
+-   model: wagtailcore.page
+    pk: 15
+    fields:
+        path: '000100010006'
+        depth: 3
+        numchild: 0
+        translation_key: 97c69421-b084-4b3c-ae4e-50de55e1d484
+        locale: 1
+        title: Rental Offers
+        draft_title: Rental Offers
+        slug: rental-offers
+        content_type: 19
+        live: true
+        has_unpublished_changes: false
+        url_path: /home/rental-offers/
+        owner: 1
+        seo_title: ''
+        show_in_menus: false
+        search_description: ''
+        go_live_at: null
+        expire_at: null
+        expired: false
+        locked: false
+        locked_at: null
+        locked_by: null
+        first_published_at: 2021-06-30 11:28:39.151874+00:00
+        last_published_at: 2021-06-30 11:28:39.151874+00:00
+        latest_revision_created_at: 2021-06-30 11:28:39.104772+00:00
+        live_revision: 25
+        alias_of: null
+-   model: wagtailcore.page
+    pk: 16
+    fields:
+        path: '0001000100030002'
+        depth: 4
+        numchild: 1
+        translation_key: a1a77780-cbf5-4d09-b114-6d6fd624c566
+        locale: 1
+        title: Studio à Isola 2000
+        draft_title: Studio à Isola 2000
+        slug: studio-à-isola-2000
+        content_type: 17
+        live: true
+        has_unpublished_changes: true
+        url_path: /home/assets/studio-à-isola-2000/
+        owner: 1
+        seo_title: ''
+        show_in_menus: false
+        search_description: ''
+        go_live_at: null
+        expire_at: null
+        expired: false
+        locked: false
+        locked_at: null
+        locked_by: null
+        first_published_at: 2021-07-01 19:45:02.250794+00:00
+        last_published_at: 2021-07-01 19:45:02.250794+00:00
+        latest_revision_created_at: 2021-07-01 19:45:42.978812+00:00
+        live_revision: 33
+        alias_of: null
+-   model: wagtailcore.page
+    pk: 17
+    fields:
+        path: '00010001000300020001'
+        depth: 5
+        numchild: 0
+        translation_key: e57c10b7-56bd-492f-a605-2211260a93a6
+        locale: 1
+        title: Studio en location à la semaine à Isola
+        draft_title: Studio en location à la semaine à Isola
+        slug: studio-en-location-à-la-semaine
+        content_type: 22
+        live: true
+        has_unpublished_changes: false
+        url_path: /home/assets/studio-à-isola-2000/studio-en-location-à-la-semaine/
+        owner: 1
+        seo_title: ''
+        show_in_menus: false
+        search_description: ''
+        go_live_at: null
+        expire_at: null
+        expired: false
+        locked: false
+        locked_at: null
+        locked_by: null
+        first_published_at: 2021-07-01 19:48:45.871025+00:00
+        last_published_at: 2021-07-01 22:11:47.558901+00:00
+        latest_revision_created_at: 2021-07-01 22:11:47.520845+00:00
+        live_revision: 40
+        alias_of: null
+-   model: wagtailcore.page
+    pk: 18
+    fields:
+        path: '0001000100030003'
+        depth: 4
+        numchild: 0
+        translation_key: d19c2e98-3b20-4479-9c28-43fba2e4524a
+        locale: 1
+        title: Villa à Villeneuve Loubet
+        draft_title: Villa à Villeneuve Loubet
+        slug: villa-à-villeneuve-loubet
+        content_type: 17
+        live: true
+        has_unpublished_changes: false
+        url_path: /home/assets/villa-à-villeneuve-loubet/
+        owner: 1
+        seo_title: ''
+        show_in_menus: false
+        search_description: ''
+        go_live_at: null
+        expire_at: null
+        expired: false
+        locked: false
+        locked_at: null
+        locked_by: null
+        first_published_at: 2021-07-01 22:42:44.623792+00:00
+        last_published_at: 2021-07-01 22:42:44.623792+00:00
+        latest_revision_created_at: 2021-07-01 22:42:44.557103+00:00
+        live_revision: 41
+        alias_of: null
+-   model: wagtailcore.pagerevision
+    pk: 1
+    fields:
+        page: 4
+        submitted_for_moderation: false
+        created_at: 2021-06-29 22:30:33.678394+00:00
+        user: 1
+        content_json: '{"pk": 4, "path": "000100010001", "depth": 3, "numchild": 0,
+            "translation_key": "34c86705-dbab-4069-97ba-d68c2170f58f", "locale": 1,
+            "title": "Mon Agence", "draft_title": "Mon Agence", "slug": "mon-agence",
+            "content_type": 21, "live": false, "has_unpublished_changes": false, "url_path":
+            "/home/mon-agence/", "owner": 1, "seo_title": "", "show_in_menus": false,
+            "search_description": "", "go_live_at": null, "expire_at": null, "expired":
+            false, "locked": false, "locked_at": null, "locked_by": null, "first_published_at":
+            null, "last_published_at": null, "latest_revision_created_at": null, "live_revision":
+            null, "alias_of": null, "address_street": "45 rue de la paix", "address_city":
+            "Draguignan", "address_zip": "83123", "address_country": "France", "address_website":
+            null, "agency_name": "Mon Agence", "comments": []}'
+        approved_go_live_at: null
+-   model: wagtailcore.pagerevision
+    pk: 2
+    fields:
+        page: 4
+        submitted_for_moderation: false
+        created_at: 2021-06-29 22:30:38.093032+00:00
+        user: 1
+        content_json: '{"pk": 4, "path": "000100010001", "depth": 3, "numchild": 0,
+            "translation_key": "34c86705-dbab-4069-97ba-d68c2170f58f", "locale": 1,
+            "title": "Mon Agence", "draft_title": "Mon Agence", "slug": "mon-agence",
+            "content_type": 21, "live": false, "has_unpublished_changes": true, "url_path":
+            "/home/mon-agence/", "owner": 1, "seo_title": "", "show_in_menus": false,
+            "search_description": "", "go_live_at": null, "expire_at": null, "expired":
+            false, "locked": false, "locked_at": null, "locked_by": null, "first_published_at":
+            null, "last_published_at": null, "latest_revision_created_at": "2021-06-29T22:30:33.678Z",
+            "live_revision": null, "alias_of": null, "address_street": "45 rue de
+            la paix", "address_city": "Draguignan", "address_zip": "83123", "address_country":
+            "France", "address_website": null, "agency_name": "Mon Agence", "comments":
+            []}'
+        approved_go_live_at: null
+-   model: wagtailcore.pagerevision
+    pk: 3
+    fields:
+        page: 3
+        submitted_for_moderation: false
+        created_at: 2021-06-30 05:24:13.193674+00:00
+        user: 1
+        content_json: '{"pk": 3, "path": "00010001", "depth": 2, "numchild": 1, "translation_key":
+            "b4fd365b-a14c-491c-837e-230c9dfdacbe", "locale": 1, "title": "Home",
+            "draft_title": "Home", "slug": "home", "content_type": 4, "live": true,
+            "has_unpublished_changes": false, "url_path": "/home/", "owner": null,
+            "seo_title": "", "show_in_menus": false, "search_description": "", "go_live_at":
+            null, "expire_at": null, "expired": false, "locked": false, "locked_at":
+            null, "locked_by": null, "first_published_at": null, "last_published_at":
+            null, "latest_revision_created_at": null, "live_revision": null, "alias_of":
+            null, "body": "<p data-block-key=\"h9xb8\">Ma Homepage</p>", "comments":
+            []}'
+        approved_go_live_at: null
+-   model: wagtailcore.pagerevision
+    pk: 7
+    fields:
+        page: 6
+        submitted_for_moderation: false
+        created_at: 2021-06-30 05:44:08.907748+00:00
+        user: 1
+        content_json: '{"pk": 6, "path": "000100010003", "depth": 3, "numchild": 0,
+            "translation_key": "8231aac1-c1fa-4204-b908-100a6cace6fe", "locale": 1,
+            "title": "Assets", "draft_title": "Assets", "slug": "assets", "content_type":
+            16, "live": true, "has_unpublished_changes": false, "url_path": "/home/assets/",
+            "owner": 1, "seo_title": "", "show_in_menus": false, "search_description":
+            "", "go_live_at": null, "expire_at": null, "expired": false, "locked":
+            false, "locked_at": null, "locked_by": null, "first_published_at": null,
+            "last_published_at": null, "latest_revision_created_at": null, "live_revision":
+            null, "alias_of": null, "intro": "<p data-block-key=\"xnv3m\">Nullam eu
+            ante vel est convallis dignissim.  Fusce suscipit, wisi nec facilisis
+            facilisis, est dui fermentum leo, quis tempor ligula erat quis odio.  Nunc
+            porta vulputate tellus.  Nunc rutrum turpis sed pede.  Sed bibendum.  Aliquam
+            posuere.  Nunc aliquet, augue nec adipiscing interdum, lacus tellus malesuada
+            massa, quis varius mi purus non odio.  Pellentesque condimentum, magna
+            ut suscipit hendrerit, ipsum augue ornare nulla, non luctus diam neque
+            sit amet urna.  Curabitur vulputate vestibulum lorem.  Fusce sagittis,
+            libero non molestie mollis, magna orci ultrices dolor, at vulputate neque
+            nulla lacinia eros.  Sed id ligula quis est convallis tempor.  Curabitur
+            lacinia pulvinar nibh.  Nam a sapien.</p><p data-block-key=\"bnkp4\"></p>",
+            "comments": []}'
+        approved_go_live_at: null
+-   model: wagtailcore.pagerevision
+    pk: 11
+    fields:
+        page: 9
+        submitted_for_moderation: false
+        created_at: 2021-06-30 06:07:01.807804+00:00
+        user: 1
+        content_json: '{"pk": 9, "path": "0001000100030001", "depth": 4, "numchild":
+            0, "translation_key": "54d78626-b89f-494c-bc81-de68eb04a304", "locale":
+            1, "title": "Belle villa en bord de mer", "draft_title": "Belle villa
+            en bord de mer", "slug": "belle-villa-en-bord-de-mer", "content_type":
+            17, "live": false, "has_unpublished_changes": false, "url_path": "/home/assets/belle-villa-en-bord-de-mer/",
+            "owner": 1, "seo_title": "", "show_in_menus": false, "search_description":
+            "", "go_live_at": null, "expire_at": null, "expired": false, "locked":
+            false, "locked_at": null, "locked_by": null, "first_published_at": null,
+            "last_published_at": null, "latest_revision_created_at": null, "live_revision":
+            null, "alias_of": null, "asset_owner": 1, "time_created": "2021-06-30T06:07:01.789Z",
+            "address_street": "45 rue de la paix", "address_zip": "83654", "address_city":
+            "Cavalaire", "address_country": "France", "asset_surface": "250", "asset_type":
+            6, "short_description": "Belle villa vue sur la plage", "description":
+            "<p data-block-key=\"15jje\">Nullam eu ante vel est convallis dignissim.  Fusce
+            suscipit, wisi nec facilisis facilisis, est dui fermentum leo, quis tempor
+            ligula erat quis odio.  Nunc porta vulputate tellus.  Nunc rutrum turpis
+            sed pede.  Sed bibendum.  Aliquam posuere.  Nunc aliquet, augue nec adipiscing
+            interdum, lacus tellus malesuada massa, quis varius mi purus non odio.  Pellentesque
+            condimentum, magna ut suscipit hendrerit, ipsum augue ornare nulla, non
+            luctus diam neque sit amet urna.  Curabitur vulputate vestibulum lorem.  Fusce
+            sagittis, libero non molestie mollis, magna orci ultrices dolor, at vulputate
+            neque nulla lacinia eros.  Sed id ligula quis est convallis tempor.  Curabitur
+            lacinia pulvinar nibh.  Nam a sapien.</p><p data-block-key=\"b931l\"></p>",
+            "comments": [], "tagged_items": [{"pk": 1, "tag": 1, "content_object":
+            9}], "gallery_images": [], "categories": []}'
+        approved_go_live_at: null
+-   model: wagtailcore.pagerevision
+    pk: 12
+    fields:
+        page: 9
+        submitted_for_moderation: false
+        created_at: 2021-06-30 06:08:03.746134+00:00
+        user: 1
+        content_json: '{"pk": 9, "path": "0001000100030001", "depth": 4, "numchild":
+            0, "translation_key": "54d78626-b89f-494c-bc81-de68eb04a304", "locale":
+            1, "title": "Belle villa en bord de mer", "draft_title": "Belle villa
+            en bord de mer", "slug": "belle-villa-en-bord-de-mer", "content_type":
+            17, "live": false, "has_unpublished_changes": true, "url_path": "/home/assets/belle-villa-en-bord-de-mer/",
+            "owner": 1, "seo_title": "", "show_in_menus": false, "search_description":
+            "", "go_live_at": null, "expire_at": null, "expired": false, "locked":
+            false, "locked_at": null, "locked_by": null, "first_published_at": null,
+            "last_published_at": null, "latest_revision_created_at": "2021-06-30T06:07:01.807Z",
+            "live_revision": null, "alias_of": null, "asset_owner": 1, "time_created":
+            "2021-06-30T06:07:01.789Z", "address_street": "45 rue de la paix", "address_zip":
+            "83654", "address_city": "Cavalaire", "address_country": "France", "asset_surface":
+            "250", "asset_type": 6, "short_description": "Belle villa vue sur la plage",
+            "description": "<p data-block-key=\"15jje\">Nullam eu ante vel est convallis
+            dignissim. Fusce suscipit, wisi nec facilisis facilisis, est dui fermentum
+            leo, quis tempor ligula erat quis odio. Nunc porta vulputate tellus. Nunc
+            rutrum turpis sed pede. Sed bibendum. Aliquam posuere. Nunc aliquet, augue
+            nec adipiscing interdum, lacus tellus malesuada massa, quis varius mi
+            purus non odio. Pellentesque condimentum, magna ut suscipit hendrerit,
+            ipsum augue ornare nulla, non luctus diam neque sit amet urna. Curabitur
+            vulputate vestibulum lorem. Fusce sagittis, libero non molestie mollis,
+            magna orci ultrices dolor, at vulputate neque nulla lacinia eros. Sed
+            id ligula quis est convallis tempor. Curabitur lacinia pulvinar nibh.
+            Nam a sapien.</p><p data-block-key=\"b931l\"></p>", "comments": [], "tagged_items":
+            [{"pk": null, "tag": 1, "content_object": 9}], "gallery_images": [{"pk":
+            null, "sort_order": 0, "page": 9, "image": 1, "caption": ""}, {"pk": null,
+            "sort_order": 1, "page": 9, "image": 2, "caption": ""}, {"pk": null, "sort_order":
+            2, "page": 9, "image": 3, "caption": ""}, {"pk": null, "sort_order": 3,
+            "page": 9, "image": 4, "caption": ""}, {"pk": null, "sort_order": 4, "page":
+            9, "image": 5, "caption": ""}], "categories": []}'
+        approved_go_live_at: null
+-   model: wagtailcore.pagerevision
+    pk: 13
+    fields:
+        page: 9
+        submitted_for_moderation: false
+        created_at: 2021-06-30 06:08:09.565957+00:00
+        user: 1
+        content_json: '{"pk": 9, "path": "0001000100030001", "depth": 4, "numchild":
+            0, "translation_key": "54d78626-b89f-494c-bc81-de68eb04a304", "locale":
+            1, "title": "Belle villa en bord de mer", "draft_title": "Belle villa
+            en bord de mer", "slug": "belle-villa-en-bord-de-mer", "content_type":
+            17, "live": false, "has_unpublished_changes": true, "url_path": "/home/assets/belle-villa-en-bord-de-mer/",
+            "owner": 1, "seo_title": "", "show_in_menus": false, "search_description":
+            "", "go_live_at": null, "expire_at": null, "expired": false, "locked":
+            false, "locked_at": null, "locked_by": null, "first_published_at": null,
+            "last_published_at": null, "latest_revision_created_at": "2021-06-30T06:08:03.746Z",
+            "live_revision": null, "alias_of": null, "asset_owner": 1, "time_created":
+            "2021-06-30T06:07:01.789Z", "address_street": "45 rue de la paix", "address_zip":
+            "83654", "address_city": "Cavalaire", "address_country": "France", "asset_surface":
+            "250", "asset_type": 6, "short_description": "Belle villa vue sur la plage",
+            "description": "<p data-block-key=\"15jje\">Nullam eu ante vel est convallis
+            dignissim. Fusce suscipit, wisi nec facilisis facilisis, est dui fermentum
+            leo, quis tempor ligula erat quis odio. Nunc porta vulputate tellus. Nunc
+            rutrum turpis sed pede. Sed bibendum. Aliquam posuere. Nunc aliquet, augue
+            nec adipiscing interdum, lacus tellus malesuada massa, quis varius mi
+            purus non odio. Pellentesque condimentum, magna ut suscipit hendrerit,
+            ipsum augue ornare nulla, non luctus diam neque sit amet urna. Curabitur
+            vulputate vestibulum lorem. Fusce sagittis, libero non molestie mollis,
+            magna orci ultrices dolor, at vulputate neque nulla lacinia eros. Sed
+            id ligula quis est convallis tempor. Curabitur lacinia pulvinar nibh.
+            Nam a sapien.</p><p data-block-key=\"b931l\"></p>", "comments": [], "tagged_items":
+            [{"pk": null, "tag": 1, "content_object": 9}], "gallery_images": [{"pk":
+            null, "sort_order": 0, "page": 9, "image": 1, "caption": ""}, {"pk": null,
+            "sort_order": 1, "page": 9, "image": 2, "caption": ""}, {"pk": null, "sort_order":
+            2, "page": 9, "image": 3, "caption": ""}, {"pk": null, "sort_order": 3,
+            "page": 9, "image": 4, "caption": ""}, {"pk": null, "sort_order": 4, "page":
+            9, "image": 5, "caption": ""}], "categories": []}'
+        approved_go_live_at: null
+-   model: wagtailcore.pagerevision
+    pk: 22
+    fields:
+        page: 13
+        submitted_for_moderation: false
+        created_at: 2021-06-30 11:12:05.176272+00:00
+        user: 1
+        content_json: '{"pk": 13, "path": "00010001000300010001", "depth": 5, "numchild":
+            0, "translation_key": "ea657fe0-e08c-42b1-a3ba-1530d29cc9a2", "locale":
+            1, "title": "Belle villa en bord de mer", "draft_title": "Belle villa
+            en bord de mer", "slug": "belle-villa-en-bord-de-mer", "content_type":
+            22, "live": true, "has_unpublished_changes": false, "url_path": "/home/assets/belle-villa-en-bord-de-mer/belle-villa-en-bord-de-mer/",
+            "owner": 1, "seo_title": "", "show_in_menus": false, "search_description":
+            "", "go_live_at": null, "expire_at": null, "expired": false, "locked":
+            false, "locked_at": null, "locked_by": null, "first_published_at": null,
+            "last_published_at": null, "latest_revision_created_at": null, "live_revision":
+            null, "alias_of": null, "price": "750", "short_description": "Belle villa
+            vue sur la plage", "description": "", "status": 1, "deposit": "0", "start_date":
+            "2021-07-05T13:11:00Z", "end_date": "2021-07-11T13:11:00Z", "comments":
+            [], "tagged_items": []}'
+        approved_go_live_at: null
+-   model: wagtailcore.pagerevision
+    pk: 23
+    fields:
+        page: 14
+        submitted_for_moderation: false
+        created_at: 2021-06-30 11:26:03.132551+00:00
+        user: 1
+        content_json: '{"pk": 14, "path": "000100010005", "depth": 3, "numchild":
+            0, "translation_key": "fd771ba9-4af7-44d0-a2cb-099a1e328c0c", "locale":
+            1, "title": "Sale Offers", "draft_title": "Sale Offers", "slug": "sale-offers",
+            "content_type": 20, "live": true, "has_unpublished_changes": false, "url_path":
+            "/home/sale-offers/", "owner": 1, "seo_title": "", "show_in_menus": false,
+            "search_description": "", "go_live_at": null, "expire_at": null, "expired":
+            false, "locked": false, "locked_at": null, "locked_by": null, "first_published_at":
+            null, "last_published_at": null, "latest_revision_created_at": null, "live_revision":
+            null, "alias_of": null, "intro": "<h2 data-block-key=\"sscfw\">Nullam
+            eu ante vel est convallis dignissim.  </h2><p data-block-key=\"7meiu\">Fusce
+            suscipit, wisi nec facilisis facilisis, est dui fermentum leo, quis tempor
+            ligula erat quis odio.  Nunc porta vulputate tellus.  Nunc rutrum turpis
+            sed pede.  </p><ul><li data-block-key=\"5qiu\">Sed bibendum.  </li><li
+            data-block-key=\"fsfed\">Aliquam posuere.  </li></ul><p data-block-key=\"8eg0e\">Nunc
+            aliquet, augue nec adipiscing interdum, lacus tellus malesuada massa,
+            quis varius mi purus non odio.  Pellentesque condimentum, magna ut suscipit
+            hendrerit, ipsum augue ornare nulla, non luctus diam neque sit amet urna.  Curabitur
+            vulputate vestibulum lorem.  Fusce sagittis, libero non molestie mollis,
+            magna orci ultrices dolor, at vulputate neque nulla lacinia eros.  Sed
+            id ligula quis est convallis tempor.  Curabitur lacinia pulvinar nibh.  Nam
+            a sapien.</p><p data-block-key=\"7ptur\"></p>", "comments": []}'
+        approved_go_live_at: null
+-   model: wagtailcore.pagerevision
+    pk: 24
+    fields:
+        page: 14
+        submitted_for_moderation: false
+        created_at: 2021-06-30 11:26:25.217103+00:00
+        user: 1
+        content_json: '{"pk": 14, "path": "000100010005", "depth": 3, "numchild":
+            0, "translation_key": "fd771ba9-4af7-44d0-a2cb-099a1e328c0c", "locale":
+            1, "title": "Sale Offers", "draft_title": "Sale Offers", "slug": "sale-offers",
+            "content_type": 20, "live": true, "has_unpublished_changes": false, "url_path":
+            "/home/sale-offers/", "owner": 1, "seo_title": "", "show_in_menus": false,
+            "search_description": "", "go_live_at": null, "expire_at": null, "expired":
+            false, "locked": false, "locked_at": null, "locked_by": null, "first_published_at":
+            "2021-06-30T11:26:03.163Z", "last_published_at": "2021-06-30T11:26:03.163Z",
+            "latest_revision_created_at": "2021-06-30T11:26:03.132Z", "live_revision":
+            23, "alias_of": null, "intro": "<h2 data-block-key=\"sscfw\">Nullam eu
+            ante vel est convallis dignissim.</h2><p data-block-key=\"7meiu\">Fusce
+            suscipit, wisi nec facilisis facilisis, est dui fermentum leo, quis tempor
+            ligula erat quis odio. Nunc porta vulputate tellus. Nunc rutrum turpis
+            sed pede.</p><ul><li data-block-key=\"5qiu\">Sed bibendum.</li><li data-block-key=\"fsfed\">Aliquam
+            posuere.</li></ul><p data-block-key=\"8eg0e\">Nunc aliquet, augue nec
+            adipiscing interdum, lacus tellus malesuada massa, quis varius mi purus
+            non odio. Pellentesque condimentum, magna ut suscipit hendrerit, ipsum
+            augue ornare nulla, non luctus diam neque sit amet urna. Curabitur vulputate
+            vestibulum lorem. Fusce sagittis, libero non molestie mollis, magna orci
+            ultrices dolor, at vulputate neque nulla lacinia eros. Sed id ligula quis
+            est convallis tempor. Curabitur lacinia pulvinar nibh. Nam a sapien.</p><p
+            data-block-key=\"7ptur\"></p>", "comments": []}'
+        approved_go_live_at: null
+-   model: wagtailcore.pagerevision
+    pk: 25
+    fields:
+        page: 15
+        submitted_for_moderation: false
+        created_at: 2021-06-30 11:28:39.104772+00:00
+        user: 1
+        content_json: '{"pk": 15, "path": "000100010006", "depth": 3, "numchild":
+            0, "translation_key": "97c69421-b084-4b3c-ae4e-50de55e1d484", "locale":
+            1, "title": "Rental Offers", "draft_title": "Rental Offers", "slug": "rental-offers",
+            "content_type": 19, "live": true, "has_unpublished_changes": false, "url_path":
+            "/home/rental-offers/", "owner": 1, "seo_title": "", "show_in_menus":
+            false, "search_description": "", "go_live_at": null, "expire_at": null,
+            "expired": false, "locked": false, "locked_at": null, "locked_by": null,
+            "first_published_at": null, "last_published_at": null, "latest_revision_created_at":
+            null, "live_revision": null, "alias_of": null, "intro": "<ul><li data-block-key=\"gutfc\">Suspendisse
+            potenti.</li><li data-block-key=\"2lqma\">Phasellus at dui in ligula mollis
+            ultricies.</li><li data-block-key=\"5vp15\">In id erat non orci commodo
+            lobortis.</li></ul><p data-block-key=\"cncg0\"></p>", "comments": []}'
+        approved_go_live_at: null
+-   model: wagtailcore.pagerevision
+    pk: 26
+    fields:
+        page: 13
+        submitted_for_moderation: false
+        created_at: 2021-06-30 17:12:51.594546+00:00
+        user: 1
+        content_json: '{"pk": 13, "path": "00010001000300010001", "depth": 5, "numchild":
+            0, "translation_key": "ea657fe0-e08c-42b1-a3ba-1530d29cc9a2", "locale":
+            1, "title": "Belle villa en bord de mer", "draft_title": "Belle villa
+            en bord de mer", "slug": "belle-villa-en-bord-de-mer", "content_type":
+            22, "live": true, "has_unpublished_changes": false, "url_path": "/home/assets/belle-villa-en-bord-de-mer/belle-villa-en-bord-de-mer/",
+            "owner": 1, "seo_title": "", "show_in_menus": false, "search_description":
+            "", "go_live_at": null, "expire_at": null, "expired": false, "locked":
+            false, "locked_at": null, "locked_by": null, "first_published_at": "2021-06-30T11:12:05.208Z",
+            "last_published_at": "2021-06-30T11:12:05.208Z", "latest_revision_created_at":
+            "2021-06-30T11:12:05.176Z", "live_revision": 22, "alias_of": null, "price":
+            "750.00", "short_description": "Belle villa vue sur la plage", "description":
+            "", "status": 1, "deposit": "1250", "start_date": "2021-07-05T13:11:00Z",
+            "end_date": "2021-07-11T13:11:00Z", "comments": [], "tagged_items": []}'
+        approved_go_live_at: null
+-   model: wagtailcore.pagerevision
+    pk: 27
+    fields:
+        page: 13
+        submitted_for_moderation: false
+        created_at: 2021-06-30 17:40:02.721636+00:00
+        user: 1
+        content_json: '{"pk": 13, "path": "00010001000300010001", "depth": 5, "numchild":
+            0, "translation_key": "ea657fe0-e08c-42b1-a3ba-1530d29cc9a2", "locale":
+            1, "title": "Belle villa en bord de mer", "draft_title": "Belle villa
+            en bord de mer", "slug": "belle-villa-en-bord-de-mer", "content_type":
+            22, "live": true, "has_unpublished_changes": false, "url_path": "/home/assets/belle-villa-en-bord-de-mer/belle-villa-en-bord-de-mer/",
+            "owner": 1, "seo_title": "", "show_in_menus": false, "search_description":
+            "", "go_live_at": null, "expire_at": null, "expired": false, "locked":
+            false, "locked_at": null, "locked_by": null, "first_published_at": "2021-06-30T11:12:05.208Z",
+            "last_published_at": "2021-06-30T17:12:51.634Z", "latest_revision_created_at":
+            "2021-06-30T17:12:51.594Z", "live_revision": 26, "alias_of": null, "price":
+            "750.00", "short_description": "Belle villa vue sur la plage", "description":
+            "<p data-block-key=\"87wtb\">Nous vous proposons pour une semaine cette
+            <b><i>magnifique villa de prestige</i></b>, acc\u00e8s direct \u00e0 la
+            plage</p><p data-block-key=\"bduvn\"></p>", "status": 1, "deposit": "1250.00",
+            "start_date": "2021-07-05T13:11:00Z", "end_date": "2021-07-11T13:11:00Z",
+            "comments": [], "tagged_items": []}'
+        approved_go_live_at: null
+-   model: wagtailcore.pagerevision
+    pk: 28
+    fields:
+        page: 3
+        submitted_for_moderation: false
+        created_at: 2021-07-01 18:11:17.376926+00:00
+        user: 1
+        content_json: '{"pk": 3, "path": "00010001", "depth": 2, "numchild": 4, "translation_key":
+            "b4fd365b-a14c-491c-837e-230c9dfdacbe", "locale": 1, "title": "Home",
+            "draft_title": "Home", "slug": "home", "content_type": 4, "live": true,
+            "has_unpublished_changes": false, "url_path": "/home/", "owner": null,
+            "seo_title": "", "show_in_menus": false, "search_description": "", "go_live_at":
+            null, "expire_at": null, "expired": false, "locked": false, "locked_at":
+            null, "locked_by": null, "first_published_at": "2021-06-30T05:24:13.240Z",
+            "last_published_at": "2021-06-30T05:24:13.240Z", "latest_revision_created_at":
+            "2021-06-30T05:24:13.193Z", "live_revision": 3, "alias_of": null, "body":
+            "<p data-block-key=\"h9xb8\">Ma Homepage<a id=\"15\" linktype=\"page\">Rental
+            Offers</a></p>", "comments": []}'
+        approved_go_live_at: null
+-   model: wagtailcore.pagerevision
+    pk: 29
+    fields:
+        page: 3
+        submitted_for_moderation: false
+        created_at: 2021-07-01 18:12:05.226339+00:00
+        user: 1
+        content_json: '{"pk": 3, "path": "00010001", "depth": 2, "numchild": 4, "translation_key":
+            "b4fd365b-a14c-491c-837e-230c9dfdacbe", "locale": 1, "title": "Home",
+            "draft_title": "Home", "slug": "home", "content_type": 4, "live": true,
+            "has_unpublished_changes": false, "url_path": "/home/", "owner": null,
+            "seo_title": "", "show_in_menus": false, "search_description": "", "go_live_at":
+            null, "expire_at": null, "expired": false, "locked": false, "locked_at":
+            null, "locked_by": null, "first_published_at": "2021-06-30T05:24:13.240Z",
+            "last_published_at": "2021-07-01T18:11:17.440Z", "latest_revision_created_at":
+            "2021-07-01T18:11:17.376Z", "live_revision": 28, "alias_of": null, "body":
+            "<p data-block-key=\"h9xb8\">Ma Homepage</p><p data-block-key=\"d32v1\"></p><p
+            data-block-key=\"5l7ul\"><a id=\"15\" linktype=\"page\">Rental Offers</a></p>",
+            "comments": []}'
+        approved_go_live_at: null
+-   model: wagtailcore.pagerevision
+    pk: 30
+    fields:
+        page: 3
+        submitted_for_moderation: false
+        created_at: 2021-07-01 19:27:05.208020+00:00
+        user: 1
+        content_json: '{"pk": 3, "path": "00010001", "depth": 2, "numchild": 4, "translation_key":
+            "b4fd365b-a14c-491c-837e-230c9dfdacbe", "locale": 1, "title": "Home",
+            "draft_title": "Home", "slug": "home", "content_type": 4, "live": true,
+            "has_unpublished_changes": false, "url_path": "/home/", "owner": null,
+            "seo_title": "", "show_in_menus": false, "search_description": "", "go_live_at":
+            null, "expire_at": null, "expired": false, "locked": false, "locked_at":
+            null, "locked_by": null, "first_published_at": "2021-06-30T05:24:13.240Z",
+            "last_published_at": "2021-07-01T18:12:05.277Z", "latest_revision_created_at":
+            "2021-07-01T18:12:05.226Z", "live_revision": 29, "alias_of": null, "body":
+            "<p data-block-key=\"h9xb8\">Ma Homepage</p><p data-block-key=\"d32v1\"></p><p
+            data-block-key=\"5l7ul\"><a id=\"15\" linktype=\"page\">Rental Offers</a></p><p
+            data-block-key=\"a5tpt\">&lt;br/&gt;</p><p data-block-key=\"7t8mv\">&lt;a
+            href=&quot;/admin/&quot;&gt;Admin&lt;/a&gt;</p>", "comments": []}'
+        approved_go_live_at: null
+-   model: wagtailcore.pagerevision
+    pk: 31
+    fields:
+        page: 3
+        submitted_for_moderation: false
+        created_at: 2021-07-01 19:28:45.249928+00:00
+        user: 1
+        content_json: '{"pk": 3, "path": "00010001", "depth": 2, "numchild": 4, "translation_key":
+            "b4fd365b-a14c-491c-837e-230c9dfdacbe", "locale": 1, "title": "Home",
+            "draft_title": "Home", "slug": "home", "content_type": 4, "live": true,
+            "has_unpublished_changes": true, "url_path": "/home/", "owner": null,
+            "seo_title": "", "show_in_menus": false, "search_description": "", "go_live_at":
+            null, "expire_at": null, "expired": false, "locked": false, "locked_at":
+            null, "locked_by": null, "first_published_at": "2021-06-30T05:24:13.240Z",
+            "last_published_at": "2021-07-01T18:12:05.277Z", "latest_revision_created_at":
+            "2021-07-01T19:27:05.208Z", "live_revision": 29, "alias_of": null, "body":
+            "<p data-block-key=\"h9xb8\">Ma Homepage</p><p data-block-key=\"d32v1\"></p><p
+            data-block-key=\"5l7ul\"><a id=\"15\" linktype=\"page\">Rental Offers</a></p><p
+            data-block-key=\"a5tpt\">&lt;br/&gt;</p><p data-block-key=\"7t8mv\"><a
+            href=\"/admin/\">Admin</a></p>", "comments": []}'
+        approved_go_live_at: null
+-   model: wagtailcore.pagerevision
+    pk: 32
+    fields:
+        page: 16
+        submitted_for_moderation: false
+        created_at: 2021-07-01 19:34:55.661303+00:00
+        user: 1
+        content_json: '{"pk": 16, "path": "0001000100030002", "depth": 4, "numchild":
+            0, "translation_key": "a1a77780-cbf5-4d09-b114-6d6fd624c566", "locale":
+            1, "title": "Studio \u00e0 Isola 2000", "draft_title": "Studio \u00e0
+            Isola 2000", "slug": "studio-\u00e0-isola-2000", "content_type": 17, "live":
+            false, "has_unpublished_changes": false, "url_path": "/home/assets/studio-\u00e0-isola-2000/",
+            "owner": 1, "seo_title": "", "show_in_menus": false, "search_description":
+            "", "go_live_at": null, "expire_at": null, "expired": false, "locked":
+            false, "locked_at": null, "locked_by": null, "first_published_at": null,
+            "last_published_at": null, "latest_revision_created_at": null, "live_revision":
+            null, "alias_of": null, "asset_owner": 2, "time_created": "2021-07-01T19:34:55.631Z",
+            "address_street": "67 avenue Foch", "address_zip": "83987", "address_city":
+            "Le Revest", "address_country": "France", "asset_surface": "20", "asset_type":
+            1, "description": "<h2 data-block-key=\"zdm3s\">Nullam eu ante vel est
+            convallis dignissim.  </h2><p data-block-key=\"6u3k4\">Fusce suscipit,
+            wisi nec facilisis facilisis, est dui fermentum leo, quis tempor ligula
+            erat quis odio.  Nunc porta vulputate tellus.  Nunc rutrum turpis sed
+            pede.  Sed bibendum.  </p><ol><li data-block-key=\"3o0ft\">Aliquam posuere.  </li><li
+            data-block-key=\"4f59u\">Nunc aliquet, </li><li data-block-key=\"bp8d6\">augue
+            nec adipiscing interdum, </li></ol><h2 data-block-key=\"5350o\">lacus
+            tellus malesuada massa, quis varius mi purus non odio.  </h2><p data-block-key=\"6tcuj\">Pellentesque
+            condimentum, magna ut suscipit hendrerit, ipsum augue ornare nulla, non
+            luctus diam neque sit amet urna.  Curabitur vulputate vestibulum lorem.  Fusce
+            sagittis, <b>libero</b> non molestie mollis, magna orci ultrices dolor,
+            at vulputate neque nulla lacinia eros.  Sed id ligula quis est convallis
+            tempor.<i>  Curabitur lacinia pulvinar nibh</i>.  Nam a sapien.</p><p
+            data-block-key=\"5mols\"></p>", "comments": [], "tagged_items": [{"pk":
+            3, "tag": 2, "content_object": 16}], "gallery_images": [], "categories":
+            []}'
+        approved_go_live_at: null
+-   model: wagtailcore.pagerevision
+    pk: 33
+    fields:
+        page: 16
+        submitted_for_moderation: false
+        created_at: 2021-07-01 19:45:02.182680+00:00
+        user: 1
+        content_json: '{"pk": 16, "path": "0001000100030002", "depth": 4, "numchild":
+            0, "translation_key": "a1a77780-cbf5-4d09-b114-6d6fd624c566", "locale":
+            1, "title": "Studio \u00e0 Isola 2000", "draft_title": "Studio \u00e0
+            Isola 2000", "slug": "studio-\u00e0-isola-2000", "content_type": 17, "live":
+            false, "has_unpublished_changes": true, "url_path": "/home/assets/studio-\u00e0-isola-2000/",
+            "owner": 1, "seo_title": "", "show_in_menus": false, "search_description":
+            "", "go_live_at": null, "expire_at": null, "expired": false, "locked":
+            false, "locked_at": null, "locked_by": null, "first_published_at": null,
+            "last_published_at": null, "latest_revision_created_at": "2021-07-01T19:34:55.661Z",
+            "live_revision": null, "alias_of": null, "asset_owner": 2, "time_created":
+            "2021-07-01T19:34:55.631Z", "address_street": "67 avenue Foch", "address_zip":
+            "83987", "address_city": "Le Revest", "address_country": "France", "asset_surface":
+            "20", "asset_type": 1, "description": "<h2 data-block-key=\"zdm3s\">Nullam
+            eu ante vel est convallis dignissim.</h2><p data-block-key=\"6u3k4\">Fusce
+            suscipit, wisi nec facilisis facilisis, est dui fermentum leo, quis tempor
+            ligula erat quis odio. Nunc porta vulputate tellus. Nunc rutrum turpis
+            sed pede. Sed bibendum.</p><ol><li data-block-key=\"3o0ft\">Aliquam posuere.</li><li
+            data-block-key=\"4f59u\">Nunc aliquet,</li><li data-block-key=\"bp8d6\">augue
+            nec adipiscing interdum,</li></ol><h2 data-block-key=\"5350o\">lacus tellus
+            malesuada massa, quis varius mi purus non odio.</h2><p data-block-key=\"6tcuj\">Pellentesque
+            condimentum, magna ut suscipit hendrerit, ipsum augue ornare nulla, non
+            luctus diam neque sit amet urna. Curabitur vulputate vestibulum lorem.
+            Fusce sagittis, <b>libero</b> non molestie mollis, magna orci ultrices
+            dolor, at vulputate neque nulla lacinia eros. Sed id ligula quis est convallis
+            tempor.<i> Curabitur lacinia pulvinar nibh</i>. Nam a sapien.</p><p data-block-key=\"5mols\"></p>",
+            "comments": [], "tagged_items": [{"pk": null, "tag": 2, "content_object":
+            16}], "gallery_images": [{"pk": null, "sort_order": 0, "page": 16, "image":
+            6, "caption": ""}, {"pk": null, "sort_order": 1, "page": 16, "image":
+            7, "caption": ""}, {"pk": null, "sort_order": 2, "page": 16, "image":
+            8, "caption": ""}, {"pk": null, "sort_order": 3, "page": 16, "image":
+            9, "caption": ""}, {"pk": null, "sort_order": 4, "page": 16, "image":
+            10, "caption": ""}, {"pk": null, "sort_order": 5, "page": 16, "image":
+            11, "caption": ""}], "categories": []}'
+        approved_go_live_at: null
+-   model: wagtailcore.pagerevision
+    pk: 34
+    fields:
+        page: 16
+        submitted_for_moderation: false
+        created_at: 2021-07-01 19:45:42.978812+00:00
+        user: 1
+        content_json: '{"pk": 16, "path": "0001000100030002", "depth": 4, "numchild":
+            0, "translation_key": "a1a77780-cbf5-4d09-b114-6d6fd624c566", "locale":
+            1, "title": "Studio \u00e0 Isola 2000", "draft_title": "Studio \u00e0
+            Isola 2000", "slug": "studio-\u00e0-isola-2000", "content_type": 17, "live":
+            true, "has_unpublished_changes": false, "url_path": "/home/assets/studio-\u00e0-isola-2000/",
+            "owner": 1, "seo_title": "", "show_in_menus": false, "search_description":
+            "", "go_live_at": null, "expire_at": null, "expired": false, "locked":
+            false, "locked_at": null, "locked_by": null, "first_published_at": "2021-07-01T19:45:02.250Z",
+            "last_published_at": "2021-07-01T19:45:02.250Z", "latest_revision_created_at":
+            "2021-07-01T19:45:02.182Z", "live_revision": 33, "alias_of": null, "asset_owner":
+            2, "time_created": "2021-07-01T19:34:55.631Z", "address_street": "67 avenue
+            Foch", "address_zip": "83987", "address_city": "Le Revest", "address_country":
+            "France", "asset_surface": "20", "asset_type": 1, "description": "<h2
+            data-block-key=\"zdm3s\">Nullam eu ante vel est convallis dignissim.</h2><p
+            data-block-key=\"6u3k4\">Fusce suscipit, wisi nec facilisis facilisis,
+            est dui fermentum leo, quis tempor ligula erat quis odio. Nunc porta vulputate
+            tellus. Nunc rutrum turpis sed pede. Sed bibendum.</p><ol><li data-block-key=\"3o0ft\">Aliquam
+            posuere.</li><li data-block-key=\"4f59u\">Nunc aliquet,</li><li data-block-key=\"bp8d6\">augue
+            nec adipiscing interdum,</li></ol><h2 data-block-key=\"5350o\">lacus tellus
+            malesuada massa, quis varius mi purus non odio.</h2><p data-block-key=\"6tcuj\">Pellentesque
+            condimentum, magna ut suscipit hendrerit, ipsum augue ornare nulla, non
+            luctus diam neque sit amet urna. Curabitur vulputate vestibulum lorem.
+            Fusce sagittis, <b>libero</b> non molestie mollis, magna orci ultrices
+            dolor, at vulputate neque nulla lacinia eros. Sed id ligula quis est convallis
+            tempor.<i> Curabitur lacinia pulvinar nibh</i>. Nam a sapien.</p><p data-block-key=\"5mols\"></p>",
+            "comments": [], "tagged_items": [{"pk": null, "tag": 2, "content_object":
+            16}, {"pk": null, "tag": 3, "content_object": 16}], "gallery_images":
+            [{"pk": 6, "sort_order": 0, "page": 16, "image": 6, "caption": ""}, {"pk":
+            7, "sort_order": 1, "page": 16, "image": 7, "caption": ""}, {"pk": 8,
+            "sort_order": 2, "page": 16, "image": 8, "caption": ""}, {"pk": 9, "sort_order":
+            3, "page": 16, "image": 9, "caption": ""}, {"pk": 10, "sort_order": 4,
+            "page": 16, "image": 10, "caption": ""}, {"pk": 11, "sort_order": 5, "page":
+            16, "image": 11, "caption": ""}], "categories": []}'
+        approved_go_live_at: null
+-   model: wagtailcore.pagerevision
+    pk: 35
+    fields:
+        page: 17
+        submitted_for_moderation: false
+        created_at: 2021-07-01 19:48:45.817551+00:00
+        user: 1
+        content_json: '{"pk": 17, "path": "00010001000300020001", "depth": 5, "numchild":
+            0, "translation_key": "e57c10b7-56bd-492f-a605-2211260a93a6", "locale":
+            1, "title": "Studio en location \u00e0 la semaine", "draft_title": "Studio
+            en location \u00e0 la semaine", "slug": "studio-en-location-\u00e0-la-semaine",
+            "content_type": 22, "live": true, "has_unpublished_changes": false, "url_path":
+            "/home/assets/studio-\u00e0-isola-2000/studio-en-location-\u00e0-la-semaine/",
+            "owner": 1, "seo_title": "", "show_in_menus": false, "search_description":
+            "", "go_live_at": null, "expire_at": null, "expired": false, "locked":
+            false, "locked_at": null, "locked_by": null, "first_published_at": null,
+            "last_published_at": null, "latest_revision_created_at": null, "live_revision":
+            null, "alias_of": null, "price": "750", "description": "<h2 data-block-key=\"4gm69\">Pellentesque
+            dapibus suscipit ligula.  </h2><p data-block-key=\"ds1tp\">Donec posuere
+            augue in quam.  Etiam vel tortor sodales tellus ultricies commodo.  Suspendisse
+            potenti.  Aenean in sem ac leo mollis blandit.  Donec neque quam, dignissim
+            in, mollis nec, sagittis eu, wisi.  Phasellus lacus.  Etiam laoreet quam
+            sed arcu.  Phasellus at dui in ligula mollis ultricies.  Integer placerat
+            tristique nisl.  Praesent augue.  Fusce commodo.  Vestibulum convallis,
+            lorem a tempus semper, dui dui euismod elit, vitae placerat urna tortor
+            vitae lacus.  Nullam libero mauris, consequat quis, varius et, dictum
+            id, arcu. </p><ul><li data-block-key=\"58scb\">Mauris mollis tincidunt
+            felis.  </li><li data-block-key=\"29gf8\">Aliquam feugiat tellus ut neque.  </li></ul><p
+            data-block-key=\"2qgbl\">Nulla facilisis, risus a rhoncus fermentum, tellus
+            tellus lacinia purus, et dictum nunc justo sit amet elit.</p><p data-block-key=\"9vgpq\"></p>",
+            "status": 1, "deposit": "800", "start_date": "2021-12-06T21:48:00Z", "end_date":
+            "2021-07-10T21:48:00Z", "comments": [], "tagged_items": []}'
+        approved_go_live_at: null
+-   model: wagtailcore.pagerevision
+    pk: 36
+    fields:
+        page: 17
+        submitted_for_moderation: false
+        created_at: 2021-07-01 20:40:05.205886+00:00
+        user: 1
+        content_json: '{"pk": 17, "path": "00010001000300020001", "depth": 5, "numchild":
+            0, "translation_key": "e57c10b7-56bd-492f-a605-2211260a93a6", "locale":
+            1, "title": "Studio en location \u00e0 la semaine", "draft_title": "Studio
+            en location \u00e0 la semaine", "slug": "studio-en-location-\u00e0-la-semaine",
+            "content_type": 22, "live": true, "has_unpublished_changes": false, "url_path":
+            "/home/assets/studio-\u00e0-isola-2000/studio-en-location-\u00e0-la-semaine/",
+            "owner": 1, "seo_title": "", "show_in_menus": false, "search_description":
+            "", "go_live_at": null, "expire_at": null, "expired": false, "locked":
+            false, "locked_at": null, "locked_by": null, "first_published_at": "2021-07-01T19:48:45.871Z",
+            "last_published_at": "2021-07-01T19:48:45.871Z", "latest_revision_created_at":
+            "2021-07-01T19:48:45.817Z", "live_revision": 35, "alias_of": null, "price":
+            "750.00", "description": "<h2 data-block-key=\"4gm69\">Pellentesque dapibus
+            suscipit ligula.</h2><p data-block-key=\"ds1tp\">Donec posuere augue in
+            quam. Etiam vel tortor sodales tellus ultricies commodo. Suspendisse potenti.
+            Aenean in sem ac leo mollis blandit. Donec neque quam, dignissim in, mollis
+            nec, sagittis eu, wisi. Phasellus lacus. Etiam laoreet quam sed arcu.
+            Phasellus at dui in ligula mollis ultricies. Integer placerat tristique
+            nisl. Praesent augue. Fusce commodo. Vestibulum convallis, lorem a tempus
+            semper, dui dui euismod elit, vitae placerat urna tortor vitae lacus.
+            Nullam libero mauris, consequat quis, varius et, dictum id, arcu.</p><ul><li
+            data-block-key=\"58scb\">Mauris mollis tincidunt felis.</li><li data-block-key=\"29gf8\">Aliquam
+            feugiat tellus ut neque.</li></ul><p data-block-key=\"2qgbl\">Nulla facilisis,
+            risus a rhoncus fermentum, tellus tellus lacinia purus, et dictum nunc
+            justo sit amet elit.</p><p data-block-key=\"9vgpq\"></p>", "status": 1,
+            "deposit": "800.00", "start_date": "2021-12-06T21:48:00Z", "end_date":
+            "2021-12-11T21:48:00Z", "comments": [], "tagged_items": []}'
+        approved_go_live_at: null
+-   model: wagtailcore.pagerevision
+    pk: 37
+    fields:
+        page: 17
+        submitted_for_moderation: false
+        created_at: 2021-07-01 21:40:39.246245+00:00
+        user: 1
+        content_json: '{"pk": 17, "path": "00010001000300020001", "depth": 5, "numchild":
+            0, "translation_key": "e57c10b7-56bd-492f-a605-2211260a93a6", "locale":
+            1, "title": "Studio en location \u00e0 la semaine", "draft_title": "Studio
+            en location \u00e0 la semaine", "slug": "studio-en-location-\u00e0-la-semaine",
+            "content_type": 22, "live": true, "has_unpublished_changes": false, "url_path":
+            "/home/assets/studio-\u00e0-isola-2000/studio-en-location-\u00e0-la-semaine/",
+            "owner": 1, "seo_title": "", "show_in_menus": false, "search_description":
+            "", "go_live_at": null, "expire_at": null, "expired": false, "locked":
+            false, "locked_at": null, "locked_by": null, "first_published_at": "2021-07-01T19:48:45.871Z",
+            "last_published_at": "2021-07-01T20:40:05.274Z", "latest_revision_created_at":
+            "2021-07-01T20:40:05.205Z", "live_revision": 36, "alias_of": null, "price":
+            "750.00", "description": "<h2 data-block-key=\"4gm69\">Pellentesque dapibus
+            suscipit ligula.</h2><p data-block-key=\"ds1tp\">Donec posuere augue in
+            quam. Etiam vel tortor sodales tellus ultricies commodo. Suspendisse potenti.
+            Aenean in sem ac leo mollis blandit. Donec neque quam, dignissim in, mollis
+            nec, sagittis eu, wisi. Phasellus lacus. Etiam laoreet quam sed arcu.
+            Phasellus at dui in ligula mollis ultricies. Integer placerat tristique
+            nisl. Praesent augue. Fusce commodo. Vestibulum convallis, lorem a tempus
+            semper, dui dui euismod elit, vitae placerat urna tortor vitae lacus.
+            Nullam libero mauris, consequat quis, varius et, dictum id, arcu.</p><ul><li
+            data-block-key=\"58scb\">Mauris mollis tincidunt felis.</li><li data-block-key=\"29gf8\">Aliquam
+            feugiat tellus ut neque.</li></ul><p data-block-key=\"2qgbl\">Nulla facilisis,
+            risus a rhoncus fermentum, tellus tellus lacinia purus, et dictum nunc
+            justo sit amet elit.</p><p data-block-key=\"9vgpq\"></p>", "status": 1,
+            "deposit": "800.00", "start_date": "2021-12-06T21:48:00Z", "end_date":
+            "2021-12-11T21:48:00Z", "comments": [], "tagged_items": []}'
+        approved_go_live_at: null
+-   model: wagtailcore.pagerevision
+    pk: 38
+    fields:
+        page: 17
+        submitted_for_moderation: false
+        created_at: 2021-07-01 21:41:08.776845+00:00
+        user: 1
+        content_json: '{"pk": 17, "path": "00010001000300020001", "depth": 5, "numchild":
+            0, "translation_key": "e57c10b7-56bd-492f-a605-2211260a93a6", "locale":
+            1, "title": "Studio en location \u00e0 la semaine \u00e0 Isola", "draft_title":
+            "Studio en location \u00e0 la semaine", "slug": "studio-en-location-\u00e0-la-semaine",
+            "content_type": 22, "live": true, "has_unpublished_changes": false, "url_path":
+            "/home/assets/studio-\u00e0-isola-2000/studio-en-location-\u00e0-la-semaine/",
+            "owner": 1, "seo_title": "", "show_in_menus": false, "search_description":
+            "", "go_live_at": null, "expire_at": null, "expired": false, "locked":
+            false, "locked_at": null, "locked_by": null, "first_published_at": "2021-07-01T19:48:45.871Z",
+            "last_published_at": "2021-07-01T21:40:39.282Z", "latest_revision_created_at":
+            "2021-07-01T21:40:39.246Z", "live_revision": 37, "alias_of": null, "price":
+            "750.00", "description": "<h2 data-block-key=\"4gm69\">Pellentesque dapibus
+            suscipit ligula.</h2><p data-block-key=\"ds1tp\">Donec posuere augue in
+            quam. Etiam vel tortor sodales tellus ultricies commodo. Suspendisse potenti.
+            Aenean in sem ac leo mollis blandit. Donec neque quam, dignissim in, mollis
+            nec, sagittis eu, wisi. Phasellus lacus. Etiam laoreet quam sed arcu.
+            Phasellus at dui in ligula mollis ultricies. Integer placerat tristique
+            nisl. Praesent augue. Fusce commodo. Vestibulum convallis, lorem a tempus
+            semper, dui dui euismod elit, vitae placerat urna tortor vitae lacus.
+            Nullam libero mauris, consequat quis, varius et, dictum id, arcu.</p><ul><li
+            data-block-key=\"58scb\">Mauris mollis tincidunt felis.</li><li data-block-key=\"29gf8\">Aliquam
+            feugiat tellus ut neque.</li></ul><p data-block-key=\"2qgbl\">Nulla facilisis,
+            risus a rhoncus fermentum, tellus tellus lacinia purus, et dictum nunc
+            justo sit amet elit.</p><p data-block-key=\"9vgpq\"></p>", "status": 1,
+            "deposit": "800.00", "start_date": "2021-12-06T21:48:00Z", "end_date":
+            "2021-12-11T21:48:00Z", "comments": [], "tagged_items": []}'
+        approved_go_live_at: null
+-   model: wagtailcore.pagerevision
+    pk: 39
+    fields:
+        page: 17
+        submitted_for_moderation: false
+        created_at: 2021-07-01 21:41:47.572578+00:00
+        user: 1
+        content_json: '{"pk": 17, "path": "00010001000300020001", "depth": 5, "numchild":
+            0, "translation_key": "e57c10b7-56bd-492f-a605-2211260a93a6", "locale":
+            1, "title": "Studio en location \u00e0 la semaine \u00e0 Isola", "draft_title":
+            "Studio en location \u00e0 la semaine \u00e0 Isola", "slug": "studio-en-location-\u00e0-la-semaine",
+            "content_type": 22, "live": true, "has_unpublished_changes": false, "url_path":
+            "/home/assets/studio-\u00e0-isola-2000/studio-en-location-\u00e0-la-semaine/",
+            "owner": 1, "seo_title": "", "show_in_menus": false, "search_description":
+            "", "go_live_at": null, "expire_at": null, "expired": false, "locked":
+            false, "locked_at": null, "locked_by": null, "first_published_at": "2021-07-01T19:48:45.871Z",
+            "last_published_at": "2021-07-01T21:41:08.823Z", "latest_revision_created_at":
+            "2021-07-01T21:41:08.776Z", "live_revision": 38, "alias_of": null, "price":
+            "750.00", "description": "<h2 data-block-key=\"4gm69\">Pellentesque dapibus
+            suscipit ligula.</h2><p data-block-key=\"ds1tp\">Donec posuere augue in
+            quam. Etiam vel tortor sodales tellus ultricies commodo. Suspendisse potenti.
+            Aenean in sem ac leo mollis blandit. Donec neque quam, dignissim in, mollis
+            nec, sagittis eu, wisi. Phasellus lacus. Etiam laoreet quam sed arcu.
+            Phasellus at dui in ligula mollis ultricies. Integer placerat tristique
+            nisl. Praesent augue. Fusce commodo. Vestibulum convallis, lorem a tempus
+            semper, dui dui euismod elit, vitae placerat urna tortor vitae lacus.
+            Nullam libero mauris, consequat quis, varius et, dictum id, arcu.</p><ul><li
+            data-block-key=\"58scb\">Mauris mollis tincidunt felis.</li><li data-block-key=\"29gf8\">Aliquam
+            feugiat tellus ut neque.</li></ul><p data-block-key=\"2qgbl\">Nulla facilisis,
+            risus a rhoncus fermentum, tellus tellus lacinia purus, et dictum nunc
+            justo sit amet elit.</p><p data-block-key=\"9vgpq\"></p>", "status": 1,
+            "deposit": "800.00", "start_date": "2021-12-06T21:48:00Z", "end_date":
+            "2021-12-11T21:48:00Z", "comments": [], "tagged_items": []}'
+        approved_go_live_at: null
+-   model: wagtailcore.pagerevision
+    pk: 40
+    fields:
+        page: 17
+        submitted_for_moderation: false
+        created_at: 2021-07-01 22:11:47.520845+00:00
+        user: 1
+        content_json: '{"pk": 17, "path": "00010001000300020001", "depth": 5, "numchild":
+            0, "translation_key": "e57c10b7-56bd-492f-a605-2211260a93a6", "locale":
+            1, "title": "Studio en location \u00e0 la semaine \u00e0 Isola", "draft_title":
+            "Studio en location \u00e0 la semaine \u00e0 Isola", "slug": "studio-en-location-\u00e0-la-semaine",
+            "content_type": 22, "live": true, "has_unpublished_changes": false, "url_path":
+            "/home/assets/studio-\u00e0-isola-2000/studio-en-location-\u00e0-la-semaine/",
+            "owner": 1, "seo_title": "", "show_in_menus": false, "search_description":
+            "", "go_live_at": null, "expire_at": null, "expired": false, "locked":
+            false, "locked_at": null, "locked_by": null, "first_published_at": "2021-07-01T19:48:45.871Z",
+            "last_published_at": "2021-07-01T21:41:47.609Z", "latest_revision_created_at":
+            "2021-07-01T21:41:47.572Z", "live_revision": 39, "alias_of": null, "price":
+            "750.00", "description": "<h2 data-block-key=\"4gm69\">Pellentesque dapibus
+            suscipit ligula.</h2><p data-block-key=\"ds1tp\">Donec posuere augue in
+            quam. Etiam vel tortor sodales tellus ultricies commodo. Suspendisse potenti.
+            Aenean in sem ac leo mollis blandit. Donec neque quam, dignissim in, mollis
+            nec, sagittis eu, wisi. Phasellus lacus. Etiam laoreet quam sed arcu.
+            Phasellus at dui in ligula mollis ultricies. Integer placerat tristique
+            nisl. Praesent augue. Fusce commodo. Vestibulum convallis, lorem a tempus
+            semper, dui dui euismod elit, vitae placerat urna tortor vitae lacus.
+            Nullam libero mauris, consequat quis, varius et, dictum id, arcu.</p><ul><li
+            data-block-key=\"58scb\">Mauris mollis tincidunt felis.</li><li data-block-key=\"29gf8\">Aliquam
+            feugiat tellus ut neque.</li></ul><p data-block-key=\"2qgbl\">Nulla facilisis,
+            risus a rhoncus fermentum, tellus tellus lacinia purus, et dictum nunc
+            justo sit amet elit.</p><p data-block-key=\"9vgpq\"></p>", "status": 1,
+            "deposit": "800.00", "start_date": "2021-12-06T21:48:00Z", "end_date":
+            "2021-12-11T21:48:00Z", "comments": [], "tagged_items": [{"pk": null,
+            "tag": 3, "content_object": 17}]}'
+        approved_go_live_at: null
+-   model: wagtailcore.pagerevision
+    pk: 41
+    fields:
+        page: 18
+        submitted_for_moderation: false
+        created_at: 2021-07-01 22:42:44.557103+00:00
+        user: 1
+        content_json: '{"pk": 18, "path": "0001000100030003", "depth": 4, "numchild":
+            0, "translation_key": "d19c2e98-3b20-4479-9c28-43fba2e4524a", "locale":
+            1, "title": "Villa \u00e0 Villeneuve Loubet", "draft_title": "Villa \u00e0
+            Villeneuve Loubet", "slug": "villa-\u00e0-villeneuve-loubet", "content_type":
+            17, "live": true, "has_unpublished_changes": false, "url_path": "/home/assets/villa-\u00e0-villeneuve-loubet/",
+            "owner": 1, "seo_title": "", "show_in_menus": false, "search_description":
+            "", "go_live_at": null, "expire_at": null, "expired": false, "locked":
+            false, "locked_at": null, "locked_by": null, "first_published_at": null,
+            "last_published_at": null, "latest_revision_created_at": null, "live_revision":
+            null, "alias_of": null, "asset_owner": 2, "time_created": "2021-07-01T22:42:44.538Z",
+            "address_street": "21 rue qui monte", "address_zip": "06321", "address_city":
+            "Villeneuve Loubet", "address_country": "France", "asset_surface": "175",
+            "asset_type": 6, "description": "<p data-block-key=\"log4h\">Pellentesque
+            dapibus suscipit ligula.  Donec posuere augue in quam.  Etiam vel tortor
+            sodales tellus ultricies commodo.  Suspendisse potenti.  Aenean in sem
+            ac leo mollis blandit.  Donec neque quam, dignissim in, mollis nec, sagittis
+            eu, wisi.  Phasellus lacus.  Etiam laoreet quam sed arcu.  Phasellus at
+            dui in ligula mollis ultricies.  Integer placerat tristique nisl.  Praesent
+            augue.  Fusce commodo.  Vestibulum convallis, lorem a tempus semper, dui
+            dui euismod elit, vitae placerat urna tortor vitae lacus.  Nullam libero
+            mauris, consequat quis, varius et, dictum id, arcu.  Mauris mollis tincidunt
+            felis.  Aliquam feugiat tellus ut neque.  Nulla facilisis, risus a rhoncus
+            fermentum, tellus tellus lacinia purus, et dictum nunc justo sit amet
+            elit.</p><p data-block-key=\"cklhl\"></p>", "comments": [], "tagged_items":
+            [], "gallery_images": [{"pk": 12, "sort_order": 0, "page": 18, "image":
+            12, "caption": ""}, {"pk": 13, "sort_order": 1, "page": 18, "image": 13,
+            "caption": ""}, {"pk": 14, "sort_order": 2, "page": 18, "image": 14, "caption":
+            ""}, {"pk": 15, "sort_order": 3, "page": 18, "image": 15, "caption": ""},
+            {"pk": 16, "sort_order": 4, "page": 18, "image": 16, "caption": ""}],
+            "categories": []}'
+        approved_go_live_at: null
+-   model: wagtailcore.pagerevision
+    pk: 42
+    fields:
+        page: 13
+        submitted_for_moderation: false
+        created_at: 2021-07-01 23:09:49.395991+00:00
+        user: 1
+        content_json: '{"pk": 13, "path": "00010001000300010001", "depth": 5, "numchild":
+            0, "translation_key": "ea657fe0-e08c-42b1-a3ba-1530d29cc9a2", "locale":
+            1, "title": "Belle villa en bord de mer", "draft_title": "Belle villa
+            en bord de mer", "slug": "belle-villa-en-bord-de-mer", "content_type":
+            22, "live": true, "has_unpublished_changes": false, "url_path": "/home/assets/belle-villa-en-bord-de-mer/belle-villa-en-bord-de-mer/",
+            "owner": 1, "seo_title": "", "show_in_menus": false, "search_description":
+            "", "go_live_at": null, "expire_at": null, "expired": false, "locked":
+            false, "locked_at": null, "locked_by": null, "first_published_at": "2021-06-30T11:12:05.208Z",
+            "last_published_at": "2021-06-30T17:40:02.779Z", "latest_revision_created_at":
+            "2021-06-30T17:40:02.721Z", "live_revision": 27, "alias_of": null, "price":
+            "750.00", "description": "<p data-block-key=\"87wtb\">Nous vous proposons
+            pour une semaine cette <b><i>magnifique villa de prestige</i></b>, acc\u00e8s
+            direct \u00e0 la plage</p><p data-block-key=\"bduvn\"></p>", "status":
+            1, "deposit": "1250.00", "start_date": "2021-07-05T13:11:00Z", "end_date":
+            "2021-07-11T13:11:00Z", "comments": [], "tagged_items": [{"pk": null,
+            "tag": 5, "content_object": 13}]}'
+        approved_go_live_at: null
+-   model: wagtailcore.grouppagepermission
+    pk: 1
+    fields:
+        group: 1
+        page: 1
+        permission_type: add
+-   model: wagtailcore.grouppagepermission
+    pk: 2
+    fields:
+        group: 1
+        page: 1
+        permission_type: edit
+-   model: wagtailcore.grouppagepermission
+    pk: 3
+    fields:
+        group: 1
+        page: 1
+        permission_type: publish
+-   model: wagtailcore.grouppagepermission
+    pk: 4
+    fields:
+        group: 2
+        page: 1
+        permission_type: add
+-   model: wagtailcore.grouppagepermission
+    pk: 5
+    fields:
+        group: 2
+        page: 1
+        permission_type: edit
+-   model: wagtailcore.grouppagepermission
+    pk: 6
+    fields:
+        group: 1
+        page: 1
+        permission_type: lock
+-   model: wagtailcore.grouppagepermission
+    pk: 7
+    fields:
+        group: 1
+        page: 1
+        permission_type: unlock
+-   model: wagtailcore.collection
+    pk: 1
+    fields:
+        path: '0001'
+        depth: 1
+        numchild: 0
+        name: Root
+-   model: wagtailcore.groupcollectionpermission
+    pk: 1
+    fields:
+        group: 2
+        collection: 1
+        permission: 1
+-   model: wagtailcore.groupcollectionpermission
+    pk: 2
+    fields:
+        group: 1
+        collection: 1
+        permission: 1
+-   model: wagtailcore.groupcollectionpermission
+    pk: 3
+    fields:
+        group: 2
+        collection: 1
+        permission: 2
+-   model: wagtailcore.groupcollectionpermission
+    pk: 4
+    fields:
+        group: 1
+        collection: 1
+        permission: 2
+-   model: wagtailcore.groupcollectionpermission
+    pk: 5
+    fields:
+        group: 2
+        collection: 1
+        permission: 6
+-   model: wagtailcore.groupcollectionpermission
+    pk: 6
+    fields:
+        group: 1
+        collection: 1
+        permission: 6
+-   model: wagtailcore.groupcollectionpermission
+    pk: 7
+    fields:
+        group: 2
+        collection: 1
+        permission: 7
+-   model: wagtailcore.groupcollectionpermission
+    pk: 8
+    fields:
+        group: 1
+        collection: 1
+        permission: 7
+-   model: wagtailcore.groupcollectionpermission
+    pk: 9
+    fields:
+        group: 2
+        collection: 1
+        permission: 9
+-   model: wagtailcore.groupcollectionpermission
+    pk: 10
+    fields:
+        group: 1
+        collection: 1
+        permission: 9
+-   model: wagtailcore.workflowpage
+    pk: 1
+    fields:
+        workflow: 1
+-   model: wagtailcore.workflowtask
+    pk: 1
+    fields:
+        sort_order: 0
+        workflow: 1
+        task: 1
+-   model: wagtailcore.task
+    pk: 1
+    fields:
+        name: Moderators approval
+        content_type: 3
+        active: true
+-   model: wagtailcore.task
+    pk: 2
+    fields:
+        name: Register Owner
+        content_type: 3
+        active: true
+-   model: wagtailcore.workflow
+    pk: 1
+    fields:
+        name: Moderators approval
+        active: true
+-   model: wagtailcore.groupapprovaltask
+    pk: 1
+    fields:
+        groups:
+        - 1
+-   model: wagtailcore.groupapprovaltask
+    pk: 2
+    fields:
+        groups:
+        - 2
+-   model: wagtailcore.pagelogentry
+    pk: 1
+    fields:
+        content_type: 21
+        label: Mon Agence
+        action: wagtail.create
+        data_json: '""'
+        timestamp: 2021-06-29 22:30:33.650359+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 4
+        revision: null
+-   model: wagtailcore.pagelogentry
+    pk: 2
+    fields:
+        content_type: 21
+        label: Mon Agence
+        action: wagtail.edit
+        data_json: '""'
+        timestamp: 2021-06-29 22:30:38.109420+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 4
+        revision: 2
+-   model: wagtailcore.pagelogentry
+    pk: 3
+    fields:
+        content_type: 21
+        label: Mon Agence
+        action: wagtail.publish
+        data_json: 'null'
+        timestamp: 2021-06-29 22:30:38.182772+00:00
+        user: 1
+        content_changed: false
+        deleted: false
+        page: 4
+        revision: 2
+-   model: wagtailcore.pagelogentry
+    pk: 4
+    fields:
+        content_type: 4
+        label: Home
+        action: wagtail.edit
+        data_json: '""'
+        timestamp: 2021-06-30 05:24:13.210741+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 3
+        revision: 3
+-   model: wagtailcore.pagelogentry
+    pk: 5
+    fields:
+        content_type: 4
+        label: Home
+        action: wagtail.publish
+        data_json: 'null'
+        timestamp: 2021-06-30 05:24:13.272231+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 3
+        revision: 3
+-   model: wagtailcore.pagelogentry
+    pk: 6
+    fields:
+        content_type: 19
+        label: Rentals
+        action: wagtail.create
+        data_json: '""'
+        timestamp: 2021-06-30 05:31:22.071269+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 5
+        revision: null
+-   model: wagtailcore.pagelogentry
+    pk: 7
+    fields:
+        content_type: 19
+        label: Rentals
+        action: wagtail.publish
+        data_json: 'null'
+        timestamp: 2021-06-30 05:31:22.188217+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 5
+        revision: 4
+-   model: wagtailcore.pagelogentry
+    pk: 8
+    fields:
+        content_type: 19
+        label: Rentals
+        action: wagtail.edit
+        data_json: '""'
+        timestamp: 2021-06-30 05:31:58.710877+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 5
+        revision: 5
+-   model: wagtailcore.pagelogentry
+    pk: 9
+    fields:
+        content_type: 19
+        label: Rentals
+        action: wagtail.publish
+        data_json: 'null'
+        timestamp: 2021-06-30 05:31:58.795378+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 5
+        revision: 5
+-   model: wagtailcore.pagelogentry
+    pk: 10
+    fields:
+        content_type: 19
+        label: Rentals
+        action: wagtail.edit
+        data_json: '""'
+        timestamp: 2021-06-30 05:36:01.409802+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 5
+        revision: 6
+-   model: wagtailcore.pagelogentry
+    pk: 11
+    fields:
+        content_type: 19
+        label: Rentals
+        action: wagtail.publish
+        data_json: 'null'
+        timestamp: 2021-06-30 05:36:01.453261+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 5
+        revision: 6
+-   model: wagtailcore.pagelogentry
+    pk: 12
+    fields:
+        content_type: 16
+        label: Assets
+        action: wagtail.create
+        data_json: '""'
+        timestamp: 2021-06-30 05:44:08.895565+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 6
+        revision: null
+-   model: wagtailcore.pagelogentry
+    pk: 13
+    fields:
+        content_type: 16
+        label: Assets
+        action: wagtail.publish
+        data_json: 'null'
+        timestamp: 2021-06-30 05:44:08.963580+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 6
+        revision: 7
+-   model: wagtailcore.pagelogentry
+    pk: 14
+    fields:
+        content_type: 20
+        label: Sales
+        action: wagtail.create
+        data_json: '""'
+        timestamp: 2021-06-30 05:45:51.581764+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 7
+        revision: null
+-   model: wagtailcore.pagelogentry
+    pk: 15
+    fields:
+        content_type: 20
+        label: Sales
+        action: wagtail.publish
+        data_json: 'null'
+        timestamp: 2021-06-30 05:45:51.681465+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 7
+        revision: 8
+-   model: wagtailcore.pagelogentry
+    pk: 16
+    fields:
+        content_type: 20
+        label: Sales
+        action: wagtail.edit
+        data_json: '""'
+        timestamp: 2021-06-30 06:00:08.917977+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 7
+        revision: 9
+-   model: wagtailcore.pagelogentry
+    pk: 17
+    fields:
+        content_type: 20
+        label: Sales
+        action: wagtail.publish
+        data_json: 'null'
+        timestamp: 2021-06-30 06:00:08.959017+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 7
+        revision: 9
+-   model: wagtailcore.pagelogentry
+    pk: 18
+    fields:
+        content_type: 16
+        label: Property Assets
+        action: wagtail.create
+        data_json: '""'
+        timestamp: 2021-06-30 06:03:11.823510+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 8
+        revision: null
+-   model: wagtailcore.pagelogentry
+    pk: 19
+    fields:
+        content_type: 16
+        label: Property Assets
+        action: wagtail.publish
+        data_json: 'null'
+        timestamp: 2021-06-30 06:03:11.927433+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 8
+        revision: 10
+-   model: wagtailcore.pagelogentry
+    pk: 20
+    fields:
+        content_type: 16
+        label: Property Assets
+        action: wagtail.delete
+        data_json: '""'
+        timestamp: 2021-06-30 06:05:57.604474+00:00
+        user: 1
+        content_changed: false
+        deleted: true
+        page: 8
+        revision: null
+-   model: wagtailcore.pagelogentry
+    pk: 21
+    fields:
+        content_type: 19
+        label: Rentals
+        action: wagtail.delete
+        data_json: '""'
+        timestamp: 2021-06-30 06:05:57.608343+00:00
+        user: 1
+        content_changed: false
+        deleted: true
+        page: 5
+        revision: null
+-   model: wagtailcore.pagelogentry
+    pk: 22
+    fields:
+        content_type: 17
+        label: Belle villa en bord de mer
+        action: wagtail.create
+        data_json: '""'
+        timestamp: 2021-06-30 06:07:01.793714+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 9
+        revision: null
+-   model: wagtailcore.pagelogentry
+    pk: 23
+    fields:
+        content_type: 17
+        label: Belle villa en bord de mer
+        action: wagtail.edit
+        data_json: '""'
+        timestamp: 2021-06-30 06:08:03.762538+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 9
+        revision: 12
+-   model: wagtailcore.pagelogentry
+    pk: 24
+    fields:
+        content_type: 17
+        label: Belle villa en bord de mer
+        action: wagtail.edit
+        data_json: '""'
+        timestamp: 2021-06-30 06:08:09.584318+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 9
+        revision: 13
+-   model: wagtailcore.pagelogentry
+    pk: 25
+    fields:
+        content_type: 17
+        label: Belle villa en bord de mer
+        action: wagtail.publish
+        data_json: 'null'
+        timestamp: 2021-06-30 06:08:09.652591+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 9
+        revision: 13
+-   model: wagtailcore.pagelogentry
+    pk: 26
+    fields:
+        content_type: 22
+        label: Belle villa en bord de mer
+        action: wagtail.create
+        data_json: '""'
+        timestamp: 2021-06-30 06:13:44.352157+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 10
+        revision: null
+-   model: wagtailcore.pagelogentry
+    pk: 27
+    fields:
+        content_type: 22
+        label: Belle villa en bord de mer
+        action: wagtail.edit
+        data_json: '""'
+        timestamp: 2021-06-30 06:13:49.238246+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 10
+        revision: 15
+-   model: wagtailcore.pagelogentry
+    pk: 28
+    fields:
+        content_type: 22
+        label: Belle villa en bord de mer
+        action: wagtail.publish
+        data_json: 'null'
+        timestamp: 2021-06-30 06:13:49.298810+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 10
+        revision: 15
+-   model: wagtailcore.pagelogentry
+    pk: 29
+    fields:
+        content_type: 19
+        label: Rentals
+        action: wagtail.create
+        data_json: '""'
+        timestamp: 2021-06-30 06:17:07.784128+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 11
+        revision: null
+-   model: wagtailcore.pagelogentry
+    pk: 30
+    fields:
+        content_type: 19
+        label: Rentals
+        action: wagtail.publish
+        data_json: 'null'
+        timestamp: 2021-06-30 06:17:07.875604+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 11
+        revision: 16
+-   model: wagtailcore.pagelogentry
+    pk: 31
+    fields:
+        content_type: 19
+        label: Rentals
+        action: wagtail.edit
+        data_json: '""'
+        timestamp: 2021-06-30 06:19:34.569751+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 11
+        revision: 17
+-   model: wagtailcore.pagelogentry
+    pk: 32
+    fields:
+        content_type: 19
+        label: Rentals
+        action: wagtail.publish
+        data_json: 'null'
+        timestamp: 2021-06-30 06:19:34.618589+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 11
+        revision: 17
+-   model: wagtailcore.pagelogentry
+    pk: 33
+    fields:
+        content_type: 20
+        label: Sales
+        action: wagtail.edit
+        data_json: '""'
+        timestamp: 2021-06-30 06:19:44.739624+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 7
+        revision: 18
+-   model: wagtailcore.pagelogentry
+    pk: 34
+    fields:
+        content_type: 20
+        label: Sales
+        action: wagtail.publish
+        data_json: 'null'
+        timestamp: 2021-06-30 06:19:44.787458+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 7
+        revision: 18
+-   model: wagtailcore.pagelogentry
+    pk: 35
+    fields:
+        content_type: 4
+        label: Donec neque quam, dignissim in, mollis nec, sagittis eu, wisi.
+        action: wagtail.create
+        data_json: '""'
+        timestamp: 2021-06-30 07:42:23.529887+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 12
+        revision: null
+-   model: wagtailcore.pagelogentry
+    pk: 36
+    fields:
+        content_type: 4
+        label: Donec neque quam, dignissim in, mollis nec, sagittis eu, wisi.
+        action: wagtail.edit
+        data_json: '""'
+        timestamp: 2021-06-30 07:42:43.035794+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 12
+        revision: 20
+-   model: wagtailcore.pagelogentry
+    pk: 37
+    fields:
+        content_type: 4
+        label: Donec neque quam, dignissim in, mollis nec, sagittis eu, wisi.
+        action: wagtail.publish
+        data_json: 'null'
+        timestamp: 2021-06-30 07:42:43.081022+00:00
+        user: 1
+        content_changed: false
+        deleted: false
+        page: 12
+        revision: 20
+-   model: wagtailcore.pagelogentry
+    pk: 38
+    fields:
+        content_type: 22
+        label: Belle villa en bord de mer
+        action: wagtail.edit
+        data_json: '""'
+        timestamp: 2021-06-30 09:11:57.864617+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 10
+        revision: 21
+-   model: wagtailcore.pagelogentry
+    pk: 39
+    fields:
+        content_type: 22
+        label: Belle villa en bord de mer
+        action: wagtail.publish
+        data_json: 'null'
+        timestamp: 2021-06-30 09:11:57.938890+00:00
+        user: 1
+        content_changed: false
+        deleted: false
+        page: 10
+        revision: 21
+-   model: wagtailcore.pagelogentry
+    pk: 40
+    fields:
+        content_type: 17
+        label: Belle villa en bord de mer
+        action: wagtail.reorder
+        data_json: '{"source": {"id": 6, "title": "Assets"}, "destination": {"id":
+            6, "title": "Assets"}}'
+        timestamp: 2021-06-30 11:09:28.026213+00:00
+        user: 1
+        content_changed: false
+        deleted: false
+        page: 9
+        revision: null
+-   model: wagtailcore.pagelogentry
+    pk: 41
+    fields:
+        content_type: 22
+        label: Belle villa en bord de mer
+        action: wagtail.create
+        data_json: '""'
+        timestamp: 2021-06-30 11:12:05.163027+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 13
+        revision: null
+-   model: wagtailcore.pagelogentry
+    pk: 42
+    fields:
+        content_type: 22
+        label: Belle villa en bord de mer
+        action: wagtail.publish
+        data_json: 'null'
+        timestamp: 2021-06-30 11:12:05.233020+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 13
+        revision: 22
+-   model: wagtailcore.pagelogentry
+    pk: 43
+    fields:
+        content_type: 19
+        label: Rentals
+        action: wagtail.delete
+        data_json: '""'
+        timestamp: 2021-06-30 11:21:48.200304+00:00
+        user: 1
+        content_changed: false
+        deleted: true
+        page: 11
+        revision: null
+-   model: wagtailcore.pagelogentry
+    pk: 44
+    fields:
+        content_type: 20
+        label: Sale Offers
+        action: wagtail.create
+        data_json: '""'
+        timestamp: 2021-06-30 11:26:03.119652+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 14
+        revision: null
+-   model: wagtailcore.pagelogentry
+    pk: 45
+    fields:
+        content_type: 20
+        label: Sale Offers
+        action: wagtail.publish
+        data_json: 'null'
+        timestamp: 2021-06-30 11:26:03.198897+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 14
+        revision: 23
+-   model: wagtailcore.pagelogentry
+    pk: 46
+    fields:
+        content_type: 20
+        label: Sale Offers
+        action: wagtail.edit
+        data_json: '""'
+        timestamp: 2021-06-30 11:26:25.236186+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 14
+        revision: 24
+-   model: wagtailcore.pagelogentry
+    pk: 47
+    fields:
+        content_type: 20
+        label: Sale Offers
+        action: wagtail.publish
+        data_json: 'null'
+        timestamp: 2021-06-30 11:26:25.284959+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 14
+        revision: 24
+-   model: wagtailcore.pagelogentry
+    pk: 48
+    fields:
+        content_type: 22
+        label: Belle villa en bord de mer
+        action: wagtail.delete
+        data_json: '""'
+        timestamp: 2021-06-30 11:26:55.119543+00:00
+        user: 1
+        content_changed: false
+        deleted: true
+        page: 10
+        revision: null
+-   model: wagtailcore.pagelogentry
+    pk: 49
+    fields:
+        content_type: 20
+        label: Sales
+        action: wagtail.delete
+        data_json: '""'
+        timestamp: 2021-06-30 11:26:55.122733+00:00
+        user: 1
+        content_changed: false
+        deleted: true
+        page: 7
+        revision: null
+-   model: wagtailcore.pagelogentry
+    pk: 50
+    fields:
+        content_type: 19
+        label: Rental Offers
+        action: wagtail.create
+        data_json: '""'
+        timestamp: 2021-06-30 11:28:39.092522+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 15
+        revision: null
+-   model: wagtailcore.pagelogentry
+    pk: 51
+    fields:
+        content_type: 19
+        label: Rental Offers
+        action: wagtail.publish
+        data_json: 'null'
+        timestamp: 2021-06-30 11:28:39.200244+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 15
+        revision: 25
+-   model: wagtailcore.pagelogentry
+    pk: 52
+    fields:
+        content_type: 22
+        label: Belle villa en bord de mer
+        action: wagtail.edit
+        data_json: '""'
+        timestamp: 2021-06-30 17:12:51.613406+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 13
+        revision: 26
+-   model: wagtailcore.pagelogentry
+    pk: 53
+    fields:
+        content_type: 22
+        label: Belle villa en bord de mer
+        action: wagtail.publish
+        data_json: 'null'
+        timestamp: 2021-06-30 17:12:51.661257+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 13
+        revision: 26
+-   model: wagtailcore.pagelogentry
+    pk: 54
+    fields:
+        content_type: 22
+        label: Belle villa en bord de mer
+        action: wagtail.edit
+        data_json: '""'
+        timestamp: 2021-06-30 17:40:02.738712+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 13
+        revision: 27
+-   model: wagtailcore.pagelogentry
+    pk: 55
+    fields:
+        content_type: 22
+        label: Belle villa en bord de mer
+        action: wagtail.publish
+        data_json: 'null'
+        timestamp: 2021-06-30 17:40:02.813657+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 13
+        revision: 27
+-   model: wagtailcore.pagelogentry
+    pk: 56
+    fields:
+        content_type: 4
+        label: Home
+        action: wagtail.edit
+        data_json: '""'
+        timestamp: 2021-07-01 18:11:17.407768+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 3
+        revision: 28
+-   model: wagtailcore.pagelogentry
+    pk: 57
+    fields:
+        content_type: 4
+        label: Home
+        action: wagtail.publish
+        data_json: 'null'
+        timestamp: 2021-07-01 18:11:17.477135+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 3
+        revision: 28
+-   model: wagtailcore.pagelogentry
+    pk: 58
+    fields:
+        content_type: 4
+        label: Home
+        action: wagtail.edit
+        data_json: '""'
+        timestamp: 2021-07-01 18:12:05.254720+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 3
+        revision: 29
+-   model: wagtailcore.pagelogentry
+    pk: 59
+    fields:
+        content_type: 4
+        label: Home
+        action: wagtail.publish
+        data_json: 'null'
+        timestamp: 2021-07-01 18:12:05.311610+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 3
+        revision: 29
+-   model: wagtailcore.pagelogentry
+    pk: 60
+    fields:
+        content_type: 4
+        label: Home
+        action: wagtail.edit
+        data_json: '""'
+        timestamp: 2021-07-01 19:27:05.225529+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 3
+        revision: 30
+-   model: wagtailcore.pagelogentry
+    pk: 61
+    fields:
+        content_type: 4
+        label: Home
+        action: wagtail.edit
+        data_json: '""'
+        timestamp: 2021-07-01 19:28:45.275910+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 3
+        revision: 31
+-   model: wagtailcore.pagelogentry
+    pk: 62
+    fields:
+        content_type: 4
+        label: Home
+        action: wagtail.publish
+        data_json: 'null'
+        timestamp: 2021-07-01 19:28:45.352024+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 3
+        revision: 31
+-   model: wagtailcore.pagelogentry
+    pk: 63
+    fields:
+        content_type: 17
+        label: Studio à Isola 2000
+        action: wagtail.create
+        data_json: '""'
+        timestamp: 2021-07-01 19:34:55.644398+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 16
+        revision: null
+-   model: wagtailcore.pagelogentry
+    pk: 64
+    fields:
+        content_type: 17
+        label: Studio à Isola 2000
+        action: wagtail.edit
+        data_json: '""'
+        timestamp: 2021-07-01 19:45:02.215364+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 16
+        revision: 33
+-   model: wagtailcore.pagelogentry
+    pk: 65
+    fields:
+        content_type: 17
+        label: Studio à Isola 2000
+        action: wagtail.publish
+        data_json: 'null'
+        timestamp: 2021-07-01 19:45:02.285422+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 16
+        revision: 33
+-   model: wagtailcore.pagelogentry
+    pk: 66
+    fields:
+        content_type: 17
+        label: Studio à Isola 2000
+        action: wagtail.edit
+        data_json: '""'
+        timestamp: 2021-07-01 19:45:42.998231+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 16
+        revision: 34
+-   model: wagtailcore.pagelogentry
+    pk: 67
+    fields:
+        content_type: 22
+        label: Studio en location à la semaine
+        action: wagtail.create
+        data_json: '""'
+        timestamp: 2021-07-01 19:48:45.804001+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 17
+        revision: null
+-   model: wagtailcore.pagelogentry
+    pk: 68
+    fields:
+        content_type: 22
+        label: Studio en location à la semaine
+        action: wagtail.publish
+        data_json: 'null'
+        timestamp: 2021-07-01 19:48:45.918936+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 17
+        revision: 35
+-   model: wagtailcore.pagelogentry
+    pk: 69
+    fields:
+        content_type: 22
+        label: Studio en location à la semaine
+        action: wagtail.edit
+        data_json: '""'
+        timestamp: 2021-07-01 20:40:05.239010+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 17
+        revision: 36
+-   model: wagtailcore.pagelogentry
+    pk: 70
+    fields:
+        content_type: 22
+        label: Studio en location à la semaine
+        action: wagtail.publish
+        data_json: 'null'
+        timestamp: 2021-07-01 20:40:05.308748+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 17
+        revision: 36
+-   model: wagtailcore.pagelogentry
+    pk: 71
+    fields:
+        content_type: 22
+        label: Studio en location à la semaine
+        action: wagtail.edit
+        data_json: '""'
+        timestamp: 2021-07-01 21:40:39.264362+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 17
+        revision: 37
+-   model: wagtailcore.pagelogentry
+    pk: 72
+    fields:
+        content_type: 22
+        label: Studio en location à la semaine
+        action: wagtail.publish
+        data_json: 'null'
+        timestamp: 2021-07-01 21:40:39.321951+00:00
+        user: 1
+        content_changed: false
+        deleted: false
+        page: 17
+        revision: 37
+-   model: wagtailcore.pagelogentry
+    pk: 73
+    fields:
+        content_type: 22
+        label: Studio en location à la semaine à Isola
+        action: wagtail.edit
+        data_json: '""'
+        timestamp: 2021-07-01 21:41:08.791476+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 17
+        revision: 38
+-   model: wagtailcore.pagelogentry
+    pk: 74
+    fields:
+        content_type: 22
+        label: Studio en location à la semaine à Isola
+        action: wagtail.rename
+        data_json: '{"title": {"old": "Studio en location \u00e0 la semaine", "new":
+            "Studio en location \u00e0 la semaine \u00e0 Isola"}}'
+        timestamp: 2021-07-01 21:41:08.864621+00:00
+        user: 1
+        content_changed: false
+        deleted: false
+        page: 17
+        revision: 38
+-   model: wagtailcore.pagelogentry
+    pk: 75
+    fields:
+        content_type: 22
+        label: Studio en location à la semaine à Isola
+        action: wagtail.publish
+        data_json: '{"title": {"old": "Studio en location \u00e0 la semaine", "new":
+            "Studio en location \u00e0 la semaine \u00e0 Isola"}}'
+        timestamp: 2021-07-01 21:41:08.877138+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 17
+        revision: 38
+-   model: wagtailcore.pagelogentry
+    pk: 76
+    fields:
+        content_type: 22
+        label: Studio en location à la semaine à Isola
+        action: wagtail.edit
+        data_json: '""'
+        timestamp: 2021-07-01 21:41:47.590498+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 17
+        revision: 39
+-   model: wagtailcore.pagelogentry
+    pk: 77
+    fields:
+        content_type: 22
+        label: Studio en location à la semaine à Isola
+        action: wagtail.publish
+        data_json: 'null'
+        timestamp: 2021-07-01 21:41:47.634402+00:00
+        user: 1
+        content_changed: false
+        deleted: false
+        page: 17
+        revision: 39
+-   model: wagtailcore.pagelogentry
+    pk: 78
+    fields:
+        content_type: 22
+        label: Studio en location à la semaine à Isola
+        action: wagtail.edit
+        data_json: '""'
+        timestamp: 2021-07-01 22:11:47.537597+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 17
+        revision: 40
+-   model: wagtailcore.pagelogentry
+    pk: 79
+    fields:
+        content_type: 22
+        label: Studio en location à la semaine à Isola
+        action: wagtail.publish
+        data_json: 'null'
+        timestamp: 2021-07-01 22:11:47.585706+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 17
+        revision: 40
+-   model: wagtailcore.pagelogentry
+    pk: 80
+    fields:
+        content_type: 17
+        label: Villa à Villeneuve Loubet
+        action: wagtail.create
+        data_json: '""'
+        timestamp: 2021-07-01 22:42:44.542947+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 18
+        revision: null
+-   model: wagtailcore.pagelogentry
+    pk: 81
+    fields:
+        content_type: 17
+        label: Villa à Villeneuve Loubet
+        action: wagtail.publish
+        data_json: 'null'
+        timestamp: 2021-07-01 22:42:44.654313+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 18
+        revision: 41
+-   model: wagtailcore.pagelogentry
+    pk: 82
+    fields:
+        content_type: 22
+        label: Belle villa en bord de mer
+        action: wagtail.edit
+        data_json: '""'
+        timestamp: 2021-07-01 23:09:49.412849+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 13
+        revision: 42
+-   model: wagtailcore.pagelogentry
+    pk: 83
+    fields:
+        content_type: 22
+        label: Belle villa en bord de mer
+        action: wagtail.publish
+        data_json: 'null'
+        timestamp: 2021-07-01 23:09:49.482064+00:00
+        user: 1
+        content_changed: true
+        deleted: false
+        page: 13
+        revision: 42
+-   model: wagtailcore.pagesubscription
+    pk: 1
+    fields:
+        user: 1
+        page: 4
+        comment_notifications: true
+-   model: wagtailcore.pagesubscription
+    pk: 2
+    fields:
+        user: 1
+        page: 3
+        comment_notifications: false
+-   model: wagtailcore.pagesubscription
+    pk: 4
+    fields:
+        user: 1
+        page: 6
+        comment_notifications: true
+-   model: wagtailcore.pagesubscription
+    pk: 7
+    fields:
+        user: 1
+        page: 9
+        comment_notifications: true
+-   model: wagtailcore.pagesubscription
+    pk: 11
+    fields:
+        user: 1
+        page: 13
+        comment_notifications: true
+-   model: wagtailcore.pagesubscription
+    pk: 12
+    fields:
+        user: 1
+        page: 14
+        comment_notifications: true
+-   model: wagtailcore.pagesubscription
+    pk: 13
+    fields:
+        user: 1
+        page: 15
+        comment_notifications: true
+-   model: wagtailcore.pagesubscription
+    pk: 14
+    fields:
+        user: 1
+        page: 16
+        comment_notifications: true
+-   model: wagtailcore.pagesubscription
+    pk: 15
+    fields:
+        user: 1
+        page: 17
+        comment_notifications: true
+-   model: wagtailcore.pagesubscription
+    pk: 16
+    fields:
+        user: 1
+        page: 18
+        comment_notifications: true
+-   model: taggit.tag
+    pk: 1
+    fields:
+        name: villa
+        slug: villa
+-   model: taggit.tag
+    pk: 2
+    fields:
+        name: Studio
+        slug: studio
+-   model: taggit.tag
+    pk: 3
+    fields:
+        name: montagne
+        slug: montagne
+-   model: taggit.tag
+    pk: 4
+    fields:
+        name: station de ski
+        slug: station-de-ski
+-   model: taggit.tag
+    pk: 5
+    fields:
+        name: mer
+        slug: mer
+-   model: auth.permission
+    pk: 1
+    fields:
+        name: Can add image
+        content_type: 2
+        codename: add_image
+-   model: auth.permission
+    pk: 2
+    fields:
+        name: Can change image
+        content_type: 2
+        codename: change_image
+-   model: auth.permission
+    pk: 3
+    fields:
+        name: Can delete image
+        content_type: 2
+        codename: delete_image
+-   model: auth.permission
+    pk: 4
+    fields:
+        name: Can choose image
+        content_type: 2
+        codename: choose_image
+-   model: auth.permission
+    pk: 5
+    fields:
+        name: Can access Wagtail admin
+        content_type: 5
+        codename: access_admin
+-   model: auth.permission
+    pk: 6
+    fields:
+        name: Can add document
+        content_type: 6
+        codename: add_document
+-   model: auth.permission
+    pk: 7
+    fields:
+        name: Can change document
+        content_type: 6
+        codename: change_document
+-   model: auth.permission
+    pk: 8
+    fields:
+        name: Can delete document
+        content_type: 6
+        codename: delete_document
+-   model: auth.permission
+    pk: 9
+    fields:
+        name: Can choose document
+        content_type: 6
+        codename: choose_document
+-   model: auth.permission
+    pk: 10
+    fields:
+        name: Can add home page
+        content_type: 4
+        codename: add_homepage
+-   model: auth.permission
+    pk: 11
+    fields:
+        name: Can change home page
+        content_type: 4
+        codename: change_homepage
+-   model: auth.permission
+    pk: 12
+    fields:
+        name: Can delete home page
+        content_type: 4
+        codename: delete_homepage
+-   model: auth.permission
+    pk: 13
+    fields:
+        name: Can view home page
+        content_type: 4
+        codename: view_homepage
+-   model: auth.permission
+    pk: 14
+    fields:
+        name: Can add blog index page
+        content_type: 7
+        codename: add_blogindexpage
+-   model: auth.permission
+    pk: 15
+    fields:
+        name: Can change blog index page
+        content_type: 7
+        codename: change_blogindexpage
+-   model: auth.permission
+    pk: 16
+    fields:
+        name: Can delete blog index page
+        content_type: 7
+        codename: delete_blogindexpage
+-   model: auth.permission
+    pk: 17
+    fields:
+        name: Can view blog index page
+        content_type: 7
+        codename: view_blogindexpage
+-   model: auth.permission
+    pk: 18
+    fields:
+        name: Can add blog page
+        content_type: 8
+        codename: add_blogpage
+-   model: auth.permission
+    pk: 19
+    fields:
+        name: Can change blog page
+        content_type: 8
+        codename: change_blogpage
+-   model: auth.permission
+    pk: 20
+    fields:
+        name: Can delete blog page
+        content_type: 8
+        codename: delete_blogpage
+-   model: auth.permission
+    pk: 21
+    fields:
+        name: Can view blog page
+        content_type: 8
+        codename: view_blogpage
+-   model: auth.permission
+    pk: 22
+    fields:
+        name: Can add blog page gallery image
+        content_type: 9
+        codename: add_blogpagegalleryimage
+-   model: auth.permission
+    pk: 23
+    fields:
+        name: Can change blog page gallery image
+        content_type: 9
+        codename: change_blogpagegalleryimage
+-   model: auth.permission
+    pk: 24
+    fields:
+        name: Can delete blog page gallery image
+        content_type: 9
+        codename: delete_blogpagegalleryimage
+-   model: auth.permission
+    pk: 25
+    fields:
+        name: Can view blog page gallery image
+        content_type: 9
+        codename: view_blogpagegalleryimage
+-   model: auth.permission
+    pk: 26
+    fields:
+        name: Can add blog page tag
+        content_type: 10
+        codename: add_blogpagetag
+-   model: auth.permission
+    pk: 27
+    fields:
+        name: Can change blog page tag
+        content_type: 10
+        codename: change_blogpagetag
+-   model: auth.permission
+    pk: 28
+    fields:
+        name: Can delete blog page tag
+        content_type: 10
+        codename: delete_blogpagetag
+-   model: auth.permission
+    pk: 29
+    fields:
+        name: Can view blog page tag
+        content_type: 10
+        codename: view_blogpagetag
+-   model: auth.permission
+    pk: 30
+    fields:
+        name: Can add blog tag index page
+        content_type: 11
+        codename: add_blogtagindexpage
+-   model: auth.permission
+    pk: 31
+    fields:
+        name: Can change blog tag index page
+        content_type: 11
+        codename: change_blogtagindexpage
+-   model: auth.permission
+    pk: 32
+    fields:
+        name: Can delete blog tag index page
+        content_type: 11
+        codename: delete_blogtagindexpage
+-   model: auth.permission
+    pk: 33
+    fields:
+        name: Can view blog tag index page
+        content_type: 11
+        codename: view_blogtagindexpage
+-   model: auth.permission
+    pk: 34
+    fields:
+        name: Can add blog category
+        content_type: 12
+        codename: add_blogcategory
+-   model: auth.permission
+    pk: 35
+    fields:
+        name: Can change blog category
+        content_type: 12
+        codename: change_blogcategory
+-   model: auth.permission
+    pk: 36
+    fields:
+        name: Can delete blog category
+        content_type: 12
+        codename: delete_blogcategory
+-   model: auth.permission
+    pk: 37
+    fields:
+        name: Can view blog category
+        content_type: 12
+        codename: view_blogcategory
+-   model: auth.permission
+    pk: 38
+    fields:
+        name: Can add address page
+        content_type: 13
+        codename: add_addresspage
+-   model: auth.permission
+    pk: 39
+    fields:
+        name: Can change address page
+        content_type: 13
+        codename: change_addresspage
+-   model: auth.permission
+    pk: 40
+    fields:
+        name: Can delete address page
+        content_type: 13
+        codename: delete_addresspage
+-   model: auth.permission
+    pk: 41
+    fields:
+        name: Can view address page
+        content_type: 13
+        codename: view_addresspage
+-   model: auth.permission
+    pk: 42
+    fields:
+        name: Can add offer index page
+        content_type: 14
+        codename: add_offerindexpage
+-   model: auth.permission
+    pk: 43
+    fields:
+        name: Can change offer index page
+        content_type: 14
+        codename: change_offerindexpage
+-   model: auth.permission
+    pk: 44
+    fields:
+        name: Can delete offer index page
+        content_type: 14
+        codename: delete_offerindexpage
+-   model: auth.permission
+    pk: 45
+    fields:
+        name: Can view offer index page
+        content_type: 14
+        codename: view_offerindexpage
+-   model: auth.permission
+    pk: 46
+    fields:
+        name: Can add Offer
+        content_type: 15
+        codename: add_offerpage
+-   model: auth.permission
+    pk: 47
+    fields:
+        name: Can change Offer
+        content_type: 15
+        codename: change_offerpage
+-   model: auth.permission
+    pk: 48
+    fields:
+        name: Can delete Offer
+        content_type: 15
+        codename: delete_offerpage
+-   model: auth.permission
+    pk: 49
+    fields:
+        name: Can view Offer
+        content_type: 15
+        codename: view_offerpage
+-   model: auth.permission
+    pk: 50
+    fields:
+        name: Can add property asset index page
+        content_type: 16
+        codename: add_propertyassetindexpage
+-   model: auth.permission
+    pk: 51
+    fields:
+        name: Can change property asset index page
+        content_type: 16
+        codename: change_propertyassetindexpage
+-   model: auth.permission
+    pk: 52
+    fields:
+        name: Can delete property asset index page
+        content_type: 16
+        codename: delete_propertyassetindexpage
+-   model: auth.permission
+    pk: 53
+    fields:
+        name: Can view property asset index page
+        content_type: 16
+        codename: view_propertyassetindexpage
+-   model: auth.permission
+    pk: 54
+    fields:
+        name: Can add Property Asset
+        content_type: 17
+        codename: add_propertyassetpage
+-   model: auth.permission
+    pk: 55
+    fields:
+        name: Can change Property Asset
+        content_type: 17
+        codename: change_propertyassetpage
+-   model: auth.permission
+    pk: 56
+    fields:
+        name: Can delete Property Asset
+        content_type: 17
+        codename: delete_propertyassetpage
+-   model: auth.permission
+    pk: 57
+    fields:
+        name: Can view Property Asset
+        content_type: 17
+        codename: view_propertyassetpage
+-   model: auth.permission
+    pk: 58
+    fields:
+        name: Can add Asset Type
+        content_type: 18
+        codename: add_propertyassettype
+-   model: auth.permission
+    pk: 59
+    fields:
+        name: Can change Asset Type
+        content_type: 18
+        codename: change_propertyassettype
+-   model: auth.permission
+    pk: 60
+    fields:
+        name: Can delete Asset Type
+        content_type: 18
+        codename: delete_propertyassettype
+-   model: auth.permission
+    pk: 61
+    fields:
+        name: Can view Asset Type
+        content_type: 18
+        codename: view_propertyassettype
+-   model: auth.permission
+    pk: 62
+    fields:
+        name: Can add rental offer index page
+        content_type: 19
+        codename: add_rentalofferindexpage
+-   model: auth.permission
+    pk: 63
+    fields:
+        name: Can change rental offer index page
+        content_type: 19
+        codename: change_rentalofferindexpage
+-   model: auth.permission
+    pk: 64
+    fields:
+        name: Can delete rental offer index page
+        content_type: 19
+        codename: delete_rentalofferindexpage
+-   model: auth.permission
+    pk: 65
+    fields:
+        name: Can view rental offer index page
+        content_type: 19
+        codename: view_rentalofferindexpage
+-   model: auth.permission
+    pk: 66
+    fields:
+        name: Can add sale offer index page
+        content_type: 20
+        codename: add_saleofferindexpage
+-   model: auth.permission
+    pk: 67
+    fields:
+        name: Can change sale offer index page
+        content_type: 20
+        codename: change_saleofferindexpage
+-   model: auth.permission
+    pk: 68
+    fields:
+        name: Can delete sale offer index page
+        content_type: 20
+        codename: delete_saleofferindexpage
+-   model: auth.permission
+    pk: 69
+    fields:
+        name: Can view sale offer index page
+        content_type: 20
+        codename: view_saleofferindexpage
+-   model: auth.permission
+    pk: 70
+    fields:
+        name: Can add Agency
+        content_type: 21
+        codename: add_agencypage
+-   model: auth.permission
+    pk: 71
+    fields:
+        name: Can change Agency
+        content_type: 21
+        codename: change_agencypage
+-   model: auth.permission
+    pk: 72
+    fields:
+        name: Can delete Agency
+        content_type: 21
+        codename: delete_agencypage
+-   model: auth.permission
+    pk: 73
+    fields:
+        name: Can view Agency
+        content_type: 21
+        codename: view_agencypage
+-   model: auth.permission
+    pk: 74
+    fields:
+        name: Can add Rental Offer
+        content_type: 22
+        codename: add_rentalofferpage
+-   model: auth.permission
+    pk: 75
+    fields:
+        name: Can change Rental Offer
+        content_type: 22
+        codename: change_rentalofferpage
+-   model: auth.permission
+    pk: 76
+    fields:
+        name: Can delete Rental Offer
+        content_type: 22
+        codename: delete_rentalofferpage
+-   model: auth.permission
+    pk: 77
+    fields:
+        name: Can view Rental Offer
+        content_type: 22
+        codename: view_rentalofferpage
+-   model: auth.permission
+    pk: 78
+    fields:
+        name: Can add Sale Offer
+        content_type: 23
+        codename: add_saleofferpage
+-   model: auth.permission
+    pk: 79
+    fields:
+        name: Can change Sale Offer
+        content_type: 23
+        codename: change_saleofferpage
+-   model: auth.permission
+    pk: 80
+    fields:
+        name: Can delete Sale Offer
+        content_type: 23
+        codename: delete_saleofferpage
+-   model: auth.permission
+    pk: 81
+    fields:
+        name: Can view Sale Offer
+        content_type: 23
+        codename: view_saleofferpage
+-   model: auth.permission
+    pk: 82
+    fields:
+        name: Can add property asset page tag
+        content_type: 24
+        codename: add_propertyassetpagetag
+-   model: auth.permission
+    pk: 83
+    fields:
+        name: Can change property asset page tag
+        content_type: 24
+        codename: change_propertyassetpagetag
+-   model: auth.permission
+    pk: 84
+    fields:
+        name: Can delete property asset page tag
+        content_type: 24
+        codename: delete_propertyassetpagetag
+-   model: auth.permission
+    pk: 85
+    fields:
+        name: Can view property asset page tag
+        content_type: 24
+        codename: view_propertyassetpagetag
+-   model: auth.permission
+    pk: 86
+    fields:
+        name: Can add page gallery image
+        content_type: 25
+        codename: add_pagegalleryimage
+-   model: auth.permission
+    pk: 87
+    fields:
+        name: Can change page gallery image
+        content_type: 25
+        codename: change_pagegalleryimage
+-   model: auth.permission
+    pk: 88
+    fields:
+        name: Can delete page gallery image
+        content_type: 25
+        codename: delete_pagegalleryimage
+-   model: auth.permission
+    pk: 89
+    fields:
+        name: Can view page gallery image
+        content_type: 25
+        codename: view_pagegalleryimage
+-   model: auth.permission
+    pk: 90
+    fields:
+        name: Can add offer page tag
+        content_type: 26
+        codename: add_offerpagetag
+-   model: auth.permission
+    pk: 91
+    fields:
+        name: Can change offer page tag
+        content_type: 26
+        codename: change_offerpagetag
+-   model: auth.permission
+    pk: 92
+    fields:
+        name: Can delete offer page tag
+        content_type: 26
+        codename: delete_offerpagetag
+-   model: auth.permission
+    pk: 93
+    fields:
+        name: Can view offer page tag
+        content_type: 26
+        codename: view_offerpagetag
+-   model: auth.permission
+    pk: 94
+    fields:
+        name: Can add flat menu
+        content_type: 27
+        codename: add_flatmenu
+-   model: auth.permission
+    pk: 95
+    fields:
+        name: Can change flat menu
+        content_type: 27
+        codename: change_flatmenu
+-   model: auth.permission
+    pk: 96
+    fields:
+        name: Can delete flat menu
+        content_type: 27
+        codename: delete_flatmenu
+-   model: auth.permission
+    pk: 97
+    fields:
+        name: Can view flat menu
+        content_type: 27
+        codename: view_flatmenu
+-   model: auth.permission
+    pk: 98
+    fields:
+        name: Can add menu item
+        content_type: 28
+        codename: add_flatmenuitem
+-   model: auth.permission
+    pk: 99
+    fields:
+        name: Can change menu item
+        content_type: 28
+        codename: change_flatmenuitem
+-   model: auth.permission
+    pk: 100
+    fields:
+        name: Can delete menu item
+        content_type: 28
+        codename: delete_flatmenuitem
+-   model: auth.permission
+    pk: 101
+    fields:
+        name: Can view menu item
+        content_type: 28
+        codename: view_flatmenuitem
+-   model: auth.permission
+    pk: 102
+    fields:
+        name: Can add main menu
+        content_type: 29
+        codename: add_mainmenu
+-   model: auth.permission
+    pk: 103
+    fields:
+        name: Can change main menu
+        content_type: 29
+        codename: change_mainmenu
+-   model: auth.permission
+    pk: 104
+    fields:
+        name: Can delete main menu
+        content_type: 29
+        codename: delete_mainmenu
+-   model: auth.permission
+    pk: 105
+    fields:
+        name: Can view main menu
+        content_type: 29
+        codename: view_mainmenu
+-   model: auth.permission
+    pk: 106
+    fields:
+        name: Can add menu item
+        content_type: 30
+        codename: add_mainmenuitem
+-   model: auth.permission
+    pk: 107
+    fields:
+        name: Can change menu item
+        content_type: 30
+        codename: change_mainmenuitem
+-   model: auth.permission
+    pk: 108
+    fields:
+        name: Can delete menu item
+        content_type: 30
+        codename: delete_mainmenuitem
+-   model: auth.permission
+    pk: 109
+    fields:
+        name: Can view menu item
+        content_type: 30
+        codename: view_mainmenuitem
+-   model: auth.permission
+    pk: 110
+    fields:
+        name: Can add form submission
+        content_type: 31
+        codename: add_formsubmission
+-   model: auth.permission
+    pk: 111
+    fields:
+        name: Can change form submission
+        content_type: 31
+        codename: change_formsubmission
+-   model: auth.permission
+    pk: 112
+    fields:
+        name: Can delete form submission
+        content_type: 31
+        codename: delete_formsubmission
+-   model: auth.permission
+    pk: 113
+    fields:
+        name: Can view form submission
+        content_type: 31
+        codename: view_formsubmission
+-   model: auth.permission
+    pk: 114
+    fields:
+        name: Can add redirect
+        content_type: 32
+        codename: add_redirect
+-   model: auth.permission
+    pk: 115
+    fields:
+        name: Can change redirect
+        content_type: 32
+        codename: change_redirect
+-   model: auth.permission
+    pk: 116
+    fields:
+        name: Can delete redirect
+        content_type: 32
+        codename: delete_redirect
+-   model: auth.permission
+    pk: 117
+    fields:
+        name: Can view redirect
+        content_type: 32
+        codename: view_redirect
+-   model: auth.permission
+    pk: 118
+    fields:
+        name: Can add embed
+        content_type: 33
+        codename: add_embed
+-   model: auth.permission
+    pk: 119
+    fields:
+        name: Can change embed
+        content_type: 33
+        codename: change_embed
+-   model: auth.permission
+    pk: 120
+    fields:
+        name: Can delete embed
+        content_type: 33
+        codename: delete_embed
+-   model: auth.permission
+    pk: 121
+    fields:
+        name: Can view embed
+        content_type: 33
+        codename: view_embed
+-   model: auth.permission
+    pk: 122
+    fields:
+        name: Can add user profile
+        content_type: 34
+        codename: add_userprofile
+-   model: auth.permission
+    pk: 123
+    fields:
+        name: Can change user profile
+        content_type: 34
+        codename: change_userprofile
+-   model: auth.permission
+    pk: 124
+    fields:
+        name: Can delete user profile
+        content_type: 34
+        codename: delete_userprofile
+-   model: auth.permission
+    pk: 125
+    fields:
+        name: Can view user profile
+        content_type: 34
+        codename: view_userprofile
+-   model: auth.permission
+    pk: 126
+    fields:
+        name: Can view document
+        content_type: 6
+        codename: view_document
+-   model: auth.permission
+    pk: 127
+    fields:
+        name: Can add uploaded document
+        content_type: 35
+        codename: add_uploadeddocument
+-   model: auth.permission
+    pk: 128
+    fields:
+        name: Can change uploaded document
+        content_type: 35
+        codename: change_uploadeddocument
+-   model: auth.permission
+    pk: 129
+    fields:
+        name: Can delete uploaded document
+        content_type: 35
+        codename: delete_uploadeddocument
+-   model: auth.permission
+    pk: 130
+    fields:
+        name: Can view uploaded document
+        content_type: 35
+        codename: view_uploadeddocument
+-   model: auth.permission
+    pk: 131
+    fields:
+        name: Can view image
+        content_type: 2
+        codename: view_image
+-   model: auth.permission
+    pk: 132
+    fields:
+        name: Can add rendition
+        content_type: 36
+        codename: add_rendition
+-   model: auth.permission
+    pk: 133
+    fields:
+        name: Can change rendition
+        content_type: 36
+        codename: change_rendition
+-   model: auth.permission
+    pk: 134
+    fields:
+        name: Can delete rendition
+        content_type: 36
+        codename: delete_rendition
+-   model: auth.permission
+    pk: 135
+    fields:
+        name: Can view rendition
+        content_type: 36
+        codename: view_rendition
+-   model: auth.permission
+    pk: 136
+    fields:
+        name: Can add uploaded image
+        content_type: 37
+        codename: add_uploadedimage
+-   model: auth.permission
+    pk: 137
+    fields:
+        name: Can change uploaded image
+        content_type: 37
+        codename: change_uploadedimage
+-   model: auth.permission
+    pk: 138
+    fields:
+        name: Can delete uploaded image
+        content_type: 37
+        codename: delete_uploadedimage
+-   model: auth.permission
+    pk: 139
+    fields:
+        name: Can view uploaded image
+        content_type: 37
+        codename: view_uploadedimage
+-   model: auth.permission
+    pk: 140
+    fields:
+        name: Can add query
+        content_type: 38
+        codename: add_query
+-   model: auth.permission
+    pk: 141
+    fields:
+        name: Can change query
+        content_type: 38
+        codename: change_query
+-   model: auth.permission
+    pk: 142
+    fields:
+        name: Can delete query
+        content_type: 38
+        codename: delete_query
+-   model: auth.permission
+    pk: 143
+    fields:
+        name: Can view query
+        content_type: 38
+        codename: view_query
+-   model: auth.permission
+    pk: 144
+    fields:
+        name: Can add Query Daily Hits
+        content_type: 39
+        codename: add_querydailyhits
+-   model: auth.permission
+    pk: 145
+    fields:
+        name: Can change Query Daily Hits
+        content_type: 39
+        codename: change_querydailyhits
+-   model: auth.permission
+    pk: 146
+    fields:
+        name: Can delete Query Daily Hits
+        content_type: 39
+        codename: delete_querydailyhits
+-   model: auth.permission
+    pk: 147
+    fields:
+        name: Can view Query Daily Hits
+        content_type: 39
+        codename: view_querydailyhits
+-   model: auth.permission
+    pk: 148
+    fields:
+        name: Can add page
+        content_type: 1
+        codename: add_page
+-   model: auth.permission
+    pk: 149
+    fields:
+        name: Can change page
+        content_type: 1
+        codename: change_page
+-   model: auth.permission
+    pk: 150
+    fields:
+        name: Can delete page
+        content_type: 1
+        codename: delete_page
+-   model: auth.permission
+    pk: 151
+    fields:
+        name: Can view page
+        content_type: 1
+        codename: view_page
+-   model: auth.permission
+    pk: 152
+    fields:
+        name: Can add group page permission
+        content_type: 40
+        codename: add_grouppagepermission
+-   model: auth.permission
+    pk: 153
+    fields:
+        name: Can change group page permission
+        content_type: 40
+        codename: change_grouppagepermission
+-   model: auth.permission
+    pk: 154
+    fields:
+        name: Can delete group page permission
+        content_type: 40
+        codename: delete_grouppagepermission
+-   model: auth.permission
+    pk: 155
+    fields:
+        name: Can view group page permission
+        content_type: 40
+        codename: view_grouppagepermission
+-   model: auth.permission
+    pk: 156
+    fields:
+        name: Can add page revision
+        content_type: 41
+        codename: add_pagerevision
+-   model: auth.permission
+    pk: 157
+    fields:
+        name: Can change page revision
+        content_type: 41
+        codename: change_pagerevision
+-   model: auth.permission
+    pk: 158
+    fields:
+        name: Can delete page revision
+        content_type: 41
+        codename: delete_pagerevision
+-   model: auth.permission
+    pk: 159
+    fields:
+        name: Can view page revision
+        content_type: 41
+        codename: view_pagerevision
+-   model: auth.permission
+    pk: 160
+    fields:
+        name: Can add page view restriction
+        content_type: 42
+        codename: add_pageviewrestriction
+-   model: auth.permission
+    pk: 161
+    fields:
+        name: Can change page view restriction
+        content_type: 42
+        codename: change_pageviewrestriction
+-   model: auth.permission
+    pk: 162
+    fields:
+        name: Can delete page view restriction
+        content_type: 42
+        codename: delete_pageviewrestriction
+-   model: auth.permission
+    pk: 163
+    fields:
+        name: Can view page view restriction
+        content_type: 42
+        codename: view_pageviewrestriction
+-   model: auth.permission
+    pk: 164
+    fields:
+        name: Can add site
+        content_type: 43
+        codename: add_site
+-   model: auth.permission
+    pk: 165
+    fields:
+        name: Can change site
+        content_type: 43
+        codename: change_site
+-   model: auth.permission
+    pk: 166
+    fields:
+        name: Can delete site
+        content_type: 43
+        codename: delete_site
+-   model: auth.permission
+    pk: 167
+    fields:
+        name: Can view site
+        content_type: 43
+        codename: view_site
+-   model: auth.permission
+    pk: 168
+    fields:
+        name: Can add collection
+        content_type: 44
+        codename: add_collection
+-   model: auth.permission
+    pk: 169
+    fields:
+        name: Can change collection
+        content_type: 44
+        codename: change_collection
+-   model: auth.permission
+    pk: 170
+    fields:
+        name: Can delete collection
+        content_type: 44
+        codename: delete_collection
+-   model: auth.permission
+    pk: 171
+    fields:
+        name: Can view collection
+        content_type: 44
+        codename: view_collection
+-   model: auth.permission
+    pk: 172
+    fields:
+        name: Can add group collection permission
+        content_type: 45
+        codename: add_groupcollectionpermission
+-   model: auth.permission
+    pk: 173
+    fields:
+        name: Can change group collection permission
+        content_type: 45
+        codename: change_groupcollectionpermission
+-   model: auth.permission
+    pk: 174
+    fields:
+        name: Can delete group collection permission
+        content_type: 45
+        codename: delete_groupcollectionpermission
+-   model: auth.permission
+    pk: 175
+    fields:
+        name: Can view group collection permission
+        content_type: 45
+        codename: view_groupcollectionpermission
+-   model: auth.permission
+    pk: 176
+    fields:
+        name: Can add collection view restriction
+        content_type: 46
+        codename: add_collectionviewrestriction
+-   model: auth.permission
+    pk: 177
+    fields:
+        name: Can change collection view restriction
+        content_type: 46
+        codename: change_collectionviewrestriction
+-   model: auth.permission
+    pk: 178
+    fields:
+        name: Can delete collection view restriction
+        content_type: 46
+        codename: delete_collectionviewrestriction
+-   model: auth.permission
+    pk: 179
+    fields:
+        name: Can view collection view restriction
+        content_type: 46
+        codename: view_collectionviewrestriction
+-   model: auth.permission
+    pk: 180
+    fields:
+        name: Can add task
+        content_type: 47
+        codename: add_task
+-   model: auth.permission
+    pk: 181
+    fields:
+        name: Can change task
+        content_type: 47
+        codename: change_task
+-   model: auth.permission
+    pk: 182
+    fields:
+        name: Can delete task
+        content_type: 47
+        codename: delete_task
+-   model: auth.permission
+    pk: 183
+    fields:
+        name: Can view task
+        content_type: 47
+        codename: view_task
+-   model: auth.permission
+    pk: 184
+    fields:
+        name: Can add Task state
+        content_type: 48
+        codename: add_taskstate
+-   model: auth.permission
+    pk: 185
+    fields:
+        name: Can change Task state
+        content_type: 48
+        codename: change_taskstate
+-   model: auth.permission
+    pk: 186
+    fields:
+        name: Can delete Task state
+        content_type: 48
+        codename: delete_taskstate
+-   model: auth.permission
+    pk: 187
+    fields:
+        name: Can view Task state
+        content_type: 48
+        codename: view_taskstate
+-   model: auth.permission
+    pk: 188
+    fields:
+        name: Can add workflow
+        content_type: 49
+        codename: add_workflow
+-   model: auth.permission
+    pk: 189
+    fields:
+        name: Can change workflow
+        content_type: 49
+        codename: change_workflow
+-   model: auth.permission
+    pk: 190
+    fields:
+        name: Can delete workflow
+        content_type: 49
+        codename: delete_workflow
+-   model: auth.permission
+    pk: 191
+    fields:
+        name: Can view workflow
+        content_type: 49
+        codename: view_workflow
+-   model: auth.permission
+    pk: 192
+    fields:
+        name: Can add Group approval task
+        content_type: 3
+        codename: add_groupapprovaltask
+-   model: auth.permission
+    pk: 193
+    fields:
+        name: Can change Group approval task
+        content_type: 3
+        codename: change_groupapprovaltask
+-   model: auth.permission
+    pk: 194
+    fields:
+        name: Can delete Group approval task
+        content_type: 3
+        codename: delete_groupapprovaltask
+-   model: auth.permission
+    pk: 195
+    fields:
+        name: Can view Group approval task
+        content_type: 3
+        codename: view_groupapprovaltask
+-   model: auth.permission
+    pk: 196
+    fields:
+        name: Can add Workflow state
+        content_type: 50
+        codename: add_workflowstate
+-   model: auth.permission
+    pk: 197
+    fields:
+        name: Can change Workflow state
+        content_type: 50
+        codename: change_workflowstate
+-   model: auth.permission
+    pk: 198
+    fields:
+        name: Can delete Workflow state
+        content_type: 50
+        codename: delete_workflowstate
+-   model: auth.permission
+    pk: 199
+    fields:
+        name: Can view Workflow state
+        content_type: 50
+        codename: view_workflowstate
+-   model: auth.permission
+    pk: 200
+    fields:
+        name: Can add workflow page
+        content_type: 51
+        codename: add_workflowpage
+-   model: auth.permission
+    pk: 201
+    fields:
+        name: Can change workflow page
+        content_type: 51
+        codename: change_workflowpage
+-   model: auth.permission
+    pk: 202
+    fields:
+        name: Can delete workflow page
+        content_type: 51
+        codename: delete_workflowpage
+-   model: auth.permission
+    pk: 203
+    fields:
+        name: Can view workflow page
+        content_type: 51
+        codename: view_workflowpage
+-   model: auth.permission
+    pk: 204
+    fields:
+        name: Can add workflow task order
+        content_type: 52
+        codename: add_workflowtask
+-   model: auth.permission
+    pk: 205
+    fields:
+        name: Can change workflow task order
+        content_type: 52
+        codename: change_workflowtask
+-   model: auth.permission
+    pk: 206
+    fields:
+        name: Can delete workflow task order
+        content_type: 52
+        codename: delete_workflowtask
+-   model: auth.permission
+    pk: 207
+    fields:
+        name: Can view workflow task order
+        content_type: 52
+        codename: view_workflowtask
+-   model: auth.permission
+    pk: 208
+    fields:
+        name: Can add page log entry
+        content_type: 53
+        codename: add_pagelogentry
+-   model: auth.permission
+    pk: 209
+    fields:
+        name: Can change page log entry
+        content_type: 53
+        codename: change_pagelogentry
+-   model: auth.permission
+    pk: 210
+    fields:
+        name: Can delete page log entry
+        content_type: 53
+        codename: delete_pagelogentry
+-   model: auth.permission
+    pk: 211
+    fields:
+        name: Can view page log entry
+        content_type: 53
+        codename: view_pagelogentry
+-   model: auth.permission
+    pk: 212
+    fields:
+        name: Can add locale
+        content_type: 54
+        codename: add_locale
+-   model: auth.permission
+    pk: 213
+    fields:
+        name: Can change locale
+        content_type: 54
+        codename: change_locale
+-   model: auth.permission
+    pk: 214
+    fields:
+        name: Can delete locale
+        content_type: 54
+        codename: delete_locale
+-   model: auth.permission
+    pk: 215
+    fields:
+        name: Can view locale
+        content_type: 54
+        codename: view_locale
+-   model: auth.permission
+    pk: 216
+    fields:
+        name: Can add comment
+        content_type: 55
+        codename: add_comment
+-   model: auth.permission
+    pk: 217
+    fields:
+        name: Can change comment
+        content_type: 55
+        codename: change_comment
+-   model: auth.permission
+    pk: 218
+    fields:
+        name: Can delete comment
+        content_type: 55
+        codename: delete_comment
+-   model: auth.permission
+    pk: 219
+    fields:
+        name: Can view comment
+        content_type: 55
+        codename: view_comment
+-   model: auth.permission
+    pk: 220
+    fields:
+        name: Can add comment reply
+        content_type: 56
+        codename: add_commentreply
+-   model: auth.permission
+    pk: 221
+    fields:
+        name: Can change comment reply
+        content_type: 56
+        codename: change_commentreply
+-   model: auth.permission
+    pk: 222
+    fields:
+        name: Can delete comment reply
+        content_type: 56
+        codename: delete_commentreply
+-   model: auth.permission
+    pk: 223
+    fields:
+        name: Can view comment reply
+        content_type: 56
+        codename: view_commentreply
+-   model: auth.permission
+    pk: 224
+    fields:
+        name: Can add page subscription
+        content_type: 57
+        codename: add_pagesubscription
+-   model: auth.permission
+    pk: 225
+    fields:
+        name: Can change page subscription
+        content_type: 57
+        codename: change_pagesubscription
+-   model: auth.permission
+    pk: 226
+    fields:
+        name: Can delete page subscription
+        content_type: 57
+        codename: delete_pagesubscription
+-   model: auth.permission
+    pk: 227
+    fields:
+        name: Can view page subscription
+        content_type: 57
+        codename: view_pagesubscription
+-   model: auth.permission
+    pk: 228
+    fields:
+        name: Can add tag
+        content_type: 58
+        codename: add_tag
+-   model: auth.permission
+    pk: 229
+    fields:
+        name: Can change tag
+        content_type: 58
+        codename: change_tag
+-   model: auth.permission
+    pk: 230
+    fields:
+        name: Can delete tag
+        content_type: 58
+        codename: delete_tag
+-   model: auth.permission
+    pk: 231
+    fields:
+        name: Can view tag
+        content_type: 58
+        codename: view_tag
+-   model: auth.permission
+    pk: 232
+    fields:
+        name: Can add tagged item
+        content_type: 59
+        codename: add_taggeditem
+-   model: auth.permission
+    pk: 233
+    fields:
+        name: Can change tagged item
+        content_type: 59
+        codename: change_taggeditem
+-   model: auth.permission
+    pk: 234
+    fields:
+        name: Can delete tagged item
+        content_type: 59
+        codename: delete_taggeditem
+-   model: auth.permission
+    pk: 235
+    fields:
+        name: Can view tagged item
+        content_type: 59
+        codename: view_taggeditem
+-   model: auth.permission
+    pk: 236
+    fields:
+        name: Can add log entry
+        content_type: 60
+        codename: add_logentry
+-   model: auth.permission
+    pk: 237
+    fields:
+        name: Can change log entry
+        content_type: 60
+        codename: change_logentry
+-   model: auth.permission
+    pk: 238
+    fields:
+        name: Can delete log entry
+        content_type: 60
+        codename: delete_logentry
+-   model: auth.permission
+    pk: 239
+    fields:
+        name: Can view log entry
+        content_type: 60
+        codename: view_logentry
+-   model: auth.permission
+    pk: 240
+    fields:
+        name: Can add permission
+        content_type: 61
+        codename: add_permission
+-   model: auth.permission
+    pk: 241
+    fields:
+        name: Can change permission
+        content_type: 61
+        codename: change_permission
+-   model: auth.permission
+    pk: 242
+    fields:
+        name: Can delete permission
+        content_type: 61
+        codename: delete_permission
+-   model: auth.permission
+    pk: 243
+    fields:
+        name: Can view permission
+        content_type: 61
+        codename: view_permission
+-   model: auth.permission
+    pk: 244
+    fields:
+        name: Can add group
+        content_type: 62
+        codename: add_group
+-   model: auth.permission
+    pk: 245
+    fields:
+        name: Can change group
+        content_type: 62
+        codename: change_group
+-   model: auth.permission
+    pk: 246
+    fields:
+        name: Can delete group
+        content_type: 62
+        codename: delete_group
+-   model: auth.permission
+    pk: 247
+    fields:
+        name: Can view group
+        content_type: 62
+        codename: view_group
+-   model: auth.permission
+    pk: 248
+    fields:
+        name: Can add user
+        content_type: 63
+        codename: add_user
+-   model: auth.permission
+    pk: 249
+    fields:
+        name: Can change user
+        content_type: 63
+        codename: change_user
+-   model: auth.permission
+    pk: 250
+    fields:
+        name: Can delete user
+        content_type: 63
+        codename: delete_user
+-   model: auth.permission
+    pk: 251
+    fields:
+        name: Can view user
+        content_type: 63
+        codename: view_user
+-   model: auth.permission
+    pk: 252
+    fields:
+        name: Can add content type
+        content_type: 64
+        codename: add_contenttype
+-   model: auth.permission
+    pk: 253
+    fields:
+        name: Can change content type
+        content_type: 64
+        codename: change_contenttype
+-   model: auth.permission
+    pk: 254
+    fields:
+        name: Can delete content type
+        content_type: 64
+        codename: delete_contenttype
+-   model: auth.permission
+    pk: 255
+    fields:
+        name: Can view content type
+        content_type: 64
+        codename: view_contenttype
+-   model: auth.permission
+    pk: 256
+    fields:
+        name: Can add session
+        content_type: 65
+        codename: add_session
+-   model: auth.permission
+    pk: 257
+    fields:
+        name: Can change session
+        content_type: 65
+        codename: change_session
+-   model: auth.permission
+    pk: 258
+    fields:
+        name: Can delete session
+        content_type: 65
+        codename: delete_session
+-   model: auth.permission
+    pk: 259
+    fields:
+        name: Can view session
+        content_type: 65
+        codename: view_session
+-   model: auth.group
+    pk: 1
+    fields:
+        name: Moderators
+        permissions:
+        - 5
+        - 6
+        - 7
+        - 9
+        - 8
+        - 1
+        - 2
+        - 3
+-   model: auth.group
+    pk: 2
+    fields:
+        name: Editors
+        permissions:
+        - 5
+        - 6
+        - 7
+        - 9
+        - 8
+        - 1
+        - 2
+        - 3
+-   model: auth.user
+    pk: 1
+    fields:
+        password: pbkdf2_sha256$260000$CFoF9oLxMU6BSA3tOshwtF$+UuKGW4+UkHJ8qQeZ2CUILV6hpsqDdldZ8Rr3zpFyeA=
+        last_login: 2021-07-02 05:33:25.110984+00:00
+        is_superuser: true
+        username: admin
+        first_name: ''
+        last_name: ''
+        email: admin@admin.io
+        is_staff: true
+        is_active: true
+        date_joined: 2021-06-29 22:29:54.091850+00:00
+        groups: []
+        user_permissions: []
+-   model: auth.user
+    pk: 2
+    fields:
+        password: pbkdf2_sha256$260000$qilYoClFa68WPHV8eygch6$vyVfTKa4t7/oJdsicRfXm4zp81wCkKQZtiyTG/QLyPE=
+        last_login: null
+        is_superuser: false
+        username: JeanRaimu
+        first_name: Jean
+        last_name: Raimu
+        email: jean.raimu@email.io
+        is_staff: false
+        is_active: true
+        date_joined: 2021-07-01 19:15:21.622586+00:00
+        groups: []
+        user_permissions: []
+-   model: auth.user
+    pk: 3
+    fields:
+        password: pbkdf2_sha256$260000$u8Urgt9CilnajZdarPcSX3$WhxrtsMW1MTbPavxTfsX/MvJy2p6koHTtLWfg4YhLB0=
+        last_login: null
+        is_superuser: true
+        username: agent1
+        first_name: ''
+        last_name: ''
+        email: agent1@monagence.io
+        is_staff: true
+        is_active: true
+        date_joined: 2021-07-02 05:26:03.869192+00:00
+        groups: []
+        user_permissions: []
