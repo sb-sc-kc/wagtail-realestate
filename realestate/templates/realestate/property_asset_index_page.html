@@ -1,4 +1,4 @@
-{% extends "realestate/base.html" %}
+{% extends "base.html" %}
 
 {% load wagtailcore_tags wagtailimages_tags %}
 {% load i18n %}
@@ -10,7 +10,7 @@
 
 {% for asset in assetpages %}
 {% with post=post.specific %}
-<h2><a href="{% pageurl asset %}">{{ asset.short_description }}</a></h2>
+<h2><a href="{% pageurl asset %}">{{ asset.title }}</a></h2>
 <p>
 {% with asset.main_image as main_image %}
 {% if main_image %}{% image main_image fill-160x100 %}{% endif %}

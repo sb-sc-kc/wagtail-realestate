@@ -1,4 +1,4 @@
-{% extends "realestate/base.html" %}
+{% extends "base.html" %}
 {% load static %}
 {% load i18n %}
 {% load custom_template_tags %}
@@ -76,16 +76,17 @@
 	    <!-- Marketing messaging and featurettes
 	    ================================================== -->
 	{% include 'realestate/includes/marketing.html' %}    
-        <!-- Wrap the rest of the page in another container to center all the content. -->
-	    
-	    {# Check if there are tags #}
-	    {% if offer.tags.count %}
-	      <h1>Tags:</h1>
-	      {% for tag in page.tags.all %}
-		{# Loop through all the existing tags #}
-		<a href="{{ self.get_parent.url }}?tag={{ tag.slug }}">{{ tag }}</a><br />
-	      {% endfor %}
+            <!-- Wrap the rest of the page in another container to center all the content. -->
+	    <!-- ========= tags ======= --->
+	    {% if page.tags.count %}
+	    <h1>Tags:</h1>
+	    {% for tag in page.tags.all %}
+	    {# Loop through all the existing tags #}
+	    <a href="{{ offer_type }}?tag={{ tag.slug }}">yyy {{ tag }}</a><br />
+	    {% endfor %}
 	    {% endif %}	    
+	    <!-- ========= endtags ======= --->
+	    
 	    {% block offer_detail %}
 	      <div>
 		<h1>{{ offer }}</h1>

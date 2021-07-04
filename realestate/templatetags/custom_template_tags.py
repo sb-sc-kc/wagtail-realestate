@@ -1,4 +1,5 @@
 from django import template
+
 import environ
 
 register = template.Library()

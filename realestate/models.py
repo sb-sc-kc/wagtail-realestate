@@ -71,6 +71,26 @@ class AgencyPage(AddressPage):
 
 
 @register_snippet
+class PropertyAssetCategory(models.Model):
+    name = models.CharField(max_length=255)
+    icon = models.ForeignKey(
+        'wagtailimages.Image', null=True, blank=True,
+        on_delete=models.SET_NULL, related_name='+'
+    )
+
+    panels = [
+        FieldPanel('name'),
+        ImageChooserPanel('icon'),
+    ]
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name_plural = 'property asset categories'
+
+
+@register_snippet
 class PropertyAssetType(models.Model):
     """Type of asset: T1 T2 T3 House...
     """
@@ -85,12 +105,27 @@ class PropertyAssetType(models.Model):
 
 
 @register_snippet
-class PropertyAssetPageTag(TaggedItemBase):
+class PropertyAssetTag(TaggedItemBase):
     content_object = ParentalKey(
         'PropertyAssetPage',
         related_name='tagged_items',
         on_delete=models.CASCADE
     )
+
+
+class PropertyAssetTagIndexPage(Page):
+
+    def get_context(self, request):
+
+        # Filter by tag
+        context = super().get_context(request)
+        tag = request.GET.get('tag')
+        if tag:
+            assetpages = PropertyAssetPage.objects.filter(tags__name__in=tag)
+            context['assetpages'] = assetpages
+
+        # Update template context
+        return context
 
 
 class PropertyAssetIndexPage(Page):
@@ -136,8 +171,8 @@ class PropertyAssetPage(Page):
         auto_now_add=True,
         editable=False, verbose_name=_('Creation Date'))
 
-    tags = ClusterTaggableManager(through=PropertyAssetPageTag, blank=True)
-    categories = ParentalManyToManyField('blog.BlogCategory', blank=True)
+    tags = ClusterTaggableManager(through=PropertyAssetTag, blank=True)
+    categories = ParentalManyToManyField('realestate.PropertyAssetCategory', blank=True)
 
     # Address
     address_street = models.CharField(max_length=256, verbose_name=_('Street'))
@@ -207,8 +242,6 @@ class PropertyAssetPage(Page):
 
     def address_county(self):
         return self.address_zip[:2]
-
-
 
 
 class OfferPageTag(TaggedItemBase):
@@ -291,12 +324,6 @@ class OfferIndexPage(RoutablePageMixin, Page):
 
         return context
 
-    # Get all posts
-        all_posts = BlogDetailPage.objects.live().public().order_by('-first_published_at')
-
-
-        context["posts"] = all_posts
-        return context
 
 class RentalOfferIndexPage(Page):
     intro = RichTextField(blank=True)
@@ -311,11 +338,7 @@ class RentalOfferIndexPage(Page):
         context = super().get_context(request)
         offerpages = RentalOfferPage.objects.specific()
         mydict = {}
-        for page in offerpages:
-            mydict[page] = page.get_parent().specific
-        # assert(len(offerpages) > 0)
         context['offerpages'] = offerpages
-        context['mydict'] = mydict
         
         return context
 

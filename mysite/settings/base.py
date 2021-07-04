@@ -20,6 +20,9 @@ BASE_DIR = os.path.dirname(PROJECT_DIR)
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
+SITE_ID = 1
+
+LOGIN_REDIRECT_URL='/'
 
 # Application definition
 
@@ -30,6 +33,7 @@ INSTALLED_APPS = [
     'realestate',
 
     'wagtail.contrib.modeladmin',
+    # "wagtail.contrib.wagtailroutablepage",
     'wagtailmenus',
     'wagtail.contrib.forms',
     'wagtail.contrib.redirects',
@@ -53,6 +57,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_extensions',
+    'django.contrib.sites',
+
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
 ]
 
 MIDDLEWARE = [
@@ -119,6 +128,10 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+AUTHENTICATION_BACKENDS = (
+    'allauth.account.auth_backends.AuthenticationBackend',
+    )
+
 # AUTH_USER_MODEL = 'users.User'
 
 RUNSCRIPT_CHDIR = os.path.join(BASE_DIR, 'scripts')
@@ -131,7 +144,7 @@ RUNSCRIPT_CHDIR = os.path.join(BASE_DIR, 'scripts')
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
 
-LANGUAGE_CODE = 'fr'
+LANGUAGE_CODE = 'en'
 
 LANGUAGES = [
     ('fr', 'French'),
@@ -166,10 +179,10 @@ STATICFILES_DIRS = [
 # See https://docs.djangoproject.com/en/3.2/ref/contrib/staticfiles/#manifeststaticfilesstorage
 STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'data/media')
 MEDIA_URL = '/media/'
 
 

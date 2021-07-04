@@ -1,9 +1,19 @@
-{% extends "realestate/base.html" %}
+{% extends "base.html" %}
 
 {% load wagtailcore_tags %}
 
 {% block body_class %}template-homepage{% endblock %}
 
 {% block content %}
-    {{ page.body|richtext }}
+<form role="search" method="get" class="form-search" action="assets-tags" method="get">
+  <div class="input-group">
+    <input type="text" class="form-control search-query" name="tag" placeholder="What are you after?" title="Search for:" />
+    <span class="input-group-btn">
+      <button type="submit" class="btn btn-default" name="" id="searchsubmit" value="">
+        <span class="btn btn-default">GO</span>
+      </button>
+    </span>
+  </div>
+</form>
+{{ page.body|richtext }}
 {% endblock %}

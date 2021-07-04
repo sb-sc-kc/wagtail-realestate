@@ -1,1 +1,7 @@
 {% extends "realestate/offer_index_page.html" %}
+
+{% block content %}
+{% with 'rental-offer' as offer_type %}
+{{ block.super }}
+{% endwith %}
+{% endblock %}

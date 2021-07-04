@@ -10,10 +10,12 @@ pyyaml = "*"
 wagtailmenus = "*"
 django-extensions = "*"
 python-environ = "*"
+django-allauth = "*"
+invoke = "*"
 
 [dev-packages]
 ipython = "*"
 notebook = "*"
 
 [requires]
-python_version = "3.9"
+python_version = "3.8"

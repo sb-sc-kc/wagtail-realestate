@@ -2,3 +2,8 @@ GPATH
 GRTAGS
 GTAGS
 db.sqlite3
+__pycache__/
+data/
+gtags.files
+#*
+staticfiles/
