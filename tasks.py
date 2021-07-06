@@ -2,17 +2,14 @@ from invoke import task
 import os
 from pathlib import Path
 
-if 'VIRTUAL_ENV' in os.environ.keys():
-    USE_PIPENV = False
-else:
-    USE_PIPENV = True
-
 DOCKER = 'docker'
 DOCKER_COMPOSE = 'docker-compose'
 
 BASE_DIR = Path(__file__).resolve().parent
 
 os.chdir(BASE_DIR)
+
+USE_PIPENV = False
 
 if USE_PIPENV:
     MANAGE = 'pipenv run python manage.py'
@@ -64,7 +61,7 @@ def loaddata(c):
     """
     print('loaddata...')
     # c.run("{manage:s} loaddata realestate".format(manage=MANAGE))
-    c.run("{manage:s} loaddata --format yaml data/test-db.yaml".format(manage=MANAGE))
+    c.run("{manage:s} loaddata --format yaml data/backups/test-db.yaml".format(manage=MANAGE))
 
 
 @task
@@ -72,7 +69,7 @@ def dumpdata(c):
     """dump database
     """
     c.run("{manage:s} dumpdata --format yaml --indent 4 \
-    -o backups/test-db.yaml wagtail realestate ".format(manage=MANAGE))
+    -e contenttypes -o data/backups/test-db.yaml realestate ".format(manage=MANAGE))
 
 
 @task

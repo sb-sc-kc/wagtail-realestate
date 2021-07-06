@@ -1,1 +1,7 @@
 {% extends 'realestate/offer_page.html' %}
+{% load i18n %}
+{% block content %}
+{% with 'sale-offer' as offer_type %}
+{{ block.super }}
+{% endwith %}
+{% endblock %}

@@ -406,7 +406,22 @@ class SaleOfferIndexPage(Page):
         context['offerpages'] = offerpages
         context['offerpages_count'] = self.get_children_count()
         return context
+
+    def get_context(self, request):
+        # Update context to include only published posts, ordered by reverse-chron
+        context = super().get_context(request)
+        offerpages = SaleOfferPage.objects.live().specific()
+        if request.GET.get('tag', None):
+            tags = request.GET.get('tag')
+            offerpages = offerpages.filter(tags__slug__in=[tags])
+
+        context['offerpages'] = offerpages
+        context['offer_type'] = 'sale-offer'
+        
+        return context
+
     subpage_types = ['realestate.SaleOfferPage']
+
 
 class SaleOfferPageTag(TaggedItemBase):
     content_object = ParentalKey(
@@ -414,19 +429,31 @@ class SaleOfferPageTag(TaggedItemBase):
         related_name='tagged_items',
         on_delete=models.CASCADE
     )
-    content_panels = OfferPage.content_panels + [
-        FieldPanel('tags'),
-    ]
 
 
 class SaleOfferPage(OfferPage):
     """Sale Offers
     """
-    tags = ClusterTaggableManager(through=RentalOfferPageTag, blank=True)
+    tags = ClusterTaggableManager(through=SaleOfferPageTag, blank=True)
 
     class Meta:
         verbose_name = _('Sale Offer')
         verbose_name_plural = _('Sale Offers')
+
+    content_panels = OfferPage.content_panels + [
+        FieldPanel('tags'),
+    ]
+
+    def get_context(self, request):
+        # Update context to include only published posts, ordered by reverse-chron
+        context = super().get_context(request)
+        asset = self.get_parent().specific
+        images = asset.gallery_images.all()
+        # assert(len(offerpages) > 0)
+        context['offer'] = self
+        context['asset'] = asset
+        context['images'] = images
+        return context
 
 
 

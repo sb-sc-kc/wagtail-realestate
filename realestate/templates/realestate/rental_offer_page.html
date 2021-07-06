@@ -4,6 +4,10 @@
 {% with 'rental-offer' as offer_type %}
 {{ block.super }}
 {% endwith %}
+{% endblock %}
+
+{% block offer-specs %}
+<tr><td>{% trans "Deposit" %}</td><td>{{ offer.deposit }}</td></tr>
 <tr><td>{% trans "Start Date" %}</td><td>{{ offer.start_date }}</td></tr>
 <tr><td>{% trans "End Date" %}  </td><td>{{ offer.end_date }}  </td></tr>
 {% endblock %}
