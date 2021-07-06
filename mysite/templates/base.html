@@ -13,8 +13,8 @@
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="{% static 'assets/favicon.ico' %}" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="{% static 'realestate/css/bootstrap-min.css' %}" rel="stylesheet" />
-        <link href="{% static 'realestate/css/styles.css' %}" rel="stylesheet" />
+        <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" />
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
     </head>
     <body>
       {% block main %} <!-- >>> main -->
@@ -31,16 +31,6 @@
         </div>
       </header>
 
-      {% comment %}
-      <div class="searchbar">
-	{% if user.is_authenticated %}
-	<h1>{% blocktrans with myuser=user.username %}Hi {{ myuser }}!{% endblocktrans %}</h1>
-	{% else %}
-	<h1>{% trans "You are not logged in" %}</h1>
-	<a class="btn btn-outline-primary" href="{% url 'realestate:login' %}">{% trans "Log In" %}</a>
-	{% endif %}
-      </div>
-      {% endcomment %}
       <!-- >>> Page Content -->
       <div id="content" class="container py-4">
 	{% block search_form %}
@@ -57,7 +47,7 @@
         <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2021</p></div>
       </footer>
       <!-- Bootstrap core JS-->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
       <!-- Core theme JS-->
       <script src="{% static 'realestate/js/scripts.js' %}"></script>
     </body>
