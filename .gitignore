@@ -7,3 +7,4 @@ gtags.files
 #*
 staticfiles/
 node_modules/
+.env
