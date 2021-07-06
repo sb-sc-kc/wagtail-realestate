@@ -244,14 +244,6 @@ class PropertyAssetPage(Page):
         return self.address_zip[:2]
 
 
-class OfferPageTag(TaggedItemBase):
-    content_object = ParentalKey(
-        'OfferPage',
-        related_name='tagged_items',
-        on_delete=models.CASCADE
-    )
-
-
 class OfferManager(PageManager):
     """QuerySet manager for PropertyAsset class to add non-database fields.
 
@@ -271,7 +263,6 @@ class OfferPage(Page):
         (2, _('Published')),
         (3, _('Archived')),
     )
-    tags = ClusterTaggableManager(through=OfferPageTag, blank=True)
 
     price = models.DecimalField(
         max_digits=9, decimal_places=2, verbose_name=_('Price'))
@@ -284,7 +275,6 @@ class OfferPage(Page):
     )
 
     content_panels = Page.content_panels + [
-        FieldPanel('tags'),
         FieldPanel('price'),
         FieldPanel('description', classname="full"),
     ]
@@ -337,21 +327,35 @@ class RentalOfferIndexPage(Page):
         # Update context to include only published posts, ordered by reverse-chron
         context = super().get_context(request)
         offerpages = RentalOfferPage.objects.specific()
-        mydict = {}
+        if request.GET.get('tag', None):
+            tags = request.GET.get('tag')
+            offerpages = offerpages.filter(tags__slug__in=[tags])
+
         context['offerpages'] = offerpages
+        context['offer_type'] = 'rental-offer'
         
         return context
 
 
-class RentalOfferPage(OfferPage):
+class RentalOfferPageTag(TaggedItemBase):
+    content_object = ParentalKey(
+        'RentalOfferPage',
+        related_name='tagged_items',
+        on_delete=models.CASCADE
+    )
+
+
+class RentalOfferPage(RoutablePageMixin, OfferPage):
     """Rental Offers
     """
     deposit = models.DecimalField(
         max_digits=6, decimal_places=2, default=0, verbose_name=_('Deposit'))
     start_date = models.DateTimeField(verbose_name=_('Start Date'))
     end_date = models.DateTimeField(verbose_name=_('End Date'))
+    tags = ClusterTaggableManager(through=RentalOfferPageTag, blank=True)
 
     content_panels = OfferPage.content_panels + [
+        FieldPanel('tags'),
         FieldPanel('deposit'),
         FieldPanel('start_date'),
         FieldPanel('end_date'),
@@ -382,6 +386,11 @@ class RentalOfferPage(OfferPage):
         return 'Rental Offer: {title:s} prix: {price:9.2f}'.format(
             title=self.title, price=self.price)
 
+    @route(r'^rental-offer/(?P<offerid>)/$')
+    def view_offer(self, request, offerid, *args, **kwargs):
+        offer = RentalOfferPage.objects.get(pk=offerid)
+        return self.render(request)
+
 
 class SaleOfferIndexPage(Page):
     intro = RichTextField(blank=True)
@@ -399,14 +408,25 @@ class SaleOfferIndexPage(Page):
         return context
     subpage_types = ['realestate.SaleOfferPage']
 
+class SaleOfferPageTag(TaggedItemBase):
+    content_object = ParentalKey(
+        'SaleOfferPage',
+        related_name='tagged_items',
+        on_delete=models.CASCADE
+    )
+    content_panels = OfferPage.content_panels + [
+        FieldPanel('tags'),
+    ]
+
+
 class SaleOfferPage(OfferPage):
     """Sale Offers
     """
+    tags = ClusterTaggableManager(through=RentalOfferPageTag, blank=True)
+
     class Meta:
         verbose_name = _('Sale Offer')
         verbose_name_plural = _('Sale Offers')
-
-    pass
 
 
 

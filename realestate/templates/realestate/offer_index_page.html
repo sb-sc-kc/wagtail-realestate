@@ -10,13 +10,15 @@
   <h2>Offers: {{ offerpages_count }}</h2>
 
   {% for offer in offerpages %}
-    <h2><a href="/{{ offer_type }}/{{ offer.id }}">Desc: {{ offer.title }}</a></h2>
+    <h2><a href="{{ offer.get_url }}">{{ offer.title }}</a></h2>
     {% with offer.asset.main_image as main_image %}
       {% if main_image %}{% image main_image fill-160x100 %}{% endif %}
     {% endwith %}
   <p>
     {{ offer.asset.description|richtext }}
   </p>
-  surface: {{ offer.asset.asset_surface }}<br/>
+  
+  {% trans "surface:" %} {{ offer.get_parent.specific.asset_surface }}<br/>
+  {% trans "city:" %} {{ offer.get_parent.specific.address_city }}<br/>
 {% endfor %}
 {% endblock %}

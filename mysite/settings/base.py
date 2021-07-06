@@ -33,7 +33,6 @@ INSTALLED_APPS = [
     'realestate',
 
     'wagtail.contrib.modeladmin',
-    # "wagtail.contrib.wagtailroutablepage",
     'wagtailmenus',
     'wagtail.contrib.forms',
     'wagtail.contrib.redirects',
@@ -46,6 +45,7 @@ INSTALLED_APPS = [
     'wagtail.search',
     'wagtail.admin',
     'wagtail.core',
+    'wagtail.contrib.routable_page',
 
     'modelcluster',
     'taggit',
