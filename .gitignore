@@ -8,3 +8,5 @@ gtags.files
 staticfiles/
 node_modules/
 .env
+.ipynb_checkpoints/
+*.back
