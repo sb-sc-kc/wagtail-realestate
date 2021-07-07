@@ -1,0 +1,5 @@
+-   model: auth.group
+    pk: 3
+    fields:
+        name: Customers
+        permissions: []
