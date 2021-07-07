@@ -58,7 +58,7 @@ services:
       - type: bind
         source: ./backups/postgresql
         target: /backups
-
+      - ./compose/db/init.sql:/docker-entrypoint-initdb.d/docker_postgres_init.sql
     networks:
       - default_network
     ports:
