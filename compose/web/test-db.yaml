@@ -1,0 +1,1254 @@
+-   model: sessions.session
+    pk: fhpg1tz8gkzl09hzewluvn31kkk74ncz
+    fields:
+        session_data: .eJxVjDsOwjAQBe_iGln-xD9Kes5g7XptHEC2FCcV4u4QKQW0b2bei0XY1hq3kZc4EzszyU6_G0J65LYDukO7dZ56W5cZ-a7wgw5-7ZSfl8P9O6gw6rfGFBBJgTMlkHUlQQhGYNHZSvTWoHdSOalRkZ-QslVEtoAVUpCeENn7AwbPOJA:1lvb89:FYf9DF0Uz4mNwAJiekvUhnuisNo1Aeyf6afn8KY4_y8
+        expire_date: 2021-07-06 07:47:33.878967+00:00
+-   model: sessions.session
+    pk: mo8nmmnlfgtr45b02u7pv8q8dtpjho87
+    fields:
+        session_data: .eJxVjDsOwjAQBe_iGln-xD9Kes5g7XptHEC2FCcV4u4QKQW0b2bei0XY1hq3kZc4EzszyU6_G0J65LYDukO7dZ56W5cZ-a7wgw5-7ZSfl8P9O6gw6rfGFBBJgTMlkHUlQQhGYNHZSvTWoHdSOalRkZ-QslVEtoAVUpCeENn7AwbPOJA:1lwAgD:LF_zWNq4uRqW_4RjUl_ZbXb5SDpTHoYbxXhkJ0mLA34
+        expire_date: 2021-07-07 21:45:05.484471+00:00
+-   model: sessions.session
+    pk: tb389it0dlh79vukphsu3zp6zbjbowps
+    fields:
+        session_data: e30:1lxRxG:kcsS1sTflTurN0GBtnEHI-QQTBKZNzWQRo0H7im--iI
+        expire_date: 2021-07-11 10:23:58.158523+00:00
+-   model: sessions.session
+    pk: w5gdv1x0gn31dl0a0wqpjlhdqj5wu591
+    fields:
+        session_data: .eJxVjDsOwjAQBe_iGln-xD9Kes5g7XptHEC2FCcV4u4QKQW0b2bei0XY1hq3kZc4EzszyU6_G0J65LYDukO7dZ56W5cZ-a7wgw5-7ZSfl8P9O6gw6rfGFBBJgTMlkHUlQQhGYNHZSvTWoHdSOalRkZ-QslVEtoAVUpCeENn7AwbPOJA:1lxTSS:c0sXw7LtbxdLQ6EYUlF9Wdyl9g1jzvawhoSjOvb1tA8
+        expire_date: 2021-07-11 12:00:16.379367+00:00
+-   model: auth.permission
+    pk: 1
+    fields:
+        name: Can add log entry
+        content_type: 1
+        codename: add_logentry
+-   model: auth.permission
+    pk: 2
+    fields:
+        name: Can change log entry
+        content_type: 1
+        codename: change_logentry
+-   model: auth.permission
+    pk: 3
+    fields:
+        name: Can delete log entry
+        content_type: 1
+        codename: delete_logentry
+-   model: auth.permission
+    pk: 4
+    fields:
+        name: Can view log entry
+        content_type: 1
+        codename: view_logentry
+-   model: auth.permission
+    pk: 5
+    fields:
+        name: Can add permission
+        content_type: 2
+        codename: add_permission
+-   model: auth.permission
+    pk: 6
+    fields:
+        name: Can change permission
+        content_type: 2
+        codename: change_permission
+-   model: auth.permission
+    pk: 7
+    fields:
+        name: Can delete permission
+        content_type: 2
+        codename: delete_permission
+-   model: auth.permission
+    pk: 8
+    fields:
+        name: Can view permission
+        content_type: 2
+        codename: view_permission
+-   model: auth.permission
+    pk: 9
+    fields:
+        name: Can add group
+        content_type: 3
+        codename: add_group
+-   model: auth.permission
+    pk: 10
+    fields:
+        name: Can change group
+        content_type: 3
+        codename: change_group
+-   model: auth.permission
+    pk: 11
+    fields:
+        name: Can delete group
+        content_type: 3
+        codename: delete_group
+-   model: auth.permission
+    pk: 12
+    fields:
+        name: Can view group
+        content_type: 3
+        codename: view_group
+-   model: auth.permission
+    pk: 13
+    fields:
+        name: Can add user
+        content_type: 4
+        codename: add_user
+-   model: auth.permission
+    pk: 14
+    fields:
+        name: Can change user
+        content_type: 4
+        codename: change_user
+-   model: auth.permission
+    pk: 15
+    fields:
+        name: Can delete user
+        content_type: 4
+        codename: delete_user
+-   model: auth.permission
+    pk: 16
+    fields:
+        name: Can view user
+        content_type: 4
+        codename: view_user
+-   model: auth.permission
+    pk: 17
+    fields:
+        name: Can add content type
+        content_type: 5
+        codename: add_contenttype
+-   model: auth.permission
+    pk: 18
+    fields:
+        name: Can change content type
+        content_type: 5
+        codename: change_contenttype
+-   model: auth.permission
+    pk: 19
+    fields:
+        name: Can delete content type
+        content_type: 5
+        codename: delete_contenttype
+-   model: auth.permission
+    pk: 20
+    fields:
+        name: Can view content type
+        content_type: 5
+        codename: view_contenttype
+-   model: auth.permission
+    pk: 21
+    fields:
+        name: Can add session
+        content_type: 6
+        codename: add_session
+-   model: auth.permission
+    pk: 22
+    fields:
+        name: Can change session
+        content_type: 6
+        codename: change_session
+-   model: auth.permission
+    pk: 23
+    fields:
+        name: Can delete session
+        content_type: 6
+        codename: delete_session
+-   model: auth.permission
+    pk: 24
+    fields:
+        name: Can view session
+        content_type: 6
+        codename: view_session
+-   model: auth.permission
+    pk: 25
+    fields:
+        name: Can add address
+        content_type: 7
+        codename: add_address
+-   model: auth.permission
+    pk: 26
+    fields:
+        name: Can change address
+        content_type: 7
+        codename: change_address
+-   model: auth.permission
+    pk: 27
+    fields:
+        name: Can delete address
+        content_type: 7
+        codename: delete_address
+-   model: auth.permission
+    pk: 28
+    fields:
+        name: Can view address
+        content_type: 7
+        codename: view_address
+-   model: auth.permission
+    pk: 29
+    fields:
+        name: Can add contact message
+        content_type: 8
+        codename: add_contactmessage
+-   model: auth.permission
+    pk: 30
+    fields:
+        name: Can change contact message
+        content_type: 8
+        codename: change_contactmessage
+-   model: auth.permission
+    pk: 31
+    fields:
+        name: Can delete contact message
+        content_type: 8
+        codename: delete_contactmessage
+-   model: auth.permission
+    pk: 32
+    fields:
+        name: Can view contact message
+        content_type: 8
+        codename: view_contactmessage
+-   model: auth.permission
+    pk: 33
+    fields:
+        name: Can add Offer
+        content_type: 9
+        codename: add_offer
+-   model: auth.permission
+    pk: 34
+    fields:
+        name: Can change Offer
+        content_type: 9
+        codename: change_offer
+-   model: auth.permission
+    pk: 35
+    fields:
+        name: Can delete Offer
+        content_type: 9
+        codename: delete_offer
+-   model: auth.permission
+    pk: 36
+    fields:
+        name: Can view Offer
+        content_type: 9
+        codename: view_offer
+-   model: auth.permission
+    pk: 37
+    fields:
+        name: Can add Property Asset
+        content_type: 10
+        codename: add_propertyasset
+-   model: auth.permission
+    pk: 38
+    fields:
+        name: Can change Property Asset
+        content_type: 10
+        codename: change_propertyasset
+-   model: auth.permission
+    pk: 39
+    fields:
+        name: Can delete Property Asset
+        content_type: 10
+        codename: delete_propertyasset
+-   model: auth.permission
+    pk: 40
+    fields:
+        name: Can view Property Asset
+        content_type: 10
+        codename: view_propertyasset
+-   model: auth.permission
+    pk: 41
+    fields:
+        name: Can add Asset Type
+        content_type: 11
+        codename: add_propertyassettype
+-   model: auth.permission
+    pk: 42
+    fields:
+        name: Can change Asset Type
+        content_type: 11
+        codename: change_propertyassettype
+-   model: auth.permission
+    pk: 43
+    fields:
+        name: Can delete Asset Type
+        content_type: 11
+        codename: delete_propertyassettype
+-   model: auth.permission
+    pk: 44
+    fields:
+        name: Can view Asset Type
+        content_type: 11
+        codename: view_propertyassettype
+-   model: auth.permission
+    pk: 45
+    fields:
+        name: Can add RealEstateContract
+        content_type: 12
+        codename: add_realestatecontract
+-   model: auth.permission
+    pk: 46
+    fields:
+        name: Can change RealEstateContract
+        content_type: 12
+        codename: change_realestatecontract
+-   model: auth.permission
+    pk: 47
+    fields:
+        name: Can delete RealEstateContract
+        content_type: 12
+        codename: delete_realestatecontract
+-   model: auth.permission
+    pk: 48
+    fields:
+        name: Can view RealEstateContract
+        content_type: 12
+        codename: view_realestatecontract
+-   model: auth.permission
+    pk: 49
+    fields:
+        name: Can add Agency
+        content_type: 13
+        codename: add_agency
+-   model: auth.permission
+    pk: 50
+    fields:
+        name: Can change Agency
+        content_type: 13
+        codename: change_agency
+-   model: auth.permission
+    pk: 51
+    fields:
+        name: Can delete Agency
+        content_type: 13
+        codename: delete_agency
+-   model: auth.permission
+    pk: 52
+    fields:
+        name: Can view Agency
+        content_type: 13
+        codename: view_agency
+-   model: auth.permission
+    pk: 53
+    fields:
+        name: Can add Rental Offer
+        content_type: 14
+        codename: add_rentaloffer
+-   model: auth.permission
+    pk: 54
+    fields:
+        name: Can change Rental Offer
+        content_type: 14
+        codename: change_rentaloffer
+-   model: auth.permission
+    pk: 55
+    fields:
+        name: Can delete Rental Offer
+        content_type: 14
+        codename: delete_rentaloffer
+-   model: auth.permission
+    pk: 56
+    fields:
+        name: Can view Rental Offer
+        content_type: 14
+        codename: view_rentaloffer
+-   model: auth.permission
+    pk: 57
+    fields:
+        name: Can add Sale Offer
+        content_type: 15
+        codename: add_saleoffer
+-   model: auth.permission
+    pk: 58
+    fields:
+        name: Can change Sale Offer
+        content_type: 15
+        codename: change_saleoffer
+-   model: auth.permission
+    pk: 59
+    fields:
+        name: Can delete Sale Offer
+        content_type: 15
+        codename: delete_saleoffer
+-   model: auth.permission
+    pk: 60
+    fields:
+        name: Can view Sale Offer
+        content_type: 15
+        codename: view_saleoffer
+-   model: auth.permission
+    pk: 61
+    fields:
+        name: Can add Property  Asset Picture
+        content_type: 16
+        codename: add_propertyassetimage
+-   model: auth.permission
+    pk: 62
+    fields:
+        name: Can change Property  Asset Picture
+        content_type: 16
+        codename: change_propertyassetimage
+-   model: auth.permission
+    pk: 63
+    fields:
+        name: Can delete Property  Asset Picture
+        content_type: 16
+        codename: delete_propertyassetimage
+-   model: auth.permission
+    pk: 64
+    fields:
+        name: Can view Property  Asset Picture
+        content_type: 16
+        codename: view_propertyassetimage
+-   model: auth.permission
+    pk: 65
+    fields:
+        name: Can add SaleContract
+        content_type: 17
+        codename: add_salecontract
+-   model: auth.permission
+    pk: 66
+    fields:
+        name: Can change SaleContract
+        content_type: 17
+        codename: change_salecontract
+-   model: auth.permission
+    pk: 67
+    fields:
+        name: Can delete SaleContract
+        content_type: 17
+        codename: delete_salecontract
+-   model: auth.permission
+    pk: 68
+    fields:
+        name: Can view SaleContract
+        content_type: 17
+        codename: view_salecontract
+-   model: auth.permission
+    pk: 69
+    fields:
+        name: Can add RentalContract
+        content_type: 18
+        codename: add_rentalcontract
+-   model: auth.permission
+    pk: 70
+    fields:
+        name: Can change RentalContract
+        content_type: 18
+        codename: change_rentalcontract
+-   model: auth.permission
+    pk: 71
+    fields:
+        name: Can delete RentalContract
+        content_type: 18
+        codename: delete_rentalcontract
+-   model: auth.permission
+    pk: 72
+    fields:
+        name: Can view RentalContract
+        content_type: 18
+        codename: view_rentalcontract
+-   model: auth.permission
+    pk: 73
+    fields:
+        name: Can add Profile
+        content_type: 19
+        codename: add_profile
+-   model: auth.permission
+    pk: 74
+    fields:
+        name: Can change Profile
+        content_type: 19
+        codename: change_profile
+-   model: auth.permission
+    pk: 75
+    fields:
+        name: Can delete Profile
+        content_type: 19
+        codename: delete_profile
+-   model: auth.permission
+    pk: 76
+    fields:
+        name: Can view Profile
+        content_type: 19
+        codename: view_profile
+-   model: auth.permission
+    pk: 77
+    fields:
+        name: Can add Customer
+        content_type: 20
+        codename: add_customer
+-   model: auth.permission
+    pk: 78
+    fields:
+        name: Can change Customer
+        content_type: 20
+        codename: change_customer
+-   model: auth.permission
+    pk: 79
+    fields:
+        name: Can delete Customer
+        content_type: 20
+        codename: delete_customer
+-   model: auth.permission
+    pk: 80
+    fields:
+        name: Can view Customer
+        content_type: 20
+        codename: view_customer
+-   model: auth.permission
+    pk: 81
+    fields:
+        name: Can add content type
+        content_type: 2
+        codename: add_contenttype
+-   model: auth.permission
+    pk: 82
+    fields:
+        name: Can change content type
+        content_type: 2
+        codename: change_contenttype
+-   model: auth.permission
+    pk: 83
+    fields:
+        name: Can delete content type
+        content_type: 2
+        codename: delete_contenttype
+-   model: auth.permission
+    pk: 84
+    fields:
+        name: Can view content type
+        content_type: 2
+        codename: view_contenttype
+-   model: auth.permission
+    pk: 85
+    fields:
+        name: Can add session
+        content_type: 3
+        codename: add_session
+-   model: auth.permission
+    pk: 86
+    fields:
+        name: Can change session
+        content_type: 3
+        codename: change_session
+-   model: auth.permission
+    pk: 87
+    fields:
+        name: Can delete session
+        content_type: 3
+        codename: delete_session
+-   model: auth.permission
+    pk: 88
+    fields:
+        name: Can view session
+        content_type: 3
+        codename: view_session
+-   model: auth.permission
+    pk: 89
+    fields:
+        name: Can add permission
+        content_type: 4
+        codename: add_permission
+-   model: auth.permission
+    pk: 90
+    fields:
+        name: Can change permission
+        content_type: 4
+        codename: change_permission
+-   model: auth.permission
+    pk: 91
+    fields:
+        name: Can delete permission
+        content_type: 4
+        codename: delete_permission
+-   model: auth.permission
+    pk: 92
+    fields:
+        name: Can view permission
+        content_type: 4
+        codename: view_permission
+-   model: auth.permission
+    pk: 93
+    fields:
+        name: Can add group
+        content_type: 5
+        codename: add_group
+-   model: auth.permission
+    pk: 94
+    fields:
+        name: Can change group
+        content_type: 5
+        codename: change_group
+-   model: auth.permission
+    pk: 95
+    fields:
+        name: Can delete group
+        content_type: 5
+        codename: delete_group
+-   model: auth.permission
+    pk: 96
+    fields:
+        name: Can view group
+        content_type: 5
+        codename: view_group
+-   model: auth.permission
+    pk: 97
+    fields:
+        name: Can add user
+        content_type: 6
+        codename: add_user
+-   model: auth.permission
+    pk: 98
+    fields:
+        name: Can change user
+        content_type: 6
+        codename: change_user
+-   model: auth.permission
+    pk: 99
+    fields:
+        name: Can delete user
+        content_type: 6
+        codename: delete_user
+-   model: auth.permission
+    pk: 100
+    fields:
+        name: Can view user
+        content_type: 6
+        codename: view_user
+-   model: auth.group
+    pk: 1
+    fields:
+        name: Agents
+        permissions:
+        - 25
+        - 26
+        - 27
+        - 28
+        - 49
+        - 50
+        - 51
+        - 52
+        - 29
+        - 30
+        - 31
+        - 32
+        - 77
+        - 78
+        - 79
+        - 80
+        - 33
+        - 34
+        - 35
+        - 36
+        - 73
+        - 74
+        - 75
+        - 76
+        - 37
+        - 38
+        - 39
+        - 40
+        - 61
+        - 62
+        - 63
+        - 64
+        - 41
+        - 42
+        - 43
+        - 44
+        - 45
+        - 46
+        - 47
+        - 48
+        - 69
+        - 70
+        - 71
+        - 72
+        - 53
+        - 54
+        - 55
+        - 56
+        - 65
+        - 66
+        - 67
+        - 68
+        - 57
+        - 58
+        - 59
+        - 60
+-   model: auth.group
+    pk: 2
+    fields:
+        name: Customers
+        permissions: []
+-   model: auth.user
+    pk: 1
+    fields:
+        password: pbkdf2_sha256$260000$2BFUU9mY1hFkVWQmAGdM7n$rrvUZgyoHCXlpGrY2qPuNyuUbf3lKe9cPw/9DxFsXuY=
+        last_login: 2021-06-27 12:00:16.371978+00:00
+        is_superuser: true
+        username: admin
+        first_name: ''
+        last_name: ''
+        email: admin@admin.io
+        is_staff: true
+        is_active: true
+        date_joined: 2021-06-21 18:04:50.241412+00:00
+        groups: []
+        user_permissions: []
+-   model: auth.user
+    pk: 2
+    fields:
+        password: pbkdf2_sha256$260000$pC2RVQVz9BvMOdiyqyHNrc$zthRKJdkiBPBPKthGGcxSCltwk2V2WdOEK+OltR+9LI=
+        last_login: 2021-06-21 18:42:14.727825+00:00
+        is_superuser: false
+        username: agent2
+        first_name: Jean
+        last_name: Dujardin
+        email: agent2@myagency.io
+        is_staff: true
+        is_active: true
+        date_joined: 2021-06-21 18:07:22+00:00
+        groups:
+        - 1
+        user_permissions: []
+-   model: auth.user
+    pk: 3
+    fields:
+        password: pbkdf2_sha256$260000$jID02y5VsNLI0RlGQHmI9Y$p0jqQXYoNKD8tg+Nz40crLu5+Y+TopTrRlJlJGEJzAI=
+        last_login: 2021-06-26 17:32:20.686327+00:00
+        is_superuser: false
+        username: agent1
+        first_name: Robert
+        last_name: Duval
+        email: agent1@myagency.io
+        is_staff: true
+        is_active: true
+        date_joined: 2021-06-21 18:11:12+00:00
+        groups:
+        - 1
+        user_permissions: []
+-   model: auth.user
+    pk: 4
+    fields:
+        password: pbkdf2_sha256$260000$k0qfwYE5b9hFQSwwpnLaVe$Hpx5VEtpf8nwU5ummVRD/w47A1OHqGRwyRfJ7pUwtlE=
+        last_login: null
+        is_superuser: false
+        username: vdelamontagne
+        first_name: Vincent
+        last_name: Delamontagne
+        email: vdelamontagne@email.io
+        is_staff: false
+        is_active: true
+        date_joined: 2021-06-21 18:18:03.339255+00:00
+        groups:
+        - 2
+        user_permissions: []
+-   model: auth.user
+    pk: 5
+    fields:
+        password: pbkdf2_sha256$260000$UK5QHzEcnIgXw5MpDd4JVh$Fmf7+2DHZ1kBQ5J0J91phd/0YkXZa/or0IiO5E1anUw=
+        last_login: null
+        is_superuser: false
+        username: pdurand
+        first_name: Pierre
+        last_name: Durand
+        email: pierre.durand@durand.io
+        is_staff: false
+        is_active: true
+        date_joined: 2021-06-21 21:23:31+00:00
+        groups:
+        - 2
+        user_permissions: []
+-   model: auth.user
+    pk: 6
+    fields:
+        password: ''
+        last_login: null
+        is_superuser: false
+        username: jraimu
+        first_name: Jean
+        last_name: Raimu
+        email: jraimu@email.io
+        is_staff: false
+        is_active: true
+        date_joined: 2021-06-21 21:35:42.028534+00:00
+        groups:
+        - 1
+        user_permissions: []
+-   model: auth.user
+    pk: 7
+    fields:
+        password: ''
+        last_login: null
+        is_superuser: false
+        username: jdupont
+        first_name: Jean
+        last_name: Dupont
+        email: jean.dupont@dupont.io
+        is_staff: false
+        is_active: true
+        date_joined: 2021-06-21 22:12:10+00:00
+        groups:
+        - 2
+        user_permissions: []
+-   model: realestate.address
+    pk: 1
+    fields:
+        address_street: null
+        address_city: null
+        address_zip: null
+        address_website: null
+-   model: realestate.address
+    pk: 2
+    fields:
+        address_street: null
+        address_city: null
+        address_zip: null
+        address_website: null
+-   model: realestate.address
+    pk: 3
+    fields:
+        address_street: null
+        address_city: La garenne Colombe
+        address_zip: null
+        address_website: null
+-   model: realestate.address
+    pk: 4
+    fields:
+        address_street: null
+        address_city: null
+        address_zip: null
+        address_website: null
+-   model: realestate.address
+    pk: 5
+    fields:
+        address_street: null
+        address_city: null
+        address_zip: null
+        address_website: null
+-   model: realestate.address
+    pk: 6
+    fields:
+        address_street: null
+        address_city: null
+        address_zip: null
+        address_website: null
+-   model: realestate.address
+    pk: 7
+    fields:
+        address_street: null
+        address_city: null
+        address_zip: null
+        address_website: null
+-   model: realestate.address
+    pk: 8
+    fields:
+        address_street: null
+        address_city: null
+        address_zip: null
+        address_website: null
+-   model: realestate.profile
+    pk: 1
+    fields:
+        user: 1
+        civility: null
+        phone: null
+        mobile: null
+-   model: realestate.profile
+    pk: 2
+    fields:
+        user: 2
+        civility: null
+        phone: null
+        mobile: null
+-   model: realestate.profile
+    pk: 3
+    fields:
+        user: 3
+        civility: null
+        phone: 06 98 76 54 32
+        mobile: null
+-   model: realestate.profile
+    pk: 4
+    fields:
+        user: 4
+        civility: null
+        phone: null
+        mobile: null
+-   model: realestate.profile
+    pk: 5
+    fields:
+        user: 5
+        civility: null
+        phone: null
+        mobile: null
+-   model: realestate.profile
+    pk: 6
+    fields:
+        user: 6
+        civility: null
+        phone: null
+        mobile: null
+-   model: realestate.profile
+    pk: 7
+    fields:
+        user: 7
+        civility: null
+        phone: null
+        mobile: null
+-   model: realestate.agency
+    pk: 4
+    fields:
+        agency_name: MyAgency
+-   model: realestate.propertyassettype
+    pk: 1
+    fields:
+        label: T2
+-   model: realestate.propertyassettype
+    pk: 2
+    fields:
+        label: Villa
+-   model: realestate.propertyasset
+    pk: 1
+    fields:
+        owner: 4
+        time_created: 2021-06-21 18:19:10.254440+00:00
+        address_street: 56 rue du Ruisseau
+        address_city: Le Revest
+        address_zip: '83654'
+        address_website: ''
+        asset_value: '649999.96'
+        asset_surface: '35'
+        asset_type: 1
+        short_description: Beau T2 avec vue sur les voisins
+        description: "Il est beau mon T2 avec vue sur les voisins\r\n\r\nIl sont sympas,
+            Roger, il aime le Ricard"
+-   model: realestate.propertyasset
+    pk: 2
+    fields:
+        owner: 5
+        time_created: 2021-06-21 21:24:29.230656+00:00
+        address_street: 13 rue de la mer
+        address_city: Marseille
+        address_zip: '13456'
+        address_website: ''
+        asset_value: '1500000.00'
+        asset_surface: '120'
+        asset_type: 2
+        short_description: Belle villa vue sur les calanques
+        description: 'Magnifique villa dans les calanque
+
+
+            Pédalos à la location
+
+            Bières fraiches dans le frigo
+
+            '
+-   model: realestate.propertyasset
+    pk: 3
+    fields:
+        owner: 6
+        time_created: 2021-06-26 17:54:28.877893+00:00
+        address_street: 67 avenue Foch
+        address_city: Draguignan
+        address_zip: '83987'
+        address_website: ''
+        asset_value: '952000.00'
+        asset_surface: '255'
+        asset_type: 2
+        short_description: Une villa au bord des vignes
+        description: "Cette villa est située sur le bord des vignes\r\n\r\nVous pourrez
+            ainsi déguster le fameux rosé local sans même vous déplacer"
+-   model: realestate.propertyasset
+    pk: 4
+    fields:
+        owner: 5
+        time_created: 2021-06-27 12:46:03.319266+00:00
+        address_street: 56 route des dolines
+        address_city: Mouans Sartoux
+        address_zip: '06450'
+        address_website: ''
+        asset_value: '1547000.00'
+        asset_surface: '350'
+        asset_type: 2
+        short_description: Villa de prestige
+        description: "Villa à proximité de sophia Antipolis,\r\n\r\nPour cadre dynamiques
+            avec belle famille et plein de brouzoufs\r\n\r\nPlein de place pour garer
+            le porshe cayenne"
+-   model: realestate.propertyasset
+    pk: 5
+    fields:
+        owner: 4
+        time_created: 2021-06-27 14:57:11.389594+00:00
+        address_street: 21 rue qui monte
+        address_city: Aix en Provence
+        address_zip: '13582'
+        address_website: ''
+        asset_value: '850000.00'
+        asset_surface: '362'
+        asset_type: 2
+        short_description: Belle habitation
+        description: "Villa en bord de route\r\n\r\nPiscine, poissons rouges\r\n\r\nLes
+            carottes sont cuites"
+-   model: realestate.offer
+    pk: 1
+    fields:
+        agency: 4
+        asset: 1
+        price: '1200.00'
+        description: "La description de la location est obligatoire ?\r\n\r\nOui,
+            et c'est bien comme ça !"
+        status: 1
+-   model: realestate.offer
+    pk: 2
+    fields:
+        agency: 4
+        asset: 2
+        price: '750.00'
+        description: "Passez une  semaine sous les pins\r\n\r\n* lancez vous des pommes
+            de pin, \r\n* chassez les lapins\r\n* ou bien lancez vous les lapins"
+        status: 2
+-   model: realestate.offer
+    pk: 3
+    fields:
+        agency: 4
+        asset: 1
+        price: '850000.00'
+        description: "Belle villa au Revest, \r\n\r\nTout à refaire\r\n\r\nInondations
+            deux fois par an\r\n\r\nLes palmes sont fournies"
+        status: 1
+-   model: realestate.offer
+    pk: 4
+    fields:
+        agency: 4
+        asset: 3
+        price: '550.00'
+        description: Petit prix pour une belle villa
+        status: 2
+-   model: realestate.offer
+    pk: 5
+    fields:
+        agency: 4
+        asset: 4
+        price: '2500000.00'
+        description: Villa pour cadre en pleine ascension
+        status: 2
+-   model: realestate.offer
+    pk: 6
+    fields:
+        agency: 4
+        asset: 5
+        price: '1250000.00'
+        description: "Villla à Aix\r\n\r\nVilla en bord de route\r\n\r\nPiscine, poissons
+            rouges\r\n\r\nLes carottes sont cuites"
+        status: 2
+-   model: realestate.rentaloffer
+    pk: 1
+    fields:
+        deposit: '1000.00'
+        start_date: 2021-06-09 10:00:00+00:00
+        end_date: 2021-07-24 16:00:00+00:00
+-   model: realestate.rentaloffer
+    pk: 2
+    fields:
+        deposit: '1200.00'
+        start_date: 2021-06-14 04:00:00+00:00
+        end_date: 2021-06-19 16:09:33+00:00
+-   model: realestate.rentaloffer
+    pk: 4
+    fields:
+        deposit: '1500.00'
+        start_date: 2021-08-31 22:00:00+00:00
+        end_date: 2022-02-28 23:00:00+00:00
+-   model: realestate.saleoffer
+    pk: 3
+    fields: {}
+-   model: realestate.saleoffer
+    pk: 5
+    fields: {}
+-   model: realestate.saleoffer
+    pk: 6
+    fields: {}
+-   model: realestate.realestatecontract
+    pk: 1
+    fields:
+        agency: 4
+        amount: '2500.00'
+-   model: realestate.salecontract
+    pk: 1
+    fields:
+        offer: 5
+-   model: realestate.propertyassetimage
+    pk: 1
+    fields:
+        asset: 1
+        upload: uploads/appartement-01_TkvwTL3.jpg
+        description: null
+        position: '0'
+-   model: realestate.propertyassetimage
+    pk: 2
+    fields:
+        asset: 1
+        upload: uploads/appartement-02_rzv364U.jpg
+        description: null
+        position: '0'
+-   model: realestate.propertyassetimage
+    pk: 3
+    fields:
+        asset: 2
+        upload: uploads/maison-06_Zrid8KU.jpg
+        description: Vue extérieure
+        position: '0'
+-   model: realestate.propertyassetimage
+    pk: 5
+    fields:
+        asset: 3
+        upload: uploads/maison-provence-02.jpg
+        description: null
+        position: '0'
+-   model: realestate.propertyassetimage
+    pk: 6
+    fields:
+        asset: 3
+        upload: uploads/maison-provence-01-interieur.jpg
+        description: null
+        position: '0'
+-   model: realestate.propertyassetimage
+    pk: 7
+    fields:
+        asset: 3
+        upload: uploads/maison-provence-01-interieur-02.jpg
+        description: null
+        position: '0'
+-   model: realestate.propertyassetimage
+    pk: 9
+    fields:
+        asset: 3
+        upload: uploads/maison-provence-01-terrasse-02.jpg
+        description: null
+        position: '0'
+-   model: realestate.propertyassetimage
+    pk: 10
+    fields:
+        asset: 4
+        upload: uploads/cuzin1.jpg
+        description: null
+        position: '0'
+-   model: realestate.propertyassetimage
+    pk: 11
+    fields:
+        asset: 4
+        upload: uploads/cuzin2.jpg
+        description: null
+        position: '0'
+-   model: realestate.propertyassetimage
+    pk: 12
+    fields:
+        asset: 4
+        upload: uploads/cuzin3.jpg
+        description: null
+        position: '0'
+-   model: realestate.propertyassetimage
+    pk: 13
+    fields:
+        asset: 4
+        upload: uploads/cuzin4.jpg
+        description: null
+        position: '0'
+-   model: realestate.propertyassetimage
+    pk: 14
+    fields:
+        asset: 4
+        upload: uploads/cuzin5.jpg
+        description: null
+        position: '0'
+-   model: realestate.propertyassetimage
+    pk: 15
+    fields:
+        asset: 5
+        upload: uploads/tradi_jib1.jpg
+        description: null
+        position: '0'
+-   model: realestate.propertyassetimage
+    pk: 16
+    fields:
+        asset: 5
+        upload: uploads/tradi_jib2.jpg
+        description: null
+        position: '0'
+-   model: realestate.propertyassetimage
+    pk: 17
+    fields:
+        asset: 5
+        upload: uploads/tradi_jib3.jpg
+        description: null
+        position: '0'
+-   model: realestate.propertyassetimage
+    pk: 18
+    fields:
+        asset: 5
+        upload: uploads/tradi_jib4.jpg
+        description: null
+        position: '0'
+-   model: realestate.propertyassetimage
+    pk: 19
+    fields:
+        asset: 5
+        upload: uploads/tradi_jib5.jpg
+        description: null
+        position: '0'
+-   model: realestate.propertyassetimage
+    pk: 20
+    fields:
+        asset: 5
+        upload: uploads/tradi_jib6.jpg
+        description: null
+        position: '0'
+-   model: realestate.propertyassetimage
+    pk: 21
+    fields:
+        asset: 5
+        upload: uploads/tradi_jib7.jpg
+        description: null
+        position: '0'
+-   model: realestate.propertyassetimage
+    pk: 22
+    fields:
+        asset: 5
+        upload: uploads/tradi_jib8.jpg
+        description: null
+        position: '0'
+-   model: realestate.propertyassetimage
+    pk: 23
+    fields:
+        asset: 5
+        upload: uploads/tradi_jib9.jpg
+        description: null
+        position: '0'
+-   model: realestate.propertyassetimage
+    pk: 24
+    fields:
+        asset: 5
+        upload: uploads/tradi_jib10.jpg
+        description: null
+        position: '0'
+-   model: realestate.contactmessage
+    pk: 1
+    fields:
+        name: Gérard Lambert
+        subject: Appartement à louer
+        message: Bel appartement avec vue sur la voie rapide
+        time_created: 2021-06-26 17:34:24.341927+00:00
+        email: gerard.lambert@lambert.io
+-   model: realestate.contactmessage
+    pk: 2
+    fields:
+        name: Roger Rabbit
+        subject: Loue mon terrier
+        message: La réserve de carottes est pleine
+        time_created: 2021-06-26 17:35:22.847911+00:00
+        email: rogger.rabbit@cartoon.io

@@ -1,0 +1,20 @@
+-   model: realestate.propertyassettype
+    pk: 31
+    fields:
+        label: T1
+-   model: realestate.propertyassettype
+    pk: 32
+    fields:
+        label: T2
+-   model: realestate.propertyassettype
+    pk: 33
+    fields:
+        label: T3
+-   model: realestate.propertyassettype
+    pk: 34
+    fields:
+        label: Villa
+-   model: realestate.propertyassettype
+    pk: 35
+    fields:
+        label: Domaine
