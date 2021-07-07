@@ -1,0 +1,93 @@
+-   model: realestate.addresspage
+    pk: 10
+    fields:
+        address_street: 56 rue de la poste
+        address_city: La Garde
+        address_zip: '83500'
+        address_country: France
+        address_website: null
+-   model: realestate.addresspage
+    pk: 14
+    fields:
+        address_street: 56 rue de la poste
+        address_city: La Garde
+        address_zip: '83500'
+        address_country: France
+        address_website: null
+-   model: realestate.agencypage
+    pk: 10
+    fields:
+        agency_name: My Agency
+-   model: realestate.agencypage
+    pk: 14
+    fields:
+        agency_name: My Agency
+-   model: realestate.propertyassettag
+    pk: 2
+    fields:
+        tag: 4
+        content_object: 13
+-   model: realestate.propertyassetindexpage
+    pk: 11
+    fields:
+        intro: <p data-block-key="s7jib">Pellentesque dapibus suscipit ligula. Donec
+            posuere augue in quam. Etiam vel tortor sodales tellus ultricies commodo.
+            Suspendisse potenti. Aenean in sem ac leo mollis blandit. Donec neque
+            quam, dignissim in, mollis nec, sagittis eu, wisi. Phasellus lacus. Etiam
+            laoreet quam sed arcu. Phasellus at dui in ligula mollis ultricies. Integer
+            placerat tristique nisl. Praesent augue. Fusce commodo. Vestibulum convallis,
+            lorem a tempus semper, dui dui euismod elit, vitae placerat urna tortor
+            vitae lacus. Nullam libero mauris, consequat quis, varius et, dictum id,
+            arcu. Mauris mollis tincidunt felis. Aliquam feugiat tellus ut neque.
+            Nulla facilisis, risus a rhoncus fermentum, tellus tellus lacinia purus,
+            et dictum nunc justo sit amet elit.</p><p data-block-key="c101n"></p>
+-   model: realestate.propertyassetpage
+    pk: 13
+    fields:
+        asset_owner: 6
+        time_created: 2021-07-07 17:52:10.345000+00:00
+        address_street: 56 rue de la plage
+        address_zip: '83123'
+        address_city: Cavalaire
+        address_country: France
+        asset_surface: '250'
+        asset_type: 34
+        description: <p data-block-key="gmndi">Lorem ipsum dolor sit amet, consectetuer
+            adipiscing elit.  Donec hendrerit tempor tellus.  Donec pretium posuere
+            tellus.  Proin quam nisl, tincidunt et, mattis eget, convallis nec, purus.  Cum
+            sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+            mus.  Nulla posuere.  Donec vitae dolor.  Nullam tristique diam non turpis.  Cras
+            placerat accumsan nulla.  Nullam rutrum.  Nam vestibulum accumsan nisl.</p><p
+            data-block-key="fqkrh"></p>
+        categories: []
+-   model: realestate.offerpage
+    pk: 15
+    fields:
+        price: '740.00'
+        description: ''
+        status: 1
+-   model: realestate.rentalofferindexpage
+    pk: 12
+    fields:
+        intro: <p data-block-key="e9tvw">Pellentesque dapibus suscipit ligula.  Donec
+            posuere augue in quam.  Etiam vel tortor sodales tellus ultricies commodo.  Suspendisse
+            potenti.  Aenean in sem ac leo mollis blandit.  Donec neque quam, dignissim
+            in, mollis nec, sagittis eu, wisi.  Phasellus lacus.  Etiam laoreet quam
+            sed arcu.  Phasellus at dui in ligula mollis ultricies.  Integer placerat
+            tristique nisl.  Praesent augue.  Fusce commodo.  Vestibulum convallis,
+            lorem a tempus semper, dui dui euismod elit, vitae placerat urna tortor
+            vitae lacus.  Nullam libero mauris, consequat quis, varius et, dictum
+            id, arcu.  Mauris mollis tincidunt felis.  Aliquam feugiat tellus ut neque.  Nulla
+            facilisis, risus a rhoncus fermentum, tellus tellus lacinia purus, et
+            dictum nunc justo sit amet elit.</p><p data-block-key="1b785"></p>
+-   model: realestate.rentalofferpagetag
+    pk: 1
+    fields:
+        tag: 5
+        content_object: 15
+-   model: realestate.rentalofferpage
+    pk: 15
+    fields:
+        deposit: '1250.00'
+        start_date: 2021-08-01 22:20:00+00:00
+        end_date: 2021-08-07 22:20:00+00:00
