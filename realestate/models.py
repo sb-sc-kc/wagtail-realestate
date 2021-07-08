@@ -1,4 +1,9 @@
+#
+# RealEstate Application models
+#
+
 from django.db import models
+from django.db.models.functions import Substr
 from django import forms
 
 from django.contrib.auth.models import User
@@ -11,7 +16,8 @@ from taggit.models import TaggedItemBase
 
 from wagtail.core.fields import RichTextField
 from wagtail.core.models import Page, Orderable, PageManager
-from wagtail.admin.edit_handlers import FieldPanel, InlinePanel, MultiFieldPanel
+from wagtail.admin.edit_handlers import (
+    FieldPanel, InlinePanel, MultiFieldPanel)
 from wagtail.images.edit_handlers import ImageChooserPanel
 
 from wagtail.contrib.routable_page.models import RoutablePageMixin, route
@@ -31,9 +37,10 @@ class AddressPage(Page):
     address_zip = models.CharField(max_length=32, verbose_name=_('Zip Code'),
                                       blank=True,
                                       null=True)
-    address_country = models.CharField(max_length=64, verbose_name=_('Country'),
-                                      blank=True,
-                                      null=True)
+    address_country = models.CharField(
+        max_length=64, verbose_name=_('Country'),
+        blank=True,
+        null=True)
     address_website = models.URLField(max_length=200,
                                       verbose_name='Web Site',
                                       blank=True,
@@ -49,7 +56,7 @@ class AddressPage(Page):
     ]
 
     def address_county(self):
-        return self.address_zip[:2]
+        return str(self.address_zip)[:2]
 
 
 class AgencyPage(AddressPage):
@@ -60,18 +67,20 @@ class AgencyPage(AddressPage):
 
     content_panels = [
         FieldPanel('agency_name'),
-    ] + AddressPage.content_panels 
+    ] + AddressPage.content_panels
 
     class Meta:
         verbose_name = _('Agency')
         verbose_name_plural = _('Agencies')
 
     def __str__(self):
-        return self.agency_name
+        return str(self.agency_name)
 
 
 @register_snippet
 class PropertyAssetCategory(models.Model):
+    """ Property Type (T1, T2 ...)
+    """
     name = models.CharField(max_length=255)
     icon = models.ForeignKey(
         'wagtailimages.Image', null=True, blank=True,
@@ -84,7 +93,7 @@ class PropertyAssetCategory(models.Model):
     ]
 
     def __str__(self):
-        return self.name
+        return str(self.name)
 
     class Meta:
         verbose_name_plural = 'property asset categories'
@@ -95,7 +104,7 @@ class PropertyAssetType(models.Model):
     """Type of asset: T1 T2 T3 House...
     """
     label = models.CharField(max_length=32)
-    
+
     class Meta:
         verbose_name = _('Asset Type')
         verbose_name_plural = _('Asset Types')
@@ -154,8 +163,7 @@ class PropertyAssetManager(PageManager):
 
     def get_queryset(self):
         """Overrides the PageManager method"""
-        from django.db.models.functions import Substr
-        qs = super(PropertyAssetManager, self).get_queryset().annotate(
+        qs = super().get_queryset().annotate(
             address_county=Substr('address_zip', 1, 2))
         return qs
 
@@ -172,7 +180,8 @@ class PropertyAssetPage(Page):
         editable=False, verbose_name=_('Creation Date'))
 
     tags = ClusterTaggableManager(through=PropertyAssetTag, blank=True)
-    categories = ParentalManyToManyField('realestate.PropertyAssetCategory', blank=True)
+    categories = ParentalManyToManyField(
+        'realestate.PropertyAssetCategory', blank=True)
 
     # Address
     address_street = models.CharField(max_length=256, verbose_name=_('Street'))
@@ -297,10 +306,6 @@ class OfferIndexPage(RoutablePageMixin, Page):
         FieldPanel('intro', classname="full")
     ]
 
-    def get_context(self, request):
-        # Update context to include only published posts, ordered by reverse-chron
-        context = super().get_context(request)
-
     def get_context(self, request, *args, **kwargs):
         """Adding custom stuff to our context."""
         context = super().get_context(request, *args, **kwargs)
@@ -382,8 +387,8 @@ class RentalOfferPage(RoutablePageMixin, OfferPage):
         context['images'] = images
         return context
 
-    def __repr__(self):
-        return 'Rental Offer: {title:s} prix: {price:9.2f}'.format(
+    def __str__(self):
+        return _('Rental Offer: {title:s} prix: {price:9.2f}').format(
             title=self.title, price=self.price)
 
     @route(r'^rental-offer/(?P<offerid>)/$')
@@ -397,15 +402,6 @@ class SaleOfferIndexPage(Page):
     content_panels = Page.content_panels + [
         FieldPanel('intro', classname="full")
     ]
-
-    def get_context(self, request):
-        # Update context to include only published posts, ordered by reverse-chron
-        context = super().get_context(request)
-        offerpages = self.get_children().live()
-        # assert(len(offerpages) > 0)
-        context['offerpages'] = offerpages
-        context['offerpages_count'] = self.get_children_count()
-        return context
 
     def get_context(self, request):
         # Update context to include only published posts, ordered by reverse-chron

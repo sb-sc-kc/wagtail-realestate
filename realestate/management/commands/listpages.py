@@ -12,5 +12,11 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         for page in Page.objects.all():
-            parent = Page.objects.filter(pk=page.pk).first_common_ancestor()
-            self.stdout.write(self.style.SUCCESS('{page:s} <- {parent:s}'.format(page=str(page), parent=str(parent))))
+            # mystr = "{:s}".format(str(page))
+            mystr = ""
+            parent = page.get_parent()
+            while parent:
+                mystr = "{:s} > {:s}".format(str(parent), mystr)
+                mypage = parent
+                parent = mypage.get_parent()
+            self.stdout.write(self.style.SUCCESS('{:s} > {:s} {:s}'.format(mystr, str(page), page.slug)))
