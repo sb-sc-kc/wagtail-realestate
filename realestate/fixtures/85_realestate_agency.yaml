@@ -1,0 +1,81 @@
+-   model: wagtailcore.page
+    pk: 4
+    fields:
+        path: '000100010001'
+        depth: 3
+        numchild: 0
+        translation_key: ff51f666-6263-4f3a-b357-729edb152630
+        locale: 1
+        title: My Agency
+        draft_title: My Agency
+        slug: my-agency
+        content_type: 21
+        live: true
+        has_unpublished_changes: false
+        url_path: /home/my-agency/
+        owner: 1
+        seo_title: ''
+        show_in_menus: false
+        search_description: ''
+        go_live_at: null
+        expire_at: null
+        expired: false
+        locked: false
+        locked_at: null
+        locked_by: null
+        first_published_at: 2021-07-08 09:33:19.027640+00:00
+        last_published_at: 2021-07-08 09:33:44.691452+00:00
+        latest_revision_created_at: 2021-07-08 09:33:43.928469+00:00
+        live_revision: 2
+        alias_of: null
+-   model: wagtailcore.pagerevision
+    pk: 1
+    fields:
+        page: 4
+        submitted_for_moderation: false
+        created_at: 2021-07-08 09:33:18.154132+00:00
+        user: 1
+        content_json: '{"pk": 4, "path": "000100010001", "depth": 3, "numchild": 0,
+            "translation_key": "ff51f666-6263-4f3a-b357-729edb152630", "locale": 1,
+            "title": "My Agency", "draft_title": "My Agency", "slug": "my-agency",
+            "content_type": 21, "live": true, "has_unpublished_changes": false, "url_path":
+            "/home/my-agency/", "owner": 1, "seo_title": "", "show_in_menus": false,
+            "search_description": "", "go_live_at": null, "expire_at": null, "expired":
+            false, "locked": false, "locked_at": null, "locked_by": null, "first_published_at":
+            null, "last_published_at": null, "latest_revision_created_at": null, "live_revision":
+            null, "alias_of": null, "address_street": "5 avenue Charles de Gaulle",
+            "address_city": "Toulon", "address_zip": "83000", "address_country": "France",
+            "address_website": null, "agency_name": "MyAgency", "comments": []}'
+        approved_go_live_at: null
+-   model: wagtailcore.pagerevision
+    pk: 2
+    fields:
+        page: 4
+        submitted_for_moderation: false
+        created_at: 2021-07-08 09:33:43.928469+00:00
+        user: 1
+        content_json: '{"pk": 4, "path": "000100010001", "depth": 3, "numchild": 0,
+            "translation_key": "ff51f666-6263-4f3a-b357-729edb152630", "locale": 1,
+            "title": "My Agency", "draft_title": "My Agency", "slug": "my-agency",
+            "content_type": 21, "live": true, "has_unpublished_changes": false, "url_path":
+            "/home/my-agency/", "owner": 1, "seo_title": "", "show_in_menus": false,
+            "search_description": "", "go_live_at": null, "expire_at": null, "expired":
+            false, "locked": false, "locked_at": null, "locked_by": null, "first_published_at":
+            "2021-07-08T09:33:19.027Z", "last_published_at": "2021-07-08T09:33:19.027Z",
+            "latest_revision_created_at": "2021-07-08T09:33:18.154Z", "live_revision":
+            1, "alias_of": null, "address_street": "5 avenue Charles de Gaulle", "address_city":
+            "Toulon", "address_zip": "83000", "address_country": "France", "address_website":
+            null, "agency_name": "MyAgency", "comments": []}'
+        approved_go_live_at: null
+-   model: realestate.addresspage
+    pk: 4
+    fields:
+        address_street: 5 avenue Charles de Gaulle
+        address_city: Toulon
+        address_zip: '83000'
+        address_country: France
+        address_website: null
+-   model: realestate.agencypage
+    pk: 4
+    fields:
+        agency_name: MyAgency
