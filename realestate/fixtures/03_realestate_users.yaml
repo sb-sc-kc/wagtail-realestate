@@ -1,0 +1,127 @@
+- model: auth.user
+  pk: 1
+  fields:
+    password: pbkdf2_sha256$260000$pbi3TeP71C6aj6hUWCWJ9e$vL06sN3U1NOcXaaegPl6adQk4Xnatpd/1S+K1WSWaeA=
+    last_login: 2021-07-07 21:13:45.212006+00:00
+    is_superuser: true
+    username: admin
+    first_name: Amin
+    last_name: L'admin
+    email: admin@email.io
+    is_staff: true
+    is_active: true
+    date_joined: 2021-07-07 21:07:54.673302+00:00
+    groups: []
+    user_permissions: []
+- model: auth.user
+  pk: 2
+  fields:
+    password: pbkdf2_sha256$260000$sKw38d1Tcxy0fFqScga929$jOpKVa1F/Wv52ULxZGFBrRdEhYZ+WXvBZu+40BFYGLU=
+    last_login: null
+    is_superuser: false
+    username: pduval
+    first_name: Pierre
+    last_name: Duval
+    email: pduval@email.io
+    is_staff: false
+    is_active: true
+    date_joined: 2021-07-07 21:07:54.805763+00:00
+    groups:
+    - 2
+    user_permissions: []
+- model: auth.user
+  pk: 3
+  fields:
+    password: pbkdf2_sha256$260000$2UOxEBxXy6od0CBwZY8nOB$8JsgiI9K6l0mhJOOJDb86L95zyYmf1CUFSrbX7MAIlE=
+    last_login: null
+    is_superuser: false
+    username: jprevert
+    first_name: Jacques
+    last_name: Prévert
+    email: jprevert@email.io
+    is_staff: false
+    is_active: true
+    date_joined: 2021-07-07 21:07:54.939855+00:00
+    groups:
+    - 2
+    user_permissions: []
+- model: auth.user
+  pk: 4
+  fields:
+    password: pbkdf2_sha256$260000$P8psEG6sZvCCng9CouSkpR$0zol1SitTz9aqVbJVqywvOE0qTF/szty/W7YH3pn4No=
+    last_login: null
+    is_superuser: false
+    username: rdurand
+    first_name: Robert
+    last_name: Durand
+    email: rdurand@email.io
+    is_staff: false
+    is_active: true
+    date_joined: 2021-07-07 21:07:55.067876+00:00
+    groups:
+    - 1
+    user_permissions: []
+- model: auth.user
+  pk: 5
+  fields:
+    password: pbkdf2_sha256$260000$PgcJTbU0TW8JE1GSTh0Jli$b2h9hELroTGNPAta1Wiv8l2rDDblpts3Kh4X9r5IzVY=
+    last_login: null
+    is_superuser: false
+    username: jconrad
+    first_name: Joseph
+    last_name: Conrad
+    email: jconrad@email.io
+    is_staff: false
+    is_active: true
+    date_joined: 2021-07-07 21:07:55.193815+00:00
+    groups:
+    - 1
+    user_permissions: []
+- model: auth.user
+  pk: 6
+  fields:
+    password: pbkdf2_sha256$260000$CRXkef5HYsTe3ijvtf4MfQ$7pqNORMoG9vcuz7iACmmPm9KQvZJ7r707pNc7ZdKmYg=
+    last_login: null
+    is_superuser: false
+    username: gorwell
+    first_name: George
+    last_name: Orwell
+    email: gorwelld@email.io
+    is_staff: false
+    is_active: true
+    date_joined: 2021-07-07 21:07:55.322631+00:00
+    groups:
+    - 3
+    user_permissions: []
+- model: auth.user
+  pk: 7
+  fields:
+    password: pbkdf2_sha256$260000$jn0Op6lTuj3giUybDPoGyQ$pIwlK0+bz+Y4v6jT5NAkwoT7OT3WfYx/SEc53NZMBAo=
+    last_login: null
+    is_superuser: false
+    username: fkafka
+    first_name: Frantz
+    last_name: Kafka
+    email: fkafka@email.io
+    is_staff: false
+    is_active: true
+    date_joined: 2021-07-07 21:07:55.452976+00:00
+    groups:
+    - 3
+    user_permissions: []
+- model: auth.user
+  pk: 8
+  fields:
+    password: pbkdf2_sha256$260000$uAbDUsgw3nIj9rSmjGQLbb$Y3hrXAB9hp+NqfC5hNaFZkM2bfPrHLwJ43UstI6CXHU=
+    last_login: null
+    is_superuser: false
+    username: jkessel
+    first_name: Joseph
+    last_name: Kessel
+    email: jkessel@email.io
+    is_staff: false
+    is_active: true
+    date_joined: 2021-07-07 21:07:55.582236+00:00
+    groups:
+    - 3
+    user_permissions: []

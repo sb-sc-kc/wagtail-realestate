@@ -68,8 +68,8 @@ def loaddata(c):
 def dumpdata(c):
     """dump database
     """
-    c.run("{manage:s} dumpdata --format yaml --indent 4 \
-    -e contenttypes -o data/backups/test-db.yaml realestate ".format(manage=MANAGE))
+    c.run("{manage:s} dumpdata --format yaml --indent 4 -e contenttypes \
+    -o data/backups/test-db.yaml".format(manage=MANAGE))
 
 
 @task
