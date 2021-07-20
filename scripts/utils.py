@@ -4,7 +4,12 @@ from wagtail.admin.auth import get_user_model
 User = get_user_model()
 
 from wagtail.core.models import Page
-from realestate.models import PageGalleryImage, PropertyAssetIndexPage, PropertyAssetType
+from realestate.models import (PageGalleryImage,
+                               PropertyAssetIndexPage,
+                               PropertyAssetType,
+                               OfferPage,
+                               RentalOfferIndexPage,
+                               SaleOfferIndexPage)
 from wagtail.images.models import Image
 from django.db.models.fields.files import ImageFieldFile
 
@@ -17,7 +22,7 @@ ASSET_SLUGS = ['maison-provence-01', 'studio-montagne']
 
 from realestate.models import PropertyAssetType
 
-def asset_types_create():
+def create_asset_types():
     for label in ('T1', 'T2', 'T3', 'Villa', 'Domaine'):
         pat = PropertyAssetType.objects.create(label=label)
         pat.save()
