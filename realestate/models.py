@@ -25,7 +25,15 @@ from wagtail.contrib.routable_page.models import RoutablePageMixin, route
 from wagtail.snippets.models import register_snippet
 
 
-class AddressPage(Page):
+class RealEstatePage(Page):
+    def get_context(self, request, *args, **kwargs):
+        context = super().get_context(request, *args, **kwargs)
+        context['menuitems'] = self.get_children().filter(
+            live=True, show_in_menus=True)
+        return context
+
+
+class AddressPage(RealEstatePage):
     """An address used by other classes
     """
     address_street = models.CharField(max_length=256, verbose_name=_('Street'),
@@ -122,7 +130,7 @@ class PropertyAssetTag(TaggedItemBase):
     )
 
 
-class PropertyAssetTagIndexPage(Page):
+class PropertyAssetTagIndexPage(RealEstatePage):
 
     def get_context(self, request):
 
@@ -137,7 +145,7 @@ class PropertyAssetTagIndexPage(Page):
         return context
 
 
-class PropertyAssetIndexPage(Page):
+class PropertyAssetIndexPage(RealEstatePage):
     intro = RichTextField(blank=True)
     template='realestate/property_asset_index_page.html'
     content_panels = Page.content_panels + [
@@ -168,7 +176,7 @@ class PropertyAssetManager(PageManager):
         return qs
 
 
-class PropertyAssetPage(Page):
+class PropertyAssetPage(RealEstatePage):
     """.. _models-propertyasset
     # Property Asset
     A house or flat to be sent or rented
@@ -264,7 +272,7 @@ class OfferManager(PageManager):
         return super().get_queryset().filter(status='_(Published)')  
 
 
-class OfferPage(Page):
+class OfferPage(RealEstatePage):
     """ Abstract class for offers
     """
     STATUS = (
@@ -299,8 +307,11 @@ class OfferPage(Page):
     def asset_surface(self):
         return self.get_parent().specific.asset_surface
 
+    def short_description(self):
+        return str(self.description)[:200]
 
-class OfferIndexPage(RoutablePageMixin, Page):
+
+class OfferIndexPage(RoutablePageMixin, RealEstatePage):
     intro = RichTextField(blank=True)
     content_panels = Page.content_panels + [
         FieldPanel('intro', classname="full")
@@ -320,7 +331,7 @@ class OfferIndexPage(RoutablePageMixin, Page):
         return context
 
 
-class RentalOfferIndexPage(Page):
+class RentalOfferIndexPage(RealEstatePage):
     intro = RichTextField(blank=True)
     content_panels = Page.content_panels + [
         FieldPanel('intro', classname="full")
@@ -332,13 +343,14 @@ class RentalOfferIndexPage(Page):
         # Update context to include only published posts, ordered by reverse-chron
         context = super().get_context(request)
         offerpages = RentalOfferPage.objects.specific()
-        if request.GET.get('tag', None):
-            tags = request.GET.get('tag')
-            offerpages = offerpages.filter(tags__slug__in=[tags])
+        if offerpages is not None:
+            if request.GET.get('tag', None):
+                tags = request.GET.get('tag')
+                offerpages = offerpages.filter(tags__slug__in=[tags])
+            context['offerpages'] = offerpages
 
-        context['offerpages'] = offerpages
         context['offer_type'] = 'rental-offer'
-        
+
         return context
 
 
@@ -397,7 +409,7 @@ class RentalOfferPage(RoutablePageMixin, OfferPage):
         return self.render(request)
 
 
-class SaleOfferIndexPage(Page):
+class SaleOfferIndexPage(RealEstatePage):
     intro = RichTextField(blank=True)
     content_panels = Page.content_panels + [
         FieldPanel('intro', classname="full")
@@ -450,7 +462,6 @@ class SaleOfferPage(OfferPage):
         context['asset'] = asset
         context['images'] = images
         return context
-
 
 
 class PageGalleryImage(Orderable):

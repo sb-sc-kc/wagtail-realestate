@@ -10849,4 +10849,12 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+
+  .carousel-item-img {
+      display: block;
+      height: 300px;
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+  }
 }

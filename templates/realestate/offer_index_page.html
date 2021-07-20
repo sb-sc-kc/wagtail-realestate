@@ -8,17 +8,50 @@
   <div class="intro">{{ page.intro|richtext }}</div>
 
   <h2>Offers: {{ offerpages_count }}</h2>
-
-  {% for offer in offerpages %}
-    <h2><a href="{{ offer.get_url }}">{{ offer.title }}</a></h2>
-    {% with offer.asset.main_image as main_image %}
-      {% if main_image %}{% image main_image fill-160x100 %}{% endif %}
-    {% endwith %}
-  <p>
-    {{ offer.asset.description|richtext }}
-  </p>
-  
-  {% trans "surface:" %} {{ offer.get_parent.specific.asset_surface }}<br/>
-  {% trans "city:" %} {{ offer.get_parent.specific.address_city }}<br/>
-{% endfor %}
+  {% comment %}
+  <table class="table table-striped">
+    <thead>
+      <th>Image</th><th>Informations</th>
+    </thead>
+    <tbody>
+      {% for offer in offerpages %}
+	<tr>
+	  <td>
+	    {% with offer.get_parent.specific.main_image as main_image %}
+	      {% if main_image %}{% image main_image fill-160x100 %}{% endif %}
+	    {% endwith %}
+	  </td>
+	  <td>
+	    <h3><a href="{{ offer.get_url }}">{{ offer.title }}</a></h3>
+	    {{offer.get_parent.description|richtext }}
+	    {% trans "surface:" %} {{ offer.get_parent.specific.asset_surface }}<br/>
+	      {% trans "city:" %} {{ offer.get_parent.specific.address_city }}<br/>
+	      {% trans "zip:" %} {{ offer.get_parent.specific.address_zip }}<br/>
+	  </td>
+	</tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% endcomment %}
+  <div class="container">
+    {% for offer in offerpages %}
+      <div class="row">
+	  <div class="col-sm-2">
+	    {% with offer.get_parent.specific.main_image as main_image %}
+	      {% if main_image %}{% image main_image fill-160x100 %}{% endif %}
+	    {% endwith %}
+	  </div>
+	  <div class="col-sm-4">
+	    <h3><a href="{{ offer.get_url }}">{{ offer.title }}</a></h3>
+	    {% trans "surface:" %} {{ offer.get_parent.specific.asset_surface }}<br/>
+	      {% trans "city:" %} {{ offer.get_parent.specific.address_city }}<br/>
+	      {% trans "zip:" %} {{ offer.get_parent.specific.address_zip }}<br/>
+	  </div>
+	  <div class="col-sm-4">
+	    {{offer.short_description|richtext }}
+	  </div>
+      </div>
+      {% endfor %}
+    </tbody>
+  </div>
 {% endblock %}

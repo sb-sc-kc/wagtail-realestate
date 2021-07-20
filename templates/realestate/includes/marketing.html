@@ -28,9 +28,4 @@
         <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
-    <div>
-      {% if user.is_authenticated %}
-      <a class="btn btn-outline-primary" href="/{{ offer_type }}/{{ offer.id }}/change">{% trans "Edit »" %}</a>
-      {% endif %}
-    </div>
   </div>

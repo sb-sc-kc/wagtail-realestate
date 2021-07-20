@@ -56,6 +56,7 @@ def reset_db(c):
     print('reset_db done.')
 
 
+@task
 def loaddata(c):
     """load database
     """
