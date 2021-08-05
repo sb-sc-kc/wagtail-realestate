@@ -10857,4 +10857,27 @@ textarea.form-control-lg {
       overflow: hidden;
       width: 100%;
   }
+  
+}
+
+#logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#logo img
+{
+    width: 150px;
+    height: 150px;  
+   -moz-transition-duration:0.7s;
+   -moz-transition-timing-function:ease;
+   -webkit-transition-duration:0.7s;
+   -webkit-transition-timing-function:ease;
+    transition-duration:0.7s;
+    transition-timing-function:ease;
+   -moz-transform:rotate(360deg); 
+   -webkit-transform:rotate(360deg);
+    transform:rotate(360deg); 
 }
