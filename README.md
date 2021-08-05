@@ -22,3 +22,7 @@
     TODO: re_images
 
  Attention! Les commandes doivent être exécutées dans l'ordre ci dessus
+ 
+ ## Lancement du serveur
+ 
+     python manage.py runserver [numero_port]
