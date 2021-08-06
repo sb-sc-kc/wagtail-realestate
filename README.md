@@ -14,12 +14,12 @@
   
 <re_cmd> correspondant à une des commandes suivantes :
    
-    python manage.py re_users
-    python manage.py re_asset_types
-    python manage.py re_pages
-    python manage.py re_assets
-    python manage.py re_offers
-    TODO: re_images
+    python manage.py re_users --create
+    python manage.py re_asset_types --create
+    python manage.py re_pages --create
+    python manage.py re_assets --create
+    python manage.py re_offers --create
+    TODO: python re_images --create
 
  Attention! Les commandes doivent être exécutées dans l'ordre ci dessus
  
