@@ -2,7 +2,7 @@
 
 ## Installation
 
-    git clone --recurse git@github:sb-sc-kc/wagtail-realestate
+    git clone --recurse git@github.com:sb-sc-kc/wagtail-realestate
   
     cd wagtail-realestate
     pipenv install -d
