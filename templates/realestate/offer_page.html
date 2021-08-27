@@ -104,24 +104,6 @@
 		      </dl>
 		    </div>
 		  </div>
-		  {% comment %}
-		  <div class="w-25 table-responsive">
- 		    <table class="table table-striped">
-		      <thead>
-			<tr>
-			  <th class="w-25 text-right"></th><th></th>
-			</tr>
-		      </thead>
-		      <tr><td class="text-right">{% trans "Street" %}</td><td>{{ asset.address_street }}</td></tr>
-		      <tr><td>{% trans "City" %}</td><td>{{ asset.address_city }}</td></tr>
-		      <tr><td>{% trans "Zip" %}</td><td>{{ asset.address_zip }}</td></tr>
-		      <tr><td>{% trans "Surface" %}</td><td>{{ asset.asset_surface }}</td></tr>
-		      <tr><td>{% trans "Price" %}</td><td>{{ offer.price }}</td></tr>
-		      {% block offer-specs %}
-		      {% endblock %}
-		    </table>
-		  </div>
-		{% endcomment %}
 		<div class="col-sm-6">
 		  <h3>{{offer.title }}</h3>
 		  <p>

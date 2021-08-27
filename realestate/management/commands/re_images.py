@@ -1,5 +1,6 @@
 import os
 from os import path
+from pathlib import Path
 from realestate.models import PageGalleryImage
 from wagtail.images.models import Image
 from django.db.models.fields.files import ImageFieldFile
@@ -64,12 +65,15 @@ class Command(BaseCommand):
             self.stdout.write(item.filename)
 
     def copy_images(self):
+        if not os.path.exists(IMAGESDIR):
+            Path(IMAGESDIR).mkdir(parents=True, exist_ok=True)
         myfiles = os.listdir(TESTIMAGESDIR)
         for myfile in myfiles:
             src = path.join(TESTIMAGESDIR, myfile)
             dst = path.join(IMAGESDIR, myfile)
             shutil.copy(src, dst)
             self.stdout.write('{src} -> {dst} '.format(src=src, dst=dst) + self.style.SUCCESS('OK'))
+
     def delete_images(self):
         for item in Image.objects.all():
             self.stdout.write('deleting {filename}'.format(filename=item.filename))

@@ -3,7 +3,7 @@ from wagtail.admin.auth import get_user_model
 from django.contrib.auth.models import Group, Permission
 
 import yaml
-DEFAULT_YAML_FILE = 'data/populate/users.yml'
+DEFAULT_YAML_FILE = 'data/populate/users.yaml'
 
 User = get_user_model()
 
