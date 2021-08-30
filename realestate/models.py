@@ -33,6 +33,10 @@ class RealEstatePage(Page):
         return context
 
 
+class RealEstateHomePage(Page):
+    template = 'realestate/homepage.html'
+
+
 class AddressPage(RealEstatePage):
     """An address used by other classes
     """
