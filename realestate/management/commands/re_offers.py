@@ -16,7 +16,7 @@ User = get_user_model()
 
 from scripts import utils, offers
 
-DEFAULT_YAML_FILE = 'data/populate/offers.yml'
+DEFAULT_YAML_FILE = 'data/populate/offers.yaml'
 
 OFFERS_LIST = [
 {

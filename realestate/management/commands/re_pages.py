@@ -5,6 +5,7 @@ from realestate.models import (PropertyAssetIndexPage,
                                OfferIndexPage,
                                RentalOfferIndexPage,
                                SaleOfferIndexPage)
+from django.core.exceptions import ValidationError
 
 User = get_user_model()
 
@@ -60,22 +61,31 @@ class Command(BaseCommand):
 
     def create_pages(self):
         home = Page.objects.filter(title='Home')[0]
+        try:
+            page = PropertyAssetIndexPage(
+                title='Property Assets',
+                slug='assets',
+            )
+            home.add_child(instance=page)
+        except ValidationError:
+            pass
 
-        page = PropertyAssetIndexPage(
-            title='Property Assets',
-            slug='assets',
-        )
-        home.add_child(instance=page)
-        page = RentalOfferIndexPage(
-            title='Rental Offers',
-            slug='rental-offers',
-            path='rental-offers',
-        )
-        home.add_child(instance=page)
+        try:
+            page = RentalOfferIndexPage(
+                title='Rental Offers',
+                slug='rental-offers',
+                path='rental-offers',
+            )
+            home.add_child(instance=page)
+        except ValidationError:
+            pass
 
-        page = SaleOfferIndexPage(
-            title='Sale Offers',
-            slug='sale-offers',
-            path='sale-offers',
-        )
-        home.add_child(instance=page)
+        try:
+            page = SaleOfferIndexPage(
+                title='Sale Offers',
+                slug='sale-offers',
+                path='sale-offers',
+            )
+            home.add_child(instance=page)
+        except ValidationError:
+            pass
