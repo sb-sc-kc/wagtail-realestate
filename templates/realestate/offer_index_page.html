@@ -17,7 +17,7 @@
 	    {% endwith %}
 	  </div>
 	  <div class="col-sm-4">
-	    <h3><a href="{{ offer.get_url }}">{{ offer.title }}</a></h3>
+	    <h3><a href="{{ offer.get_url }}#main">{{ offer.title }}</a></h3>
 	    {% trans "surface:" %} {{ offer.get_parent.specific.asset_surface }}<br/>
 	      {% trans "city:" %} {{ offer.get_parent.specific.address_city }}<br/>
 	      {% trans "zip:" %} {{ offer.get_parent.specific.address_zip }}<br/>
