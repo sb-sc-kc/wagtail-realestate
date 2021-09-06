@@ -5,52 +5,13 @@ from wagtail.core.models import Page
 from realestate.models import (PropertyAssetIndexPage,
                                PropertyAssetPage,
                                PropertyAssetType,
-                               PageGalleryImage)
+                               PageGalleryImage,
+                               RentalOfferPage,
+                               SaleOfferPage)
+from django.core.exceptions import ValidationError
+                               
 import yaml
-DEFAULT_YAML_FILE = 'data/populate/assets.yml'
-
-assets_list = [
-    {
-        'title': 'Villa en provence',
-        'slug': 'maison-provence-01',
-        'path': 'maison-provence-01',
-        'depth': '00010',
-        'asset_owner': 'jconrad',
-        'address_street': 'Cavalaire',
-        'address_zip': '83987',
-        'address_city': 'Cavalaire',
-        'asset_surface': 253,
-        'asset_type': 'Villa',
-        # 'tags': ['Provence']
-    },
-    {
-        # 'id': 1,
-        'title': 'Studio à la montagne',
-        'slug': 'studio-montagne',
-        'path': 'studio-montagne',
-        'asset_owner': 'gorwell',
-        'address_street': '654 chemin qui monte',
-        'address_zip': '06987',
-        'address_city': 'Isola',
-        'asset_surface': 25,
-        'asset_type': 'Studio',
-        'tags': ['Montagne']
-    },
-    {
-        # 'id': 2,
-            'title': 'Villa en provence verte',
-        'slug': 'maison-provence-02',
-        'path': 'maison-provence-02',
-        'depth': '00010',
-        'asset_owner': 'fkafka',
-        'address_street': '78 rue du puis',
-        'address_zip': '83951',
-        'address_city': 'Le Mole',
-        'asset_surface': 125,
-        'asset_type': 'Villa',
-        'tags': ['Provence'],
-    },
-]
+DEFAULT_YAML_FILE = 'data/populate/assets.yaml'
 
 User = get_user_model()
 
@@ -68,13 +29,27 @@ class Command(BaseCommand):
         parser.add_argument('--delete',
                             action='store_true',
                             help='delete assets')
+        parser.add_argument('--yamlfile',
+                            type=str,
+                            help='yaml file to load assets from',
+                            default=DEFAULT_YAML_FILE)
 
     def handle(self, *args, **options):
         if options['list']:
             self.list_assets()
         elif options ['create']:
             self.stdout.write('creating assets...')
-            self.create_assets()
+            if options['yamlfile']:
+                yamlfile = options['yamlfile']
+                self.stdout.write(
+                    'creating assets using yamlfile {:s}'.format(
+                        yamlfile))
+                with open(options['yamlfile'], 'r', encoding='utf-8') as myyaml:
+                    myyaml = myyaml.read()
+                    mydict = yaml.safe_load(myyaml)
+                    # print(mydict)
+                    self.load_assets(mydict)
+            # self.create_assets()
 
         elif options ['delete']:
             self.stdout.write('deleting assets...')
@@ -89,18 +64,35 @@ class Command(BaseCommand):
                     slug=item.slug,
                 ))
 
-    def create_asset(self, pagedata):
+    def load_asset(self, pagedata):
         parent = PropertyAssetIndexPage.objects.all()[0]
+        assert parent is not None
+        self.stdout.write(str(pagedata))
         pagedata['asset_owner'] = User.objects.filter(
             username=pagedata['asset_owner'])[0]
         pagedata['asset_type'] = PropertyAssetType.objects.filter(
             label=pagedata['asset_type'])[0]
-        page = PropertyAssetPage(**pagedata)
-        parent.add_child(instance=page)
+        assetpage = PropertyAssetPage(**pagedata)
+        parent.add_child(instance=assetpage)
+        return assetpage
 
-    def create_assets(self):
+    def load_assets(self, assets_list):
         for item in assets_list:
-            self.create_asset(item)
+            try:
+                assetpage = self.load_asset(item['asset'])
+                if 'rental_offers' in item.keys():
+                    idx = 1
+                    for offer in item['rental_offers']:
+                        offer['slug'] = 'rental-{}-{:02d}'.format(str(assetpage.slug), idx)
+                        offer['path'] = offer['slug']
+                        offerpage = RentalOfferPage(**offer)
+                        assetpage.add_child(instance=offerpage)
+                        # print('RENTAL OFFER:' + str(offer))
+                        idx += 1
+            except ValidationError as exc:
+                self.stdout.write(self.style.ERROR('error:' + item['asset']['asset_data']['slug']))
+                pass
+
 
     def delete_assets(self):
         for asset in PropertyAssetPage.objects.all():

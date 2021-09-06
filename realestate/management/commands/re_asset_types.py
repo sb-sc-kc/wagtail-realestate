@@ -7,7 +7,7 @@ import yaml
 User = get_user_model()
 
 def asset_types_create():
-    for idx, label in enumerate(('Studio', 'T1', 'T2', 'T3', 'Villa', 'Domaine')):
+    for idx, label in enumerate(('Studio', 'T1', 'T2', 'T3', 'Villa', 'Domaine', 'Chalet')):
         print(idx, label)
         pat = PropertyAssetType.objects.create(id=idx, label=label)
         pat.save()
