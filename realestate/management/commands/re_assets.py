@@ -67,7 +67,7 @@ class Command(BaseCommand):
     def load_asset(self, pagedata):
         parent = PropertyAssetIndexPage.objects.all()[0]
         assert parent is not None
-        self.stdout.write(str(pagedata))
+        # self.stdout.write(str(pagedata))
         pagedata['asset_owner'] = User.objects.filter(
             username=pagedata['asset_owner'])[0]
         pagedata['asset_type'] = PropertyAssetType.objects.filter(

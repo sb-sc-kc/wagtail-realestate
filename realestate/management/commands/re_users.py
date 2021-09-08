@@ -89,7 +89,6 @@ class Command(BaseCommand):
                 with open(options['yamlfile'], 'r') as myyaml:
                     usersyaml= myyaml.read()
                     usersdict = yaml.safe_load(usersyaml)
-                    print(usersdict)
                     self.load_users(usersdict)
 
         elif options ['delete']:

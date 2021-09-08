@@ -7,7 +7,7 @@
 
   <div class="intro">{{ page.intro|richtext }}</div>
 
-  <h2>Offers: {{ offerpages_count }}</h2>
+  <h2>Offres: {{ offerpages_count }}</h2>
   <div class="container">
     {% for offer in offerpages %}
       <div class="row">
@@ -18,9 +18,9 @@
 	  </div>
 	  <div class="col-sm-4">
 	    <h3><a href="{{ offer.get_url }}#main">{{ offer.title }}</a></h3>
-	    {% trans "surface:" %} {{ offer.get_parent.specific.asset_surface }}<br/>
-	      {% trans "city:" %} {{ offer.get_parent.specific.address_city }}<br/>
-	      {% trans "zip:" %} {{ offer.get_parent.specific.address_zip }}<br/>
+	    {% trans "Surface :" %} {{ offer.get_parent.specific.asset_surface }}<br/>
+	      {% trans "Ville :" %} {{ offer.get_parent.specific.address_city }}<br/>
+	      {% trans "Code postal :" %} {{ offer.get_parent.specific.address_zip }}<br/>
 	  </div>
 	  <div class="col-sm-4">
 	    {{offer.short_description|richtext }}

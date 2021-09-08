@@ -35,6 +35,11 @@ LOGIN_REDIRECT_URL='/'
 INSTALLED_APPS = [
     'home',
     'search',
+
+    # Insert these here
+    'wagtail_localize',
+    'wagtail_localize.locales',
+
     'blog',
     'realestate',
 
@@ -78,6 +83,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
 
     'wagtail.contrib.redirects.middleware.RedirectMiddleware',
 ]
@@ -153,11 +159,11 @@ RUNSCRIPT_CHDIR = os.path.join(BASE_DIR, 'scripts')
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
 
-LANGUAGE_CODE = 'en'
+LANGUAGE_CODE = 'fr'
 
-LANGUAGES = [
+WAGTAIL_CONTENT_LANGUAGES = LANGUAGES = [
     ('fr', 'French'),
-    ('en', 'English'),
+    # ('en', 'English'),
 ]
 
 # LOCALE_PATHS = [os.path.join(BASE_DIR, 'locale')]
@@ -170,7 +176,9 @@ USE_L10N = True
 
 USE_TZ = True
 
+WAGTAIL_I18N_ENABLED = True
 
+USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 

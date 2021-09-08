@@ -18,41 +18,6 @@ from scripts import utils, offers
 
 DEFAULT_YAML_FILE = 'data/populate/offers.yaml'
 
-OFFERS_LIST = [
-{
-    'property_asset': 'studio-montagne',
-    'title': 'Studio à Isola', 
-    'slug': 'rental-studio-isola',
-    'path': 'rental-studio-isola',
-    'depth': '00010',
-    'start_date': datetime(year=2021, month=8, day=20, hour=12),
-    'end_date': datetime(year=2021, month=8, day=27, hour=12),
-    'price': 1500,
-    'deposit': 750,
-    'description': offers.STR1,
-},
-{
-    'property_asset': 'maison-provence-01',
-    'title': "Villa les pieds dans l'eau", 
-    'slug': 'rental-villa-plage',
-    'path': 'rental-villa-plage',
-    'depth': '00010',
-    'start_date': datetime(year=2021, month=8, day=20, hour=12),
-    'end_date': datetime(year=2021, month=8, day=27, hour=12),
-    'price': 2500,
-    'deposit': 3000,
-    'description': offers.STR2,
-},
-{
-    'property_asset': 'maison-provence-02',
-    'title': "Vente Villa provence côte", 
-    'slug': 'sale-maison-provence-01',
-    'path': 'sale-maison-provence-01',
-    'depth': '00010',
-    'price': 2500000,
-    'description': offers.STR2,
-}
-]
 
 class Command(BaseCommand):
     help = 'Property Offers'

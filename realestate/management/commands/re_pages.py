@@ -1,7 +1,8 @@
 from django.core.management.base import BaseCommand, CommandError
 from wagtail.admin.auth import get_user_model
-from wagtail.core.models import Page
+from wagtail.core.models import Page, Site
 from realestate.models import (PropertyAssetIndexPage,
+                               RealEstateHomePage,
                                OfferIndexPage,
                                RentalOfferIndexPage,
                                SaleOfferIndexPage)
@@ -60,32 +61,53 @@ class Command(BaseCommand):
         page.delete()
 
     def create_pages(self):
-        home = Page.objects.filter(title='Home')[0]
+        default_home = Page.objects.filter(title='Home')[0]
+        # home_page.delete()
+        default_home.slug = 'home-old'
+        default_home.save_revision().publish()
+        default_home.save()
+        root = Page.objects.get(id=1)
+        home_page =  RealEstateHomePage(
+                title='Accueil',
+                slug='accueil',
+                # depth='0000',
+                # path='/'
+            )
+        root.add_child(instance=home_page)
+        # home_page.save()
+        # revision = home_page.save_revision()
+        # revision.publish()
+        home_page.save()
+        site = Site.objects.all()[0]
+        site.root_page = home_page
+        site.save()
         try:
             page = PropertyAssetIndexPage(
-                title='Property Assets',
+                title='Biens Immobiliers',
                 slug='assets',
             )
-            home.add_child(instance=page)
+            home_page.add_child(instance=page)
+            # page.save_revision().publish()
+            # page.save()
         except ValidationError:
             pass
 
         try:
             page = RentalOfferIndexPage(
-                title='Rental Offers',
+                title='Offres à la location',
                 slug='rental-offers',
                 path='rental-offers',
             )
-            home.add_child(instance=page)
+            home_page.add_child(instance=page)
         except ValidationError:
             pass
 
         try:
             page = SaleOfferIndexPage(
-                title='Sale Offers',
+                title='Offres à la vente',
                 slug='sale-offers',
                 path='sale-offers',
             )
-            home.add_child(instance=page)
+            home_page.add_child(instance=page)
         except ValidationError:
             pass
