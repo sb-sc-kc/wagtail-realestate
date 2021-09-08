@@ -3,240 +3,300 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-02 07:48+0200\n"
-"PO-Revision-Date: 2021-07-02 08:00+0200\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2021-09-06 08:57+0200\n"
+"PO-Revision-Date: 2021-09-06 11:45+0200\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 3.0\n"
 
-#: home/templates/home/welcome_page.html:6
+#: .\home\templates\home\welcome_page.html:6
 msgid "Visit the Wagtail website"
-msgstr ""
+msgstr "Visitez le site de Wagtail"
 
-#: home/templates/home/welcome_page.html:15
+#: .\home\templates\home\welcome_page.html:15
 msgid "View the release notes"
-msgstr ""
+msgstr "Afficher les notes de mise à jour"
 
-#: home/templates/home/welcome_page.html:27
+#: .\home\templates\home\welcome_page.html:27
 msgid "Welcome to your new Wagtail site!"
-msgstr ""
+msgstr "Bienvenue sur votre nouveau site Wagtail!"
 
-#: home/templates/home/welcome_page.html:28
+#: .\home\templates\home\welcome_page.html:28
 msgid ""
 "Please feel free to <a href=\"https://github.com/wagtail/wagtail/wiki/Slack"
 "\">join our community on Slack</a>, or get started with one of the links "
 "below."
 msgstr ""
+"N’hésitez pas à <a href=\"https://github.com/wagtail/wagtail/wiki/Slack"
+"\">rejoindre notre communauté sur Slack</a>ou à commencer avec l’un des "
+"liens ci-dessous."
 
-#: home/templates/home/welcome_page.html:35
+#: .\home\templates\home\welcome_page.html:35
 msgid "Wagtail Documentation"
-msgstr ""
+msgstr "Documentation sur la bergeronnette"
 
-#: home/templates/home/welcome_page.html:36
+#: .\home\templates\home\welcome_page.html:36
 msgid "Topics, references, & how-tos"
-msgstr ""
+msgstr "Sujets, références et procédures"
 
-#: home/templates/home/welcome_page.html:42
+#: .\home\templates\home\welcome_page.html:42
 msgid "Tutorial"
-msgstr ""
+msgstr "Didacticiel"
 
-#: home/templates/home/welcome_page.html:43
+#: .\home\templates\home\welcome_page.html:43
 msgid "Build your first Wagtail site"
 msgstr ""
 
-#: home/templates/home/welcome_page.html:49
+#: .\home\templates\home\welcome_page.html:49
 msgid "Admin Interface"
-msgstr ""
+msgstr "Interface d'administration"
 
-#: home/templates/home/welcome_page.html:50
+#: .\home\templates\home\welcome_page.html:50
 msgid "Create your superuser first!"
-msgstr ""
+msgstr "Créez d'abord votre super-utilisateur"
 
-#: realestate/models.py:25 realestate/models.py:143
-#: realestate/templates/realestate/offer_page.html:116
-#: realestate/templates/realestate/property_asset_page.html:13
+#: .\realestate\models.py:43 .\realestate\models.py:199
+#: .\templates\realestate\offer_page.html:98
+#: .\templates\realestate\property_asset_page.html:28
 msgid "Street"
 msgstr "Rue"
 
-#: realestate/models.py:28 realestate/models.py:144 realestate/models.py:146
-#: realestate/templates/realestate/offer_page.html:117
-#: realestate/templates/realestate/property_asset_page.html:14
+#: .\realestate\models.py:46 .\realestate\models.py:200
+#: .\realestate\models.py:202 .\templates\realestate\offer_page.html:99
+#: .\templates\realestate\property_asset_page.html:29
 msgid "City"
 msgstr "Ville"
 
-#: realestate/models.py:31 realestate/models.py:145
+#: .\realestate\models.py:49 .\realestate\models.py:201
 msgid "Zip Code"
 msgstr "Code postal"
 
-#: realestate/models.py:34 realestate/models.py:147
+#: .\realestate\models.py:53 .\realestate\models.py:203
 msgid "Country"
 msgstr "Pays"
 
-#: realestate/models.py:48 realestate/models.py:175
+#: .\realestate\models.py:67 .\realestate\models.py:231
 msgid "Asset Address"
-msgstr "Addresse du bien imobilier"
+msgstr "Adresse de la propriété"
 
-#: realestate/models.py:66
+#: .\realestate\models.py:85
 msgid "Agency"
 msgstr "Agence"
 
-#: realestate/models.py:67
+#: .\realestate\models.py:86
 msgid "Agencies"
 msgstr "Agences"
 
-#: realestate/models.py:80 realestate/models.py:154
+#: .\realestate\models.py:121 .\realestate\models.py:210
 msgid "Asset Type"
-msgstr "Type de bien immobilier"
+msgstr "Type de bien"
 
-#: realestate/models.py:81
+#: .\realestate\models.py:122
 msgid "Asset Types"
-msgstr "Types de bien immobilier"
+msgstr "Types de bien"
 
-#: realestate/models.py:134
+#: .\realestate\models.py:189
 msgid "Owner"
 msgstr "Propriétaire"
 
-#: realestate/models.py:137
+#: .\realestate\models.py:192
 msgid "Creation Date"
 msgstr "Date de création"
 
-#: realestate/models.py:151 realestate/templates/realestate/offer_page.html:119
-#: realestate/templates/realestate/property_asset_page.html:16
+#: .\realestate\models.py:207 .\templates\realestate\offer_page.html:101
+#: .\templates\realestate\property_asset_page.html:31
 msgid "Surface"
 msgstr "Surface"
 
-#: realestate/models.py:168
+#: .\realestate\models.py:224
 msgid "Property Asset information"
-msgstr "Informations sur le bien immobilier"
+msgstr "Informations sur le bien"
 
-#: realestate/models.py:179
+#: .\realestate\models.py:235
 msgid "Asset Informations"
-msgstr "Informations sur le bien immobilier"
+msgstr "Informations sur le bien"
 
-#: realestate/models.py:193
+#: .\realestate\models.py:249
 msgid "Property Asset"
 msgstr "Bien immobilier"
 
-#: realestate/models.py:194
+#: .\realestate\models.py:250
 msgid "Property Assets"
-msgstr "Biens immobilier"
+msgstr "Biens imobiliers"
 
-#: realestate/models.py:237
+#: .\realestate\models.py:283
 msgid "Draft"
 msgstr "Brouillon"
 
-#: realestate/models.py:238
+#: .\realestate\models.py:284
 msgid "Published"
 msgstr "Publié"
 
-#: realestate/models.py:239
+#: .\realestate\models.py:285
 msgid "Archived"
 msgstr "Archivé"
 
-#: realestate/models.py:244 realestate/templates/realestate/offer_page.html:120
+#: .\realestate\models.py:289 .\templates\realestate\offer_page.html:102
 msgid "Price"
 msgstr "Prix"
 
-#: realestate/models.py:260
+#: .\realestate\models.py:304
 msgid "Offer"
 msgstr "Offre"
 
-#: realestate/models.py:261
+#: .\realestate\models.py:305
 msgid "Offers"
 msgstr "Offres"
 
-#: realestate/models.py:327 realestate/templates/realestate/offer_page.html:121
+#: .\realestate\models.py:373 .\templates\realestate\offer_page.html:103
+#: .\templates\realestate\rental_offer_page.html:10
 msgid "Deposit"
 msgstr "Caution"
 
-#: realestate/models.py:328
-#: realestate/templates/realestate/rental_offer_page.html:5
+#: .\realestate\models.py:374 .\templates\realestate\rental_offer_page.html:11
 msgid "Start Date"
 msgstr "Date de début"
 
-#: realestate/models.py:329
-#: realestate/templates/realestate/rental_offer_page.html:6
+#: .\realestate\models.py:375 .\templates\realestate\rental_offer_page.html:12
 msgid "End Date"
 msgstr "Date de fin"
 
-#: realestate/models.py:338
+#: .\realestate\models.py:386
 msgid "Rental Offer"
 msgstr "Offre à la location"
 
-#: realestate/models.py:339
+#: .\realestate\models.py:387
 msgid "Rental Offers"
 msgstr "Offres à la location"
 
-#: realestate/models.py:383
-msgid "Sale Offer"
-msgstr "Offre à la vent"
+#: .\realestate\models.py:407
+msgid "Rental Offer: {title:s} prix: {price:9.2f}"
+msgstr "Offre à la location : {title:s} prix: {price:9.2f}"
 
-#: realestate/models.py:384
+#: .\realestate\models.py:452
+msgid "Sale Offer"
+msgstr "Offre à la vente"
+
+#: .\realestate\models.py:453
 msgid "Sale Offers"
 msgstr "Offres à la vente"
 
-#: realestate/templates/base.html:36
+#: .\realestate\views.py:8
+msgid "Choose a person"
+msgstr "Choisissez une personne"
+
+#: .\templates\account\login.html:6 .\templates\account\login.html:10
+#: .\templates\account\login.html:43
+msgid "Sign In"
+msgstr "Se connecter"
+
+#: .\templates\account\login.html:15
 #, python-format
-msgid "Hi %(myuser)s!"
-msgstr "Salut %(myuser)s !"
+msgid ""
+"Please sign in with one\n"
+"of your existing third party accounts. Or, <a href=\"%(signup_url)s\">sign "
+"up</a>\n"
+"for a %(site_name)s account and sign in below:"
+msgstr ""
 
-#: realestate/templates/base.html:38
-msgid "You are not logged in"
-msgstr "Vous n'êtes pas connecté"
+#: .\templates\account\login.html:25
+msgid "or"
+msgstr "ou"
 
-#: realestate/templates/base.html:39
-msgid "Log In"
-msgstr "Connexion"
+#: .\templates\account\login.html:32
+#, python-format
+msgid ""
+"If you have not created an account yet, then please\n"
+"<a href=\"%(signup_url)s\">sign up</a> first."
+msgstr ""
 
-#: realestate/templates/realestate/includes/marketing.html:33
-msgid "Edit »"
-msgstr "Modifier"
+#: .\templates\account\login.html:42
+msgid "Forgot Password?"
+msgstr "Mot de passe oublié ?"
 
-#: realestate/templates/realestate/includes/navbar.html:6
-#: realestate/templates/wagtailadmin/admin_base.html:4
+#: .\templates\account\logout.html:5 .\templates\account\logout.html:8
+#: .\templates\account\logout.html:17
+msgid "Sign Out"
+msgstr "Se déconnecter"
+
+#: .\templates\account\logout.html:10
+msgid "Are you sure you want to sign out?"
+msgstr "Etes vous sûr de vouloir vous déconnecter ?"
+
+#: .\templates\account\signup.html:5
+msgid "Signup"
+msgstr "Inscription"
+
+#: .\templates\account\signup.html:8 .\templates\account\signup.html:18
+msgid "Sign Up"
+msgstr "S'inscrire"
+
+#: .\templates\account\signup.html:10
+#, python-format
+msgid ""
+"Already have an account? Then please <a href=\"%(login_url)s\">sign in</a>."
+msgstr ""
+
+#: .\templates\realestate\includes\navbar.html:6
+#: .\templates\wagtailadmin\admin_base.html:4
 msgid "LC Real Estate"
-msgstr "Agence immobilière LC"
+msgstr "Agence immoiblière SB"
 
-#: realestate/templates/realestate/includes/navbar.html:13
+#: .\templates\realestate\includes\navbar.html:13
 msgid "Rentals"
 msgstr "Locations"
 
-#: realestate/templates/realestate/includes/navbar.html:16
+#: .\templates\realestate\includes\navbar.html:16
 msgid "Sales"
 msgstr "Ventes"
 
-#: realestate/templates/realestate/includes/navbar.html:19
+#: .\templates\realestate\includes\navbar.html:19
 msgid "Put an ad"
-msgstr "Placer une annonce"
+msgstr "Ajouter une annonce"
 
-#: realestate/templates/realestate/includes/navbar.html:24
+#: .\templates\realestate\includes\navbar.html:24
 #, python-format
 msgid "%(myuser)s"
-msgstr "%(myuser)s"
+msgstr ""
 
-#: realestate/templates/realestate/includes/navbar.html:28
+#: .\templates\realestate\includes\navbar.html:28
 msgid "Log Out"
 msgstr "Se déconnecter"
 
-#: realestate/templates/realestate/includes/navbar.html:41
-#: realestate/templates/realestate/includes/navbar.html:42
+#: .\templates\realestate\includes\navbar.html:32
+msgid "Log In"
+msgstr "Se Connecter"
+
+#: .\templates\realestate\includes\navbar.html:38
+#: .\templates\realestate\includes\navbar.html:39
 msgid "Search"
 msgstr "Rechercher"
 
-#: realestate/templates/realestate/offer_page.html:118
-#: realestate/templates/realestate/property_asset_page.html:15
+#: .\templates\realestate\offer_index_page.html:21
+msgid "surface:"
+msgstr "surface :"
+
+#: .\templates\realestate\offer_index_page.html:22
+msgid "city:"
+msgstr "ville :"
+
+#: .\templates\realestate\offer_index_page.html:23
+msgid "zip:"
+msgstr "code postal :"
+
+#: .\templates\realestate\offer_page.html:100
+#: .\templates\realestate\property_asset_page.html:30
 msgid "Zip"
 msgstr "Code postal"
 
-#: realestate/templates/realestate/property_asset_page.html:17
+#: .\templates\realestate\property_asset_page.html:32
 msgid "Value"
 msgstr "Valeur"
