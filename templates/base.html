@@ -39,51 +39,27 @@
     </head>
     <body>
       {% block main %} <!-- >>> main -->
+	  <main>
       <!-- Page header with logo and tagline-->
-                        
+
 	  <header id="header" class="fixed-top header-transparent">
 		<div class="container d-flex align-items-center justify-content-between">
-	
+		  
 		  <div class="logo">
 			<img src="{% static 'assets/img/logo-agence.jpg' %}" alt="Logo agence SB" />
 			<!-- Uncomment below if you prefer to use an image logo -->
 			<!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 		  </div>
-	
+		  
 		  <div class="col-xs-2">
 			<div class="block-connexion">
-				<span class="overlay">Propriétaire</span>
-				<a class="button" href="/inscription">Nouveau membre</a>                         
-				<a class="button" href="/membres/">Déjà membre</a>
+			  <span class="overlay">Propriétaire</span>
+			  <a class="button" href="/inscription">Nouveau membre</a>                         
+			  <a class="button" href="/membres/">Déjà membre</a>
 			</div>
-		</div>
-	{% include 'realestate/includes/navbar-fr.html' %}
-	{% comment %}
-	{% include 'realestate/includes/navbar.html' %}
-	{% endcomment %}
-{% comment %}
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="{{ blog_page.url }}">{{ blog_page.title }}</a>
-        </div>
-
-        {% main_menu template="menus/main_menu.html" %}
-
-        <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container -->
-</nav>
-{% endcomment %}
-</header><!-- End Header -->
-
+		  </div>
+		  {% include 'realestate/includes/navbar-fr.html' %}
+	  </header><!-- End Header -->
       <!-- >>> Page Content -->
 	  
 	  <section id="hero">
@@ -105,7 +81,7 @@
       {% endblock %}
       <!-- <<< main -->
       {% wagtailuserbar %}
-
+	  </main>
       <!-- Footer-->
       <footer id="footer">
 		<div class="footer-top">

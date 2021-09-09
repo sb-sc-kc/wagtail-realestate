@@ -348,9 +348,9 @@ class RentalOfferIndexPage(RealEstatePage):
         context = super().get_context(request)
         offerpages = RentalOfferPage.objects.specific()
         if offerpages is not None:
-            if request.GET.get('tag', None):
-                tags = request.GET.get('tag')
-                offerpages = offerpages.filter(tags__slug__in=[tags])
+            tag = request.GET.get('tag', None)
+            if tag:
+                offerpages = offerpages.filter(tags__slug=tag)
             context['offerpages'] = offerpages
 
         context['offer_type'] = 'rental-offer'

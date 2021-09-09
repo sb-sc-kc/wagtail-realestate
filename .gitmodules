@@ -2,5 +2,5 @@
 	path = data
 	url = git@github.com:sb-sc-kc/wagtail-realestate-data
 [submodule "mysite/static/assets/vendor/boxicons"]
-	path = mysite/static/assets/vendor/boxicons
+	path = realestate/static/assets/vendor/boxicons
 	url = https://github.com/atisawd/boxicons

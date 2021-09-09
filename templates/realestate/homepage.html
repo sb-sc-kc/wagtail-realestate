@@ -1,17 +1,10 @@
 {% extends "base.html" %}
 {% load wagtailcore_tags debugger_tags wagtailimages_tags %}
+{% load static %}
 {% load i18n %}
 
 {% block content %}
    <!-- ======= Hero Section ======= -->
-  <section id="hero">
-    <div class="hero-container" data-aos="fade-up">
-      <h1>Agence SB</h1>
-      <h2>Bienvenue Sur Notre Site</h2>
-      <a href="#about" class="btn-get-started scrollto"> <i class="bx bx-chevrons-down"></i></a>
-    </div>
-  </section><!-- End Hero -->
-
   <main id="main">
 
     <!-- ======= About Section ======= -->
@@ -119,7 +112,7 @@
               <div class="icon"><i class="bx bxl-dribbble"></i></div>
               <h4 class="title"><a href="">Chalets de luxe</a></h4> 
               <a href="description.html">
-				 <img src="./assets/img/téléchargement (4).jpg" border="0" height="150" width="200" alt="">
+				 <img src="{% static 'images/chalet-mirabel.jpg' %}" border="0" height="150" width="200" alt="">
 				</a>
                 <h1>Detail</h1>
             </div>
@@ -129,7 +122,7 @@
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
               <div class="icon"><i class="bx bx-file"></i></div>
               <h4 class="title"><a href="">Appartements</a></h4> 
-              <a href="description1.html">img src="./assets/img/immeuble.jpg"border="0" height="150" width="200" </a>
+              <a href="description1.html"><img src="{% static 'images/immeuble.jpg' %}" border="0" height="150" width="200" alt=""></a>
               <h1>Detail</h1>
             </div>
           </div>
@@ -171,7 +164,7 @@
             <div class="icon-box" data-aos="fade-up">
               <div class="icon"><i class="bx bxl-dribbble"></i></div>
               <h4 class="title"><a href="">Villa de luxes</a></h4> 
-              <a href="description2.html"> <img src="./assets/img/villa.jpg"border="0" height="150" width="200"> </a>
+              <a href="description2.html"> <img src="{% static 'images/villa.jpg' %}" border="0" height="150" width="200"> </a>
                 <h1>Detail</h1>
             </div>
           </div>
@@ -180,7 +173,7 @@
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
               <div class="icon"><i class="bx bx-file"></i></div>
               <h4 class="title"><a href="">Appartements</a></h4> 
-              <a href="description3.html"> <img src="./assets/img/residence bord de mer.jpg"border="0" height="150" width="200"> </a>
+              <a href="description3.html"> <img src="{% static 'images/residence-bord-de-mer.jpg' %}" border="0" height="150" width="200"></a>
               <h1>Detail</h1>
             </div>
           </div>
