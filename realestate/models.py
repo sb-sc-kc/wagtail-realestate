@@ -44,11 +44,11 @@ class AddressPage(RealEstatePage):
                                       blank=True,
                                       null=True)
     address_city = models.CharField(max_length=128, verbose_name=_('City'),
-                                      blank=True,
-                                      null=True)
+                                    blank=True,
+                                    null=True)
     address_zip = models.CharField(max_length=32, verbose_name=_('Zip Code'),
-                                      blank=True,
-                                      null=True)
+                                   blank=True,
+                                   null=True)
     address_country = models.CharField(
         max_length=64, verbose_name=_('Country'),
         blank=True,
@@ -151,13 +151,12 @@ class PropertyAssetTagIndexPage(RealEstatePage):
 
 class PropertyAssetIndexPage(RealEstatePage):
     intro = RichTextField(blank=True)
-    template='realestate/property_asset_index_page.html'
+    template = 'realestate/property_asset_index_page.html'
     content_panels = Page.content_panels + [
         FieldPanel('intro', classname="full")
     ]
 
     def get_context(self, request):
-        # Update context to include only published posts, ordered by reverse-chron
         context = super().get_context(request)
         assetpages = self.get_children().live()
         context['assetpages'] = assetpages
@@ -186,7 +185,7 @@ class PropertyAssetPage(RealEstatePage):
     A house or flat to be sent or rented
     """
     asset_owner = models.ForeignKey(User, on_delete=models.RESTRICT,
-                              verbose_name=_('Owner'))
+                                    verbose_name=_('Owner'))
     time_created = models.DateTimeField(
         auto_now_add=True,
         editable=False, verbose_name=_('Creation Date'))
@@ -200,7 +199,9 @@ class PropertyAssetPage(RealEstatePage):
     address_city = models.CharField(max_length=128, verbose_name=_('City'))
     address_zip = models.CharField(max_length=32, verbose_name=_('Zip Code'))
     address_city = models.CharField(max_length=128, verbose_name=_('City'))
-    address_country = models.CharField(max_length=64, verbose_name=_('Country'), default='France')
+    address_country = models.CharField(max_length=64,
+                                       verbose_name=_('Country'),
+                                       default='France')
 
     # Asset
     asset_surface = models.DecimalField(
@@ -237,10 +238,8 @@ class PropertyAssetPage(RealEstatePage):
         FieldPanel('description', classname="full"),
         InlinePanel('gallery_images', label="Gallery images"),
     ]
-    
 
     def get_context(self, request):
-        # Update context to include only published posts, ordered by reverse-chron
         context = super().get_context(request)
         context['asset'] = self
         return context
@@ -251,7 +250,9 @@ class PropertyAssetPage(RealEstatePage):
 
     def __str__(self):
         return '{address_city:s} {address_zip:s} {asset_type:s}'.format(
-            address_city=self.address_city, address_zip=self.address_zip, asset_type=str(self.asset_type),
+            address_city=self.address_city,
+            address_zip=self.address_zip,
+            asset_type=str(self.asset_type),
         )
 
     def main_image(self):
@@ -327,8 +328,8 @@ class OfferIndexPage(RoutablePageMixin, RealEstatePage):
         offerpages = self.get_children().specific().live()
         # assert(len(offerpages) > 0)
         if request.GET.get('tag', None):
-            tags = request.GET.get('tag')
-            offerpages = offerpages.filter(tags__slug__in=[tags])
+            tag = request.GET.get('tag')
+            offerpages = offerpages.filter(tags__slug__in=[tag])
         context['offerpages'] = offerpages
         context['offerpages_count'] = self.get_children_count()
 
@@ -344,7 +345,6 @@ class RentalOfferIndexPage(RealEstatePage):
     subpage_types = ['realestate.RentalOfferPage']
 
     def get_context(self, request):
-        # Update context to include only published posts, ordered by reverse-chron
         context = super().get_context(request)
         offerpages = RentalOfferPage.objects.specific()
         if offerpages is not None:
@@ -386,14 +386,7 @@ class RentalOfferPage(RoutablePageMixin, OfferPage):
         verbose_name = _('Rental Offer')
         verbose_name_plural = _('Rental Offers')
 
-    # def __str__(self):
-    #     return _('{asset:s} available from {start_date:s} to {end_date:s} price: {price:9.2f}').format(
-    #         asset=str(self.get_parent().asset),
-    #         start_date=format_date(self.start_date),
-    #         end_date=format_date(self.end_date), price=self.price)
-    
     def get_context(self, request):
-        # Update context to include only published posts, ordered by reverse-chron
         context = super().get_context(request)
         asset = self.get_parent().specific
         images = asset.gallery_images.all()
@@ -420,7 +413,6 @@ class SaleOfferIndexPage(RealEstatePage):
     ]
 
     def get_context(self, request):
-        # Update context to include only published posts, ordered by reverse-chron
         context = super().get_context(request)
         offerpages = SaleOfferPage.objects.live().specific()
         if request.GET.get('tag', None):
@@ -429,7 +421,6 @@ class SaleOfferIndexPage(RealEstatePage):
 
         context['offerpages'] = offerpages
         context['offer_type'] = 'sale-offer'
-        
         return context
 
     subpage_types = ['realestate.SaleOfferPage']
@@ -457,7 +448,6 @@ class SaleOfferPage(OfferPage):
     ]
 
     def get_context(self, request):
-        # Update context to include only published posts, ordered by reverse-chron
         context = super().get_context(request)
         asset = self.get_parent().specific
         images = asset.gallery_images.all()
@@ -469,7 +459,9 @@ class SaleOfferPage(OfferPage):
 
 
 class PageGalleryImage(Orderable):
-    page = ParentalKey(PropertyAssetPage, on_delete=models.CASCADE, related_name='gallery_images')
+    page = ParentalKey(PropertyAssetPage,
+                       on_delete=models.CASCADE,
+                       related_name='gallery_images')
     image = models.ForeignKey(
         'wagtailimages.Image', on_delete=models.CASCADE, related_name='+'
     )

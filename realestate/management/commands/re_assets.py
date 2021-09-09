@@ -83,9 +83,16 @@ class Command(BaseCommand):
                 if 'rental_offers' in item.keys():
                     idx = 1
                     for offer in item['rental_offers']:
+                        tags = {}
+                        if 'tags' in offer.keys():
+                            # tags = offer['tags']
+                            tags = offer.pop('tags')
                         offer['slug'] = 'rental-{}-{:02d}'.format(str(assetpage.slug), idx)
                         offer['path'] = offer['slug']
                         offerpage = RentalOfferPage(**offer)
+                        for tag in tags:
+                            offerpage.tags.add(tag)
+
                         assetpage.add_child(instance=offerpage)
                         # print('RENTAL OFFER:' + str(offer))
                         idx += 1
