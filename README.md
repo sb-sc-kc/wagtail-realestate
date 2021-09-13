@@ -60,3 +60,18 @@ Ouvrir un powershell
 ## Lancement du serveur
  
      python manage.py runserver
+     
+
+
+
+
+
+
+
+## 
+CREATION DE LA PAGE UTILISATEUR
+  espace utilisateur
+  formulaire de réservation , avec sécurité de mot de passe.
+  formulaire ou le client peut mettre son nom, prénom, mail, numéro de tel ,
+  son adresse, date d'arrivée et de départ . 
+  je dois pouvoir leur faire la démo que cela fonctionne sur la base de donnée.
