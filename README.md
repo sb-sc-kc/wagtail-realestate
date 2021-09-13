@@ -4,16 +4,6 @@
 
 Status: Développement en cours
 
-[Installation](installation.md)
-
-[Outils](outils/outils.md)
-
-[Interface utilisateur](html/)
-
-[Spécifications](specifications/specifications.md)
-
-[Localisation](specifications/localisation.md)
-
 # Technologies utilisées
 
 ## Django
