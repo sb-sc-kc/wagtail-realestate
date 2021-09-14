@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'wagtail_localize',
     'wagtail_localize.locales',
 
-    'blog',
     'realestate',
 
     'wagtail.contrib.modeladmin',

@@ -7,7 +7,7 @@
 {% endblock %}
 
 {% block offer-specs %}
-<tr><td>{% trans "Deposit" %}</td><td>{{ offer.deposit }}</td></tr>
-<tr><td>{% trans "Start Date" %}</td><td>{{ offer.start_date }}</td></tr>
-<tr><td>{% trans "End Date" %}  </td><td>{{ offer.end_date }}  </td></tr>
+<dt>Caution</dt><dd>{{ offer.deposit }}</dd>
+<dt>Date début</td><dd>{{ offer.start_date }}</dd>
+<dt>Date fin</dt><dd>{{ offer.end_date }}  </dd>
 {% endblock %}

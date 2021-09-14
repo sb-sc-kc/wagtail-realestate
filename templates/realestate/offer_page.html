@@ -100,7 +100,7 @@
 				<dt>Code postal</dt><dd>{{ asset.address_zip }}</dd>
 				<dt>Surface</dt><dd>{{ asset.asset_surface }}</dd>
 				<dt>Prix</dt><dd>{{ offer.price }}</dd>
-				<dt>Caution</dt><dd>{{ offer.deposit }}</dd>
+				{% block offer-specs %}${% endblock %}
 		      </dl>
 		    </div>
 		  </div>
