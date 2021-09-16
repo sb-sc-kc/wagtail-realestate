@@ -26,14 +26,19 @@ from wagtail.snippets.models import register_snippet
 
 
 class RealEstatePage(Page):
+    def get_homepage(self):
+        return [page for page in Page.objects.get(id=1).get_children() if page.slug == 'accueil'][0]
+
     def get_context(self, request, *args, **kwargs):
         context = super().get_context(request, *args, **kwargs)
-        context['menuitems'] = self.get_children().filter(
+        # pages = [page for page in homepage.get_children() if page.show_in_menus == True]
+        homepage = self.get_homepage()
+        context['menuitems'] = homepage.get_children().filter(
             live=True, show_in_menus=True)
         return context
 
 
-class RealEstateHomePage(Page):
+class RealEstateHomePage(RealEstatePage):
     template = 'realestate/homepage.html'
 
 
@@ -319,38 +324,21 @@ class OfferIndexPage(RoutablePageMixin, RealEstatePage):
         FieldPanel('intro', classname="full")
     ]
 
+    def get_offerpages(self, request):
+        print('OfferIndexPage.get_offerpages')
+        if request.GET.get('tag', None):
+            tag = request.GET.get('tag')
+            offerpages = offerpages.specific().filter(tags__slug__in=[tag])
+            return offerpages
+        else:
+            return []
+        
     def get_context(self, request, *args, **kwargs):
         """Adding custom stuff to our context."""
         context = super().get_context(request, *args, **kwargs)
-        offerpages = self.get_children().specific().live()
-        # assert(len(offerpages) > 0)
-        if request.GET.get('tag', None):
-            tag = request.GET.get('tag')
-            offerpages = offerpages.filter(tags__slug__in=[tag])
+        offerpages = self.get_offerpages(request)
         context['offerpages'] = offerpages
         context['offerpages_count'] = self.get_children_count()
-
-        return context
-
-
-class RentalOfferIndexPage(RealEstatePage):
-    intro = RichTextField(blank=True)
-    content_panels = Page.content_panels + [
-        FieldPanel('intro', classname="full")
-    ]
-
-    subpage_types = ['realestate.RentalOfferPage']
-
-    def get_context(self, request, *args, **kwargs):
-        context = super().get_context(request)
-        offerpages = RentalOfferPage.objects.specific()
-        if offerpages is not None:
-            tag = request.GET.get('tag', None)
-            if tag:
-                offerpages = offerpages.filter(tags__slug=tag)
-            context['offerpages'] = offerpages
-
-        context['offer_type'] = 'rental-offer'
 
         return context
 
@@ -361,6 +349,31 @@ class RentalOfferPageTag(TaggedItemBase):
         related_name='tagged_items',
         on_delete=models.CASCADE
     )
+
+
+class RentalOfferIndexPage(RealEstatePage):
+    tag = models.CharField(max_length=32, verbose_name=_('Tag'),
+                                   blank=True,
+                                   null=True)
+    intro = RichTextField(blank=True)
+    # tag = RentalOfferPageTag()
+    content_panels = Page.content_panels + [
+        FieldPanel('intro', classname="full"),
+        FieldPanel('tag')
+    ]
+
+    def get_offerpages(self, request):
+        print('RentalOfferIndexPage.get_offerpages')
+        offerpages = RentalOfferPage.objects.filter(tags__slug__in=[self.tag])
+        return offerpages
+
+    def get_context(self, request, *args, **kwargs):
+        print('RentalOfferIndexPage.get_context')
+        context = super().get_context(request)
+        offerpages = self.get_offerpages(request)
+        context['offerpages'] = offerpages
+        context['offer_type'] = 'rental-offer'
+        return context
 
 
 class RentalOfferContact(Page):
@@ -383,6 +396,10 @@ class RentalOfferContact(Page):
       default=1,
     )
 
+    def status_string(self):
+        mystatus = [status[1] for status in self.STATUS if status[0] == self.status][0]
+        return mystatus
+
     content_panels = Page.content_panels + [
         MultiFieldPanel([
             FieldPanel('email'),
@@ -390,6 +407,14 @@ class RentalOfferContact(Page):
             FieldPanel('status'),
         ], heading="Contact Client"),
     ]
+
+
+class RentalOfferContactIndexPage(RealEstatePage):
+    def get_context(self, request):
+        context = super().get_context(request)
+        contacts = RentalOfferContact.objects.specific().all()
+        context['contacts'] = contacts
+        return context
 
 
 class RentalOfferPage(RoutablePageMixin, OfferPage):

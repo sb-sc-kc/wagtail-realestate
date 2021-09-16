@@ -1,14 +1,21 @@
 from django.core.management.base import BaseCommand, CommandError
+from django.contrib.auth.models import Group
 from wagtail.admin.auth import get_user_model
-from wagtail.core.models import Page, Site
+from wagtail.core.models import Page, Site, PageViewRestriction
 from realestate.models import (PropertyAssetIndexPage,
                                RealEstateHomePage,
                                OfferIndexPage,
                                RentalOfferIndexPage,
-                               SaleOfferIndexPage)
+                               SaleOfferIndexPage,
+                               RentalOfferContactIndexPage)
 from django.core.exceptions import ValidationError
 
 User = get_user_model()
+
+DEFSTR = """Nullam eu ante vel est convallis dignissim. Fusce suscipit, 
+wisi nec facilisis facilisis, 
+est dui fermentum leo, quis tempor ligula erat quis odio. Nunc porta vulputate tellus. Nunc rutrum turpis se
+"""
 
 class Command(BaseCommand):
     help = 'List site pages'
@@ -94,10 +101,26 @@ class Command(BaseCommand):
 
         try:
             page = RentalOfferIndexPage(
-                title='Offres à la location',
-                slug='rental-offers',
-                path='rental-offers',
+                title='Offres à la location Mer',
+                slug='rental-offers-mer',
+                path='rental-offers-mer',
             )
+            page.tag = 'mer'
+            page.show_in_menus = True
+            page.intro = DEFSTR
+            home_page.add_child(instance=page)
+        except ValidationError:
+            pass
+
+        try:
+            page = RentalOfferIndexPage(
+                title='Offres à la location Montagne',
+                slug='rental-offers-montagne',
+                path='rental-offers-montagne',
+            )
+            page.tag = 'montagne'
+            page.show_in_menus = True
+            page.intro = DEFSTR
             home_page.add_child(instance=page)
         except ValidationError:
             pass
@@ -109,5 +132,21 @@ class Command(BaseCommand):
                 path='sale-offers',
             )
             home_page.add_child(instance=page)
+        except ValidationError:
+            pass
+        try:
+            page = RentalOfferContactIndexPage(
+                title='Contacts Locations',
+                slug='contacts-locations',
+                path='contacts-locations',
+                show_in_menus=True
+            )
+            page = home_page.add_child(instance=page)
+            pvr = PageViewRestriction(restriction_type=PageViewRestriction.GROUPS, page=page)
+            pvr.save()
+            group = Group.objects.filter(name='Editors').first()
+            pvr.groups.add(group)
+            group = Group.objects.filter(name='Moderators').first()
+            pvr.groups.add(group)
         except ValidationError:
             pass
