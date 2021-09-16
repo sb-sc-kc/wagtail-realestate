@@ -12,9 +12,11 @@
     {% for offer in offerpages %}
       <div class="row">
 	  <div class="col-sm-2">
+	  {% comment %}
 	    {% with offer.get_parent.specific.main_image as main_image %}
 	      {% if main_image %}{% image main_image fill-160x100 %}{% endif %}
 	    {% endwith %}
+	  {% endcomment %}
 	  </div>
 	  <div class="col-sm-4">
 	    <h3><a href="{{ offer.get_url }}#main">{{ offer.title }}</a></h3>
