@@ -257,10 +257,7 @@ class PropertyAssetPage(RealEstatePage):
 
     def main_image(self):
         gallery_item = self.gallery_images.first()
-        if gallery_item:
-            return gallery_item.image
-        else:
-            return None
+        return gallery_item if gallery_item else None
 
     def address_county(self):
         return self.address_zip[:2]
@@ -344,7 +341,7 @@ class RentalOfferIndexPage(RealEstatePage):
 
     subpage_types = ['realestate.RentalOfferPage']
 
-    def get_context(self, request):
+    def get_context(self, request, *args, **kwargs):
         context = super().get_context(request)
         offerpages = RentalOfferPage.objects.specific()
         if offerpages is not None:
@@ -366,6 +363,35 @@ class RentalOfferPageTag(TaggedItemBase):
     )
 
 
+class RentalOfferContact(Page):
+    STATUS = (
+        (1, 'Nouveau'),
+        (2, 'Contacté'),
+        (3, 'Archivé'),
+    )
+    time_created = models.DateTimeField(
+        auto_now_add=True,
+        editable=False, verbose_name=_('Creation Date'))
+    email = models.CharField(max_length=32, verbose_name='Email',
+                                   blank=True,
+                                   null=True)
+    phone = models.CharField(max_length=10, verbose_name='Téléphone',
+                                   blank=True,
+                                   null=True)
+    status = models.PositiveSmallIntegerField(
+      choices=STATUS,
+      default=1,
+    )
+
+    content_panels = Page.content_panels + [
+        MultiFieldPanel([
+            FieldPanel('email'),
+            FieldPanel('phone'),
+            FieldPanel('status'),
+        ], heading="Contact Client"),
+    ]
+
+
 class RentalOfferPage(RoutablePageMixin, OfferPage):
     """Rental Offers
     """
@@ -374,6 +400,8 @@ class RentalOfferPage(RoutablePageMixin, OfferPage):
     start_date = models.DateTimeField(verbose_name=_('Start Date'))
     end_date = models.DateTimeField(verbose_name=_('End Date'))
     tags = ClusterTaggableManager(through=RentalOfferPageTag, blank=True)
+    # contacts = ClusterTaggableManager(through=RentalOfferContact, blank=True)
+    subpage_types = ['realestate.RentalOfferContact']
 
     content_panels = OfferPage.content_panels + [
         FieldPanel('tags'),
@@ -386,7 +414,7 @@ class RentalOfferPage(RoutablePageMixin, OfferPage):
         verbose_name = _('Rental Offer')
         verbose_name_plural = _('Rental Offers')
 
-    def get_context(self, request):
+    def get_context(self, request, *args, **kwargs):
         context = super().get_context(request)
         asset = self.get_parent().specific
         images = asset.gallery_images.all()
@@ -394,7 +422,22 @@ class RentalOfferPage(RoutablePageMixin, OfferPage):
         context['offer'] = self
         context['asset'] = asset
         context['images'] = images
-        return context
+        if request.method == "GET":
+            # return render(request, 'index.html')
+            return context
+        elif request.method == "POST":
+            if 'form_offer' in request.POST:
+                email = request.POST['email']
+                phone = request.POST['phone']
+                offer_id = request.POST['offer_id']
+                print('EMail: ', email, 'Phone:', phone, 'offer_id:', offer_id)
+                contact = RentalOfferContact(email=email, phone=phone, status=1, title='{offer:s} {email:s}'.format(offer=self.title, email=email))
+                self.add_child(instance=contact)
+                context['contact_added'] = 1
+            # return render(request, 'index.html')
+            return context
+        else:
+            return context
 
     def __str__(self):
         return _('Rental Offer: {title:s} prix: {price:9.2f}').format(

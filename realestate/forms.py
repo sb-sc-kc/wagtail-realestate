@@ -1,4 +1,4 @@
-# from django import forms
+from django import forms
 # from django.utils.translation import gettext_lazy as _
 
 # from wagtail.users.forms import UserEditForm, UserCreationForm
@@ -6,9 +6,15 @@
 
 # class CustomUserEditForm(UserEditForm):
 #     country = forms.CharField(required=True, label=_("Country"))
-#     status = forms.ModelChoiceField(queryset=MembershipStatus.objects, required=True, label=_("Status"))
+#     status = forms.ModelChoiceField(queryset=MembershipStatus.objects,
+#                                     required=True, label=_("Status"))
 
 
 # class CustomUserCreationForm(UserCreationForm):
 #     country = forms.CharField(required=True, label=_("Country"))
-#     status = forms.ModelChoiceField(queryset=MembershipStatus.objects, required=True, label=_("Status"))
+#     status = forms.ModelChoiceField(queryset=MembershipStatus.objects,
+#                                     required=True, label=("Status"))
+
+class RentalOfferContact(forms.Form):
+    email = forms.CharField(required=True, label="Email")
+    phone = forms.CharField(required=True, label="Téléphone")
