@@ -14,7 +14,7 @@
         {% for menuitem in menuitems %}
         {% can_view menuitem as permission %}
         {% if permission %}
-        <li class="nav-item navbar-brand">
+        <li class="nav-item">
           <a class="nav-link scrollto" href="{{ menuitem.url }}">{{ menuitem.title }}</a>
         </li>
         {% endif %}
@@ -39,5 +39,3 @@
     </div>
   </div>
 </nav>
-  <ul class="nav navbar-nav">
-</ul>
