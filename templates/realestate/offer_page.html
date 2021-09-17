@@ -111,7 +111,7 @@
           {% csrf_token %}
           <input type="hidden" name="offer_id" value="{{ offer.id }}">
           <dl class="dl-hozizontal">
-            <dt><label for="">EMail:</label></dt><dd><input type="text" name="email"></dd>
+            <dt><label for="">EMail:</label></dt><dd><input type="text" name="email" value="{{ user.email }}"></dd>
             <dt><label for="">Téléphone:</label></dt><dd><input type="text" name="phone"></dd>
             <input type="submit" name="form_offer">
         </form>

@@ -454,8 +454,6 @@ class RentalOfferPage(RoutablePageMixin, OfferPage):
             if 'form_offer' in request.POST:
                 email = request.POST['email']
                 phone = request.POST['phone']
-                offer_id = request.POST['offer_id']
-                print('EMail: ', email, 'Phone:', phone, 'offer_id:', offer_id)
                 contact = RentalOfferContact(email=email, phone=phone, status=1, title='{offer:s} {email:s}'.format(offer=self.title, email=email))
                 self.add_child(instance=contact)
                 context['contact_added'] = 1
