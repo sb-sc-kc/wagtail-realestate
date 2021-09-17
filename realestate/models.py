@@ -412,7 +412,7 @@ class RentalOfferContact(Page):
 class RentalOfferContactIndexPage(RealEstatePage):
     def get_context(self, request):
         context = super().get_context(request)
-        contacts = RentalOfferContact.objects.specific().all()
+        contacts = RentalOfferContact.objects.all()
         context['contacts'] = contacts
         return context
 

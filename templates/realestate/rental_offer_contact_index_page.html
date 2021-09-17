@@ -18,16 +18,15 @@
             {% endwith %}
           </div>
           <div class="col-sm-4">
-            {% with contact.get_parent as offer %}
-              <h3><a href="/admin/pages/{{ offer.id }}/edit/">{{ offer }}</a> <a href="/admin/pages/{{ contact.id }}/edit/">{{ contact.email }}</a></h3>
+            {% with contact.get_parent.specific as offer %}
+              <h3><a href="/admin/pages/{{ offer.id }}/edit/">{{ offer }}</a> <a href="/admin/pages/{{ contact.id }}/edit/">{{ contact.email }}</a></h3>
               {% trans "Date de création :" %} {{ contact.time_created }}<br>
               {% trans "Email :" %} {{ contact.email }}<br>
               {% trans "Téléphone :" %} {{ contact.phone }}<br>
               {% trans "Status :" %} {{ contact.status_string }}<br>
               Date début : {{ offer.start_date }}<br/>
               Date fin : {{ offer.end_date }}<br/>
-            {% endwith %}       
-            
+            {% endwith %}
           </div>
           <div class="col-sm-4">
             {{offer.short_description|richtext }}
